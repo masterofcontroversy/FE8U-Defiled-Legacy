@@ -1,0 +1,10 @@
+Blood name  secondary   primary (simple int form)
+
+Tolliver:   0           0x80 (128)
+Friedegard: 1           1^0x80 (129)
+Markos:     2           2^0x80 (130)
+Cleta:      3           3^0x80 (131)
+Seanan:     4           4^0x80 (132)
+Osiris:     5           5^0x80 (133)
+Cierra:     6           6^0x80 (134)
+Eleazar:    7           7^0x80 (135)
