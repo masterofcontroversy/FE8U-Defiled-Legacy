@@ -1,0 +1,201 @@
+Introduction:
+(To be started)
+
+Chapter 1:
+Devan (Eyes closed): "...zzzzz....."
+*Knock on the door*
+Ronni (out of screen): "Hey Devan, there's a bandit attack going on over in Tristan!"
+Devan (Eyes open): "...mmm...ugh..."
+Ronni: "You might want to get up sometime today, those bandits probably won't wait for you to finish your nap."
+Devan: "...Tell the troops we sortie in fifteen minutes."
+Ronni: "Roger!"
+(Five minutes later, in the main hall)
+Issac: "Ah Devan, you're awake. I take it you heard about the raid in Tristan?"
+Devan: "Yes Uncle, I heard. I'm leaving in about ten minutes. Of course the raid had to happen while I was in the middle of the best sleep
+    I had in weeks."
+Issac: "Well, the raiders never seemed to be concerned with stealing on a schedule. Before you leave, you should get something to eat."
+Devan: "I'll be fine. I'll just eat some jerky on the way or something. I'm going to the barroks to check on the troops. While I'm gone hold down the fort."
+Issac: "Alright. Safe travels."
+(A few minutes later in the barroks)
+Devan: "Ronni!"
+Ronni: [Appears onscreen]: Yeah?
+Devan: "How are the preperations to leave going?"
+Ronni: "Great... 'cept for Kenny."
+Devan: "Let me guess: He's getting the shakes."
+Ronni: "Yup."
+Devan: "*sigh*... I'll handle it."
+[Refresh, add Kenneth, then Devan to scene]
+Devan: "Kenneth."
+Kenneth [Turns to face Devan]: "Ah... Duke Devan!"
+Devan: "How many times do I have to tell you to stop calling me that? It Sounds like the title of some children's song."
+Kenneth: "Oh. I'm sorry Lord Devan."
+Devan: "Nevermind that. I heard you're getting cold feet?"
+Kenneth: "Well...yes since this is my first sortie..."
+Devan: "What's the problem? The idea of killing on the battle field? The possibility of being killed?
+    An injury so bad that it would be better to die?"
+Kenneth: "That's about the gist of it, yes."
+Devan: "If that's all your worried about then you should be fine."
+Kenneth: "Wait, there's more to be worried about?"
+Devan: "Kenneth, why did you join my company?"
+Kenneth: "To prove to my sister that I can take care of myself."
+Devan: "If that's the case you made a poor decision. Don't worry, The only people that died under my command were either too brave or too stupid to 
+    follow orders. You're neither, so you should be fine."
+Kenneth: "Um...thanks?"
+Devan: "Now finish getting ready, we're about to leave."
+(Departure time outside)
+[Devan and Ronni onscreen]
+Ronni: "We're ready to go Devan."
+Devan: "Alright! As you know Tristan is currently being raided by bandits! By the time we get to there, the bandits will already be gone, so we'll be 
+    cutting them off at Edmund's pass! Understood??"
+Solders: "Yes sir!"
+Devan: "Alright. Foward!"
+(At Edmund's pass)
+[Ronni onscreen]
+Ronni: "Lord Devan, I found some tracks!"
+[Devan onscreen]
+Devan: "They're fresh. We just missed them. Tell the rear guard to protect the village. We'll be able to chase the raiders faster with fewer numbers."
+Ronni: "Aye aye."
+[Ronni leaves]
+(Elsewhere...)
+Kenneth: "(Whew, no bandits. Maybe I can stay with the rear guard)."
+[Anthony appears]
+Anthony: "Hey new blood."
+Kenneth: "Huh?"
+Anthony: "Heh, you've got a relieved look on your face. You really think you're staying with the rear guard?"
+Kenneth: "Well, I mean, it would make sense since this is my first time."
+Anthony: "You got a horse kid?"
+Kenneth: "Uh...yes."
+Anthony: "You're going with the advance squad. All mounted solders are a part of the advance squad."
+Kenneth: "Oh..."
+Anthony: "Don't worry kid, I'm going too, so maybe you won't get yourself killed. Name's Anthony by the way."
+Kenneth: "...Kenneth."
+[Anthony leaves]
+Kenneth "...Well there goes that. Come on Kenny, you can do this. Show Brittany that you can handle yourself."
+(A few hours later)
+[Open field scene Devan onscreen]
+Devan: "This is it. I can see some stragglers. Kenneth, Ronni, Anthony, you're with me. The rest of you, handle the surrounding area."
+(Battle start)
+Talk convos {
+Devan and Ronni:
+    Ronni: "..."
+    Devan: "..."
+    Ronni: "...So, Are we going to talk or something?"
+    Devan: "About what? We're in the middle of a skirmish."
+    Ronni: "Given our experience we should be able to talk and fight at the same time. Tell me about what you were dreaming about earlier today."
+    Devan: "It wasn't anything special, just a peaceful day without having to fight a perpectual war against obscene crime."
+    Ronni: "Right, simple stuff. Can you imagine life without having to fight? We'd be able to worry about normal things... That'd be nice."
+    Devan: "There's no point in fantasizing about something that's never happening. I'm pressing on, make sure to not get flanked."
+    [Devan leaves]
+    Ronni: "I think this is getting him..."
+
+Devan and Kenneth:
+    Kenneth: "Whew."
+    [Devan approches]
+    Devan: "Getting tired already?"
+    Kenneth: "Oh, ah. No sir. I'm good to go for hours."
+    Devan: "I was talking more about your mental state. This is your first battle after all."
+    Kenneth: "Well...in that case, I'm doing pretty bad I guess. I'm amazed I haven't thrown up."
+    Devan: "For someone so uncomfortable with fighting, you're awfully skilled with weaponry."
+    Kenneth: "That's thanks to my sister. She's a knight in the holy kingdom, she tought me how to use a sword and lance
+        mostly for self defense. The time I spent training with the other recruits helped me polish those skills."
+    Devan: "I see... Then in that case maybe I can rely on you to keep up with me. Let's go."
+    Kenneth: "Yes sir!"
+    [Kenneth leaves]
+    Devan: "Oh, and kenneth!"
+    [Kenneth comes back]
+    Kenneth: "Yes?"
+    Devan: "You probably should use your sword against the brigands instead of that lance."
+    Kenneth: "Oh. Oops. Hehe..."
+
+Kenneth and Ronni:
+    Ronni: "Hey Kenny, how're you holding up?"
+    Kenneth: "About as well as expected I guess."
+    Ronni: "I wouldn't worry if I were you, these are just a few bandit stragglers. They normally don't come in such small numbers.
+        Just make sure not to go too far ahead and you should be fine."
+    Kenneth: "Say Ronni, how long have you been in the Duramontis army?"
+    Ronni: "Oh, about three years give or take a month. Why?"
+    Kenneth: "That long huh? I'm not sure I can handle this for that long, and be so laid back about it no less."
+    Ronni: "It gets easier to deal with in time. Though I suppose that doesn't apply to Devan"
+    Kenneth: "You're on a first name basis with Lord Devan?"
+    Ronni: "Woops. Didn't mean to let that slip. Yeah, we knew each other since we were kids. We met about a year before Devan
+        inherited the throne and- Oh! There goes a bandit. Let's talk about this later."
+    [Ronni leaves]
+    Kenneth: "...Did she just ride towards the enemy ahead of me?"
+
+Anthony and Kenneth:
+    Kenneth: "Hey Anthony."
+    Anthony: "Yeah kid?"
+    Kenneth: "I was thinking about what you said earlier. About mounted solders being in the advance team."
+    Anthony: "And?"
+    Kenneth: "Why are you here? You don't ride a horse or seem to be a commander. Wouldn't it make more sense for you
+        to guard the village with the infantry?"
+    Anthony: "Maybe, but I have somethin' very useful for huntin' down bandits."
+    Kenneth: "What?"
+    Anthony: "Experience workin' with em."
+    Kenneth: "You mean you used to be a raider?"
+    Anthony: "Yup. Just like the men you see here, I got in a bad way and turned to pillaging as a source of food."
+    Kenneth: "So, how did you end up working for Lord Devan?"
+    Anthony: "It's a long story, and we don't have the time. Tell ya what? If you live long enough, I might tell it you."
+    Kenneth: "I'll try."
+}
+
+Boss quote (Normal): "You must be pretty brave to come up to me like this. Oh well, time to remove your head."
+Boss quote (Dead): "...I, I know this taste ...My blood? But I..."
+
+End sequence (Chapter 1):
+[Devan, Ronni and bandit onscreen]
+Devan: "I don't have much time to waste, so I'll be blunt. Where are the rest of the bandits going?"
+Bandit: "..."
+Devan: "Not saying anything huh? You don't have any reason to not tell me. You have the choice between a slow agonizing death or a rare display of mercy.
+    Which one will it be?"
+Bandit: "...All they told me was that we were headed north."
+Devan: "Thank you... Execute him, and make it swift.
+Bandit: "Wait, what! No! NOOO!"
+[Bandit offscreen]
+Ronni: "Man, I hate it when you do that."
+Devan: "..."
+[Cut to Kenneth and Anthony]
+Kenneth: "My gods... What did I just see?"
+Anthony: "About the norm I'd say. Oh, that's right, you're new."
+Kenneth: "Didn't Lord Devan say he would show that bandit mercy?"
+Anthony: "Yeah, he did. Normally when he has someone executed, the death is very long and drown out. That sucker's going to die a fast death."
+Kenneth: "But we captured him! Shouldn't we imprison him and make him stand trial?"
+[Devan and Ronni come onscreen]
+Devan: "Trust me, it's never worth the trouble."
+Kenneth: "Lord Devan!"
+Devan: "If we have them stand trial they will still die for their crimes. The only difference is that their families will get more involved than usual. And no one
+    Likes dealing with that."
+Kenneth: "Wait, you mean these bandits have families? how many?"
+Anthony: "Just about all of 'em."
+Kenneth: "If these men have families to take care of, why did they become... bandits..."
+Ronni: "Yeah, pretty sad huh? This nation is so poor that a lot of regular people have to resort to banditry to feed their themselves and their families."
+Devan: "It's been like this for generations, and I don't see it getting better anytime soon."
+Kenneth: "That's terrible."
+Anthony: "That's the state of our country. Sorry kid, I don't like it any more than you do, maybe even less, but that's just how it is."
+Devan: "Anthony, do you know of any bandit hideouts north of here?"
+Anthony: "Yeah, there were a few old places. Let me get a map."
+[Anthony leaves]
+Devan: "Ronni, you coming?"
+Ronni: "Nah. I think I'll talk to Kenny for a bit."
+Devan: "Alright."
+[Devan leaves]
+Kenneth: "Forced to fight your own people on a regular basis... No wonder the military is so somber. And Lord Devan... Hey Ronni, why does Lord Devan let
+    you speak so casually to him?"
+Ronni: "Hmm? I guess I droped the title a bit too much eh? Well, It was about seven years ago when we met. Devan was a year away from inheriting the throne-"
+Kenneth: "Lord Devan asended to the throne at age eleven?"
+Ronni: "Yup. Anyway, my family was poor, so when my mom was offered a job at the castle it was basically a no-brainer. After we moved into the servant's quarters
+    I decided to do some exploring."
+Kenneth: "You mean snooping around in places you weren't supposed to be?"
+Ronni: "Yes. While I was 'snooping' I found Devan working on his lance arm. He was so focused on the dummy he didn't notice me come in. He was wearing 
+    training armor so I thought he was a recruit, so I decided to...ah...teach him the importance of the element of surprise."
+Kenneth: "You snuck up on Lord Devan?"
+Ronni: "You like asking questions with obvious answers don't you?"
+Kenneth: "Oh, sorry."
+Ronni: "Moving on... I got a little closer to Devan, stayed just out of spear range and then said hi. Turns out I underestimated His reach. He turned around
+    and swept his lance at my feet knocking me down. Then he pointed it at me demanding to know who I was. While I laughed at him he prodded his lance at my chest 
+    accusing me of being a thief. It then dawned on me that I was talking to the young prince of the castle. I asked who he was, he answered, then I explained 
+    myself. After getting a very long lecture from my mom for almost making her lose her new job, Devan and I started the slow process of becoming freinds.
+Devan [Offscreen]: "Ronni! Kenneth! We're leaving!"
+Ronni: "Welp, there's the call of duty. Better get going."
+[Ronni leaves]
+Kenneth: "...So Lord Devan was on edge even at a young age."
