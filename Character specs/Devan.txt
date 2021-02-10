@@ -1,0 +1,25 @@
+Starting LV: 1
+Class: Duke
+Primary Friedegard blood
+
+Skills: Adept (Probably should change on account of the low speed)
+
+Base stats (He's a lord. Check the duke base stats):
+HP      0
+Str     0
+Mag     0
+Skl     0
+Spd     0
+Luk     0
+Def     0
+Res     0
+
+Growths:
+HP      80 + 40
+Str     50 + 20
+Mag     5
+Skl     45 + 20
+Spd     40
+Luk     30
+Def     45 + 20
+Res     15

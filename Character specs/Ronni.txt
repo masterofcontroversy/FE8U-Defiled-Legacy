@@ -1,0 +1,23 @@
+Starting LV: 1
+Class: Bow knight
+Skills: Adept
+
+Base stats:
+HP      5
+Str     2
+Mag     0
+Skl     4
+Spd     3
+Luk     5
+Def     1
+Res     2
+
+Growths:
+HP      90
+Str     50
+Mag     10
+Skl     45
+Spd     45
+Luk     40
+Def     35
+Res     30
