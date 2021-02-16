@@ -13,10 +13,10 @@ Ronni: "Roger!"
 Issac: "Ah Devan, you're awake. I take it you heard about the raid in Tristan?"
 Devan: "Yes Uncle, I heard. I'm leaving in about ten minutes. Of course the raid had to happen while I was in the middle of the best sleep
     I had in weeks."
-Issac: "Well, the raiders never seemed to be concerned with stealing on a schedule. Before you leave, you should get something to eat."
-Devan: "I'll be fine. I'll just eat some jerky on the way or something. I'm going to the barroks to check on the troops. While I'm gone hold down the fort."
+Issac: "Well, the raiders never seemed to be concerned with stealing on when it's convient. Before you leave, you should get something to eat."
+Devan: "I'll be fine. I'll just eat some jerky on the way or something. I'm going to the barrocks to check on the troops. While I'm gone hold down the fort."
 Issac: "Alright. Safe travels."
-(A few minutes later in the barroks)
+(A few minutes later in the barrocks)
 Devan: "Ronni!"
 Ronni: [Appears onscreen]: Yeah?
 Devan: "How are the preperations to leave going?"
@@ -45,8 +45,8 @@ Devan: "Now finish getting ready, we're about to leave."
 (Departure time outside)
 [Devan and Ronni onscreen]
 Ronni: "We're ready to go Devan."
-Devan: "Alright! As you know Tristan is currently being raided by bandits! By the time we get to there, the bandits will already be gone, so we'll be 
-    cutting them off at Edmund's pass! Understood??"
+Devan: "Alright! As you know Tristan is currently being raided by bandits! By the time we get  there, the bandits will already be gone, so we will be 
+    cutting them off at Edmund's pass! Understood?"
 Solders: "Yes sir!"
 Devan: "Alright. Foward!"
 (At Edmund's pass)

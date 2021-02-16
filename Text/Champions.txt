@@ -1,0 +1,65 @@
+## SS_BloodText
+Blood[X]
+
+## AHolyBloodName
+Donate[X]
+
+## ChampionDesc
+The blood of the heroes that[N]
+saved the world generations ago.[X]
+
+## SwordCB
+Tolliver[X]
+
+## SwordCBdesc
+The man who forged the Sacred weapons.[N]
+Wielder of the Rex Gladio.[X]
+
+## LanceCB
+Friedegard[X]
+
+## LanceCBdesc
+A strict yet gentle queen who hated[N]
+violence. Wielder of the Ensiferum.[X]
+
+## AxeCB
+Markos[X]
+
+## AxeCBdesc
+A true warrior who became a noble[N]
+Through battle. Wielder of the Subversor.[X]
+
+## BowCB
+Cleta[X]
+
+## BowCBdesc
+When alive, she was the best hunter[N]
+in the world. Wielder of the Celeri Venandi.[X]
+
+## AnimaCB
+Seanan[X]
+
+## AnimaCBdesc
+Rumored to have enchanted the sacred weapons.[N]
+Wielder of Nirvana.[X]
+
+## LightCB
+Osiris[X]
+
+## LightCBdesc
+A devine man rumored to be a god[N]
+Wielder of Purgatory.[X]
+
+## DarkCB
+Cierra[X]
+
+## DarkCBdesc
+A young child when she became a[N]
+champion. Gifted Tribulation by her father.[X]
+
+## StaffCB
+Eleazar[X]
+
+## StaffCBdesc
+It is said he could summon angels[N]
+with the Valhalla staff.[X]

@@ -1,0 +1,35 @@
+//ZoraMine Green Fields
+ALIGN 4
+GreenObjects: //compressed to lz77
+#incbin "Tileset/Compressed Green Fields.dmp"
+
+ALIGN 4
+GreenPalette:
+#incbin "Tileset/GreenPalette.dmp"
+
+//ZoraMine EverGreen Fields
+ALIGN 4
+EverGreenObjects: //compressed to lz77
+#incbin "Tileset/Compressed EverGreen Fields.dmp"
+
+ALIGN 4
+EverGreenPalette: 
+#incbin "Tileset/EverGreenPalette.dmp"
+
+//Zoramine mapchip config
+ALIGN 4
+ZoraPlainTiles:
+#incext compress "Tileset/Zoramine Mapchip Config.mapchip_config"
+
+ALIGN 4
+ZoraPlainTiles2:
+#incext compress "Tileset/Zoramine Mapchip Config.mapchip_config"
+
+EventPointerTable(0x88, GreenObjects)
+EventPointerTable(0x89, GreenPalette)
+
+EventPointerTable(0x01, EverGreenObjects)
+EventPointerTable(0x02, EverGreenPalette)
+
+EventPointerTable(0x8a, ZoraPlainTiles)
+EventPointerTable(0x03, ZoraPlainTiles2)

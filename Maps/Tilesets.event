@@ -1,0 +1,15 @@
+ALIGN 4
+GreenPlainsObjects: //compressed to lz77
+#incbin "Tileset/Compressed Green Fields.dmp"
+
+ALIGN 4
+GreenPlainsPalette:
+#incbin "Tileset/Palette.dmp"
+
+ALIGN 4
+GreenPlainsTiles:
+#incext compress "Tileset/Zoramine Mapchip Config.mapchip_config"
+
+EventPointerTable(0x88, GreenPlainsObjects)
+EventPointerTable(0x89, GreenPlainsPalette)
+EventPointerTable(0x8a, GreenPlainsTiles)

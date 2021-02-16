@@ -1,0 +1,23 @@
+## Ch1_Wake-up
+
+[MidRight][LoadDevan]
+...zzzzz.....[A]
+[FarFarLeft][LoadRonni]
+Hey Devan, there's a bandit attack[NL]
+going on over in Tristan![A]
+[MidRight]
+#Devan
+...mmm...ugh...[A]
+[FarFarLeft]
+#Ronni
+You might want to get up sometime[NL]
+today, those bandits probably won't[NL][A]
+wait for you to finish your nap.[A]
+[MidRight]
+#Devan
+...[.....]Tell the troops we sortie[NL]
+in fifteen minutes.[A]
+[FarFarLeft]
+#Ronni
+Roger![A]
+[X]

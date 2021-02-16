@@ -1,0 +1,18 @@
+17
+255 None
+0 Tolliver (Secondary)
+0x80 Tolliver (Primary)
+1 Friedegard (Secondary)
+0x81 Friedegard (Primary)
+2 Markos (Secondary)
+0x82 Markos (Primary)
+3 Cleta (Secondary)
+0x83 Cleta (Primary)
+4 Seanan (Secondary)
+0x84 Seanan (Primary)
+5 Osiris (Secondary)
+0x85 Osiris (Primary)
+6 Cierra (Secondary)
+0x86 Cierra (Primary)
+7 Eleazar (Secondary)
+0x87 Eleazar (Primary)

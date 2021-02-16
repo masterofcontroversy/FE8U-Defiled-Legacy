@@ -1,0 +1,2 @@
+SkillIcons=$B5AB58
+HolyBloodCharacterTable=$1000000

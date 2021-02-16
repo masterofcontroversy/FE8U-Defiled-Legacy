@@ -1,0 +1,8 @@
+ALIGN 4
+DevanPortrait:
+#incbin "Dumps/Devan_mug.dmp"
+#incbin "Dumps/Devan_frames.dmp"
+#incbin "Dumps/Devan_palette.dmp"
+#incbin "Dumps/Devan_minimug.dmp"
+
+setMugEntry(0x02,DevanPortrait,3,5,3,3)
