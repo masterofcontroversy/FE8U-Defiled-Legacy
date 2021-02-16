@@ -14,10 +14,10 @@ Res     2
 
 Growths:
 HP      90
-Str     50
+Str     40
 Mag     10
-Skl     45
-Spd     45
+Skl     50
+Spd     50
 Luk     40
 Def     35
 Res     30
