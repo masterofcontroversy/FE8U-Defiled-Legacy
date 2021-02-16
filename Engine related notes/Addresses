@@ -1,2 +1,2 @@
-Addresses for palette grabbing:
+Addresses for palette grabbing (Also the first palette address):
 0x1aebf0(First byte) - 01aed20(Last byte)
