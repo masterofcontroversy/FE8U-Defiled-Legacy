@@ -6,7 +6,7 @@ SME for holyblood ASM
 
 Zoramine for custom tilesets 
 
-Circleseverywhere for the skill system  
+Circleseverywhere for the skill system and TMX2EA  
 
 Hextator for nightmare  
 
