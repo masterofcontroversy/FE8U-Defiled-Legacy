@@ -1,1 +1,2 @@
-#include "Portaits/Portraits.event"
+#include "Portraits/Portraits.event"
+#include "Map Sprites/SpriteInstaller.event"
