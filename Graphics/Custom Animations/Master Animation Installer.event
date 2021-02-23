@@ -12,4 +12,4 @@
 //////////////Installed animations go here:
 
   //#include "my animation Installer.event"
-  #include "Lance Installer.event"
+  #include "DukeLance Installer.event"
