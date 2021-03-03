@@ -1,35 +1,38 @@
-//ZoraMine Green Fields
-ALIGN 4
-GreenObjects: //compressed to lz77
-#incbin "Tileset/Compressed Green Fields.dmp"
+#include "Tile Animation Installer.event"
 
+//Zoramine Fields
+ALIGN 4
+ZoraFieldsObjects: //compressed to lz77
+#incbin "Tilesets/Compressed Fields.dmp"
+
+//Green Palette
 ALIGN 4
 GreenPalette:
-#incbin "Tileset/GreenPalette.dmp"
+#incbin "Tilesets/Palettes/GreenPalette.dmp"
 
-//ZoraMine EverGreen Fields
+//Aquamarine Palette
 ALIGN 4
-EverGreenObjects: //compressed to lz77
-#incbin "Tileset/Compressed EverGreen Fields.dmp"
-
-ALIGN 4
-EverGreenPalette: 
-#incbin "Tileset/EverGreenPalette.dmp"
+AquaPalette: 
+#incbin "Tilesets/Palettes/AquamarinePalette.dmp"
 
 //Zoramine mapchip config
 ALIGN 4
-ZoraPlainTiles:
-#incext compress "Tileset/Zoramine Mapchip Config.mapchip_config"
+ZoraFieldsTiles:
+#incext compress "Tilesets/Zoramine Mapchip Config.mapchip_config"
 
-ALIGN 4
-ZoraPlainTiles2:
-#incext compress "Tileset/Zoramine Mapchip Config.mapchip_config"
+EventPointerTable(0x01, ZoraFieldsObjects)
 
-EventPointerTable(0x88, GreenObjects)
-EventPointerTable(0x89, GreenPalette)
+EventPointerTable(0x02, GreenPalette)
+EventPointerTable(0x38, AquaPalette)
 
-EventPointerTable(0x01, EverGreenObjects)
-EventPointerTable(0x02, EverGreenPalette)
+EventPointerTable(0x03, ZoraFieldsTiles)
 
-EventPointerTable(0x8a, ZoraPlainTiles)
-EventPointerTable(0x03, ZoraPlainTiles2)
+EventPointerTable(0x05, FieldsAnimation)
+
+
+//Tile definitions
+#define ZoraFieldsObjects 0x01
+#define GreenPalette 0x02
+#define ZoraFieldsTiles 0x03
+#define FieldsAnimation 0x05
+#define AquaPalette 0x38
