@@ -1,0 +1,76 @@
+EventPointerTable(7,MyEvents) //7 is the ID for prologue events in vanilla FE8
+
+MyEvents:
+
+POIN TurnBasedEvents
+
+POIN CharacterBasedEvents
+
+POIN LocationBasedEvents
+
+POIN MiscBasedEvents
+
+POIN Dunno Dunno Dunno
+
+POIN Tutorial
+
+POIN TrapData TrapData
+
+POIN PlayerUnits PlayerUnits
+
+POIN $0 $0 $0 $0 $0 $0
+
+POIN BeginningScene EndingScene
+
+Dunno:
+WORD $00
+
+Tutorial:
+WORD $00
+
+TrapData:
+ENDTRAP
+ALIGN 4
+
+TurnBasedEvents:
+END_MAIN
+
+ALIGN 32
+LocationBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+CharacterEventBothWays(8,TestConvo,Devan,Ronni)
+END_MAIN
+
+MiscBasedEvents:
+DefeatAll(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+BeginningScene:
+LOAD1 1 PlayerUnits
+
+ENUN
+
+LOAD1 0 EnemyUnits
+
+ENUN
+
+ENDA
+
+EndingScene:
+MNC2 0x1
+ENDA
+
+PlayerUnits:
+UNIT Devan Duke Devan Level(1,Ally,0) [13,13] 0x0 0x0 0x0 0x1 [IronLance] NoAI
+UNIT Ronni Ranger_F Devan Level(1,Ally,0) [12,12] 0x0 0x0 0x0 0x1 [IronBow] NoAI
+UNIT Anthony Mercenary Devan Level(1,Ally,0) [13, 11] 0x0 0x0 0x0 0x1 [IronSword] NoAI
+
+UNIT
+
+EnemyUnits:
+UNIT 0x64 Brigand 0x64 Level(1,Enemy,0) [13,10] 0x0 0x0 0x0 0x1 [IronAxe, Vulnerary] NoAI
+
+UNIT
