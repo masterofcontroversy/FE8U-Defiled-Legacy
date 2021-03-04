@@ -1,0 +1,17 @@
+## DukeClass
+Duke[X]
+
+## DukeDesc
+DukeDesc[X]
+
+## ArchDukeClass
+ArchDuke[X]
+
+## ArchDukeDesc
+ArchDukeDesc[X]
+
+## SongstressClass
+Songstress[X]
+
+## SongstressDesc
+SongstressDesc[X]

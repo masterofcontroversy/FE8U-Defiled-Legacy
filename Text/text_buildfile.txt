@@ -98,13 +98,10 @@ Mov[X]
 
 #include "unitinfo_text.txt"
 
-#include "Chapter Text/Chapter one/Scene1 Wake-Up Call.txt"
-#include "Chapter Text/Chapter one/Scene2 Family.txt"
-#include "Chapter Text/Chapter one/Scene3 Bravery.txt"
-#include "Chapter Text/Chapter one/Scene4 Sortie.txt"
-#include "Chapter Text/Chapter one/Scene5 On the Trail.txt"
-#include "Chapter Text/Chapter one/Scene6 Targets Found.txt"
+#include "Chapter Text/Master Chapter Installer.txt"
 
 #include "Champions.txt"
+
+#include "Names/ClassNames.txt"
 
 #include "Names/CharNames.txt"
