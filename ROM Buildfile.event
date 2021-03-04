@@ -1,6 +1,7 @@
 #ifdef _FE8_
     #include "EAstdlib.event"
     #include "Custom Definitions.event"
+    #include "Unit and Class Definitions.event"
 
     ORG FreeSpace
 
@@ -10,6 +11,14 @@
     #include "Text/Install Text Data.event"
     MESSAGE Used text space ends at currentOffset
 
+    //Graphics
+    #include "Graphics/Graphics.event"
+
+    //Animations
+    #include "AnimationTable.event"
+    #include "Graphics/Custom Animations/_Master Animation Installer.event"
+    MESSAGE Used animation space ends at currentOffset
+
     //CSV tables
     #include "Tables/Table Installer.event"
     MESSAGE Used table space ends at currentOffset
@@ -18,18 +27,15 @@
     #include "Engine Hacks/_MasterHackInstaller.event"
     MESSAGE Used hax space ends at currentOffset
 
-    //Graphics
-    #include "Graphics/Portraits/Portraits.event"
+    //Events
+    #include "Events/Test Convos.event"
+    #include "Events/Test Event.event"
 
-    //Events. Comment out for vanilla
-    //#include "Events/Release_map.event"
-    //#include "Events/WorldMapEvents.event"
-
-    //Maps. Comment out for vanilla
+    //Maps
     #include "Maps/Tileset Installer.event"
     #include "Maps/Master Map Installer.event"
 
     MESSAGE Used free space ends at currentOffset
 #else
-    ERROR You are not assembling FE8 events!
+    ERROR Not building this on FE8 is a pitfall! Try again on a FE8 ROM.
 #endif
