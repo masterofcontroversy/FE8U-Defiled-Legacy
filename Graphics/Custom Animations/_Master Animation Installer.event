@@ -1,0 +1,90 @@
+//#ifndef ClassAnimTable
+//    #define ClassAnimTable (0xc00008-0x20)
+//#endif
+
+
+//#define AnimTableEntry(index) "ORG ClassAnimTable + (index * 0x20)"
+#define AnimTableEntry(index) "ORG ClassAnimTable - 0x20 + (index * 0x20)"
+
+//////////////Installed animations go here:
+
+  //#include "my animation Installer.event"
+
+PUSH
+
+  //Storing in AnimSpaceA //FULL
+  ORG AnimSpaceA
+
+  //Duke (Smooth Animation)
+  #include "DukeLance Installer.event"
+  #include "DukeUnarmed Installer.event"
+
+  //Lord
+  #include "LordSword Installer.event"
+  #include "LordUnarmed Installer.event"
+
+  //Mercenary
+  #include "MercenarySword Installer.event"
+  #include "MercenaryUnarmed Installer.event"
+
+  //Hero
+  #include "HeroSword Installer.event"
+  #include "HeroAxe Installer.event"
+  #include "HeroHandaxe Installer.event"
+  #include "HeroUnarmed Installer.event"
+
+  //Cavalier
+  #include "CavalierSword Installer.event"
+  #include "CavalierLance Installer.event"
+  #include "CavalierUnarmed Installer.event"
+
+  //CavalierF
+  #include "CavalierLanceF Installer.event"
+  #include "CavalierSwordF Installer.event"
+  #include "CavalierUnarmedF Installer.event"
+
+  //Pegasus Knight
+  #include "Pegasus KnightSword Installer.event"
+
+  //Dragon Knight (Part one)
+  #include "Dragon KnightAxe Installer.event"
+  #include "Dragon KnightHandaxe Installer.event"
+
+  MESSAGE Animation storage A from AnimSpaceA to currentOffset
+
+  //Storing in AnimSpaceB (This ends at FDFFF0)
+  ORG AnimSpaceB
+
+  //Dragon Knight (Part two)
+  #include "Dragon KnightLance Installer.event"
+  #include "Dragon KnightUnarmed Installer.event"
+
+  //Dragon KnightF
+  #include "Dragon KnightFAxe Installer.event"
+  #include "Dragon KnightFHandaxe Installer.event"
+  #include "Dragon KnightFLance Installer.event"
+  #include "Dragon KnightFUnarmed Installer.event"
+
+  //Dragon Master
+  #include "Dragon MasterAxe Installer.event"
+  #include "Dragon MasterHandaxe Installer.event"
+  #include "Dragon MasterLance Installer.event"
+  #include "Dragon MasterUnarmed Installer.event"
+
+  //Paladin
+  #include "PaladinSword Installer.event"
+  #include "PaladinLance Installer.event"
+  #include "PaladinUnarmed Installer.event"
+
+  //Bow Knight
+
+  //Unarmed same as Paladin unarmed
+
+  //PaladinF + Bow KnightF
+  #include "PaladinFSword Installer.event"
+  #include "PaladinFLance Installer.event"
+  #include "PaladinFBow Installer.event"
+  #include "PaladinFUnarmed Installer.event"
+
+  MESSAGE Animation storage B from AnimSpaceB to currentOffset
+POP

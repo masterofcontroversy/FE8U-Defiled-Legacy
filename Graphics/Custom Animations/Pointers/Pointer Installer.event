@@ -1,0 +1,64 @@
+//Duke Animation Pointer
+ALIGN 4
+DukeAnimPoint:
+#incbin "Duke Pointer.dmp"
+WORD 0 0
+
+//ArchDuke Animation Pointer
+
+
+//Dragon KnightF
+ALIGN 4
+DragonKnightFAnimPoint:
+#incbin "Dragon KnightF Pointer.dmp"
+WORD 0 0
+
+//Dragon Master Animation Pointer
+ALIGN 4
+DragonMasterAnimPoint:
+#incbin "Dragon Master Pointer.dmp"
+WORD 0 0
+
+//Oracle Animation Pointer
+
+
+//Female Acolyte Animation Pointer
+
+
+//Female Shaman Animation Pointer
+
+
+//Lord Animation Pointer
+
+
+//Great Lord Animation Pointer
+
+
+//Deserter Animation Pointer
+
+
+//Arch Knight Animation Pointer
+
+
+//Sword Armor Animation Pointer
+
+
+//Lance Armor Animation Pointer
+
+
+//Axe Armor Animation Pointer
+
+
+//General Animation Pointer
+
+
+//Pegasus Knight Animation Pointer
+ALIGN 4
+PegasusKnightAnimPoint:
+#incbin "Pegasus Knight Pointer.dmp"
+WORD 0 0
+
+//Falcoknight Animation Pointer
+
+
+//Baron Animation Pointer

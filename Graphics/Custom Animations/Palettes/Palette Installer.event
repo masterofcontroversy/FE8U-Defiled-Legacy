@@ -1,0 +1,4 @@
+//Devan(Duke)
+ALIGN 4
+DevanDukePal:
+#incbin "Devan(Duke).dmp"
