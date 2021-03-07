@@ -86,7 +86,7 @@ Devan and Ronni:
     Ronni: "Right, simple stuff. Can you imagine life without having to fight? We'd be able to worry about normal things... That'd be nice."
     Devan: "There's no point in fantasizing about something that's never happening. I'm pressing on, make sure to not get flanked."
     [Devan leaves]
-    Ronni: "I think this is getting him..."
+    Ronni: "This is really getting to him..."
 
 Devan and Kenneth:
     Kenneth: "Whew."

@@ -5,6 +5,8 @@
 
     ORG FreeSpace
 
+    //Repointed tables
+    #include "AnimationTable.event"
     #include "repointedTextTable.event"
 
     //Text first for Text ID definitions
@@ -14,11 +16,6 @@
     //Graphics
     #include "Graphics/Graphics.event"
 
-    //Animations
-    #include "AnimationTable.event"
-    #include "Graphics/Custom Animations/_Master Animation Installer.event"
-    MESSAGE Used animation space ends at currentOffset
-
     //CSV tables
     #include "Tables/Table Installer.event"
     MESSAGE Used table space ends at currentOffset
@@ -26,6 +23,9 @@
     //Engine Hacks
     #include "Engine Hacks/_MasterHackInstaller.event"
     MESSAGE Used hax space ends at currentOffset
+
+    //Animations. When debugging, comment out to build faster
+    #include "Graphics/Custom Animations/_Master Animation Installer.event"
 
     //Events
     #include "Events/Test Convos.event"

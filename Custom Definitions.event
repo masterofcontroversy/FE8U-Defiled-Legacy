@@ -1,5 +1,7 @@
 #define FreeSpace 0xb2a610
 #define FreeSpaceBLRange 0x1c1ec0
+#define AnimSpaceA $E47200 //End at 0xEDFFF0 (0xEDFFD0 to be safe)
+#define AnimSpaceB $F00000 //End at 0xFDFFF0 (0xFDFFD0 to be safe)
 
 #define ChapterTileset(chapter, object, palette, config) "PUSH; ORG 0x8b0890 + (148* chapter) + 4; SHORT object; BYTE palette config; POP"
 #define ChapterTileAnims(chapter, anim1, anim2) "PUSH; ORG 0x8b0890 + (148* chapter) + 9; BYTE anim1 anim2; POP"

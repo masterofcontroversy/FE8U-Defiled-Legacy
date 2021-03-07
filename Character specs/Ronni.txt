@@ -13,7 +13,7 @@ Def     1
 Res     2
 
 Growths:
-HP      90
+HP      75
 Str     40
 Mag     10
 Skl     50
