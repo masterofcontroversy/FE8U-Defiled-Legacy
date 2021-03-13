@@ -1,7 +1,7 @@
 ///////Animation Install.event///////
     
 PUSH
-AnimTableEntry(0x58) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
+AnimTableEntry(DragonKnightFAxe) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
 WORD 0 0 0 //empty name field, who cares
 POIN Dragon_KnightF_Axe_Anim_sectiondata
 POIN Dragon_KnightF_Axe_Anim_framedata

@@ -1,7 +1,7 @@
 ///////Animation Install.event///////
     
 PUSH
-AnimTableEntry(0x5B) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
+AnimTableEntry(DragonKnightFUnarmed) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
 WORD 0 0 0 //empty name field, who cares
 POIN Dragon_KnightF_Unarmed_Anim_sectiondata
 POIN Dragon_KnightF_Unarmed_Anim_framedata

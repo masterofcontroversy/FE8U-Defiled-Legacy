@@ -22,8 +22,17 @@ AnthonyPortrait:
 #incbin "Dumps/Anthony_palette.dmp"
 #incbin "Dumps/Anthony_minimug.dmp"
 
+//Kenneth (More temperary than the others)
+ALIGN 4
+KennethPortrait:
+#incbin "Dumps/Kenneth (Bloopy MB r4)_mug.dmp"
+#incbin "Dumps/Kenneth (Bloopy MB r4)_frames.dmp"
+#incbin "Dumps/Kenneth (Bloopy MB r4)_palette.dmp"
+#incbin "Dumps/Kenneth (Bloopy MB r4)_minimug.dmp"
+
 //setMugEntry(<mugindex>,<portrait label>,<mouth X>,<mouth Y>,<eye X>,<eye Y>)
 
 setMugEntry(0x02,DevanPortrait,3,5,3,3)
 setMugEntry(0x04,RonniPortrait,4,6,4,4)
 setMugEntry(0x05,AnthonyPortrait,3,5,3,3)
+setMugEntry(0x06,KennethPortrait,3,6,3,4)

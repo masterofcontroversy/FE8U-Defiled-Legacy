@@ -1,0 +1,91 @@
+//Probably poorly written animation pointer macro
+#define AnimPointer(Type,Type_Designation,AnimID) "BYTE Type Type_Designation AnimID 0;"
+
+//Duke Animation Pointer
+ALIGN 4
+DukeAnimPoint:
+AnimPointer(Lance,01,DukeLance)
+AnimPointer(Unarmed,01,DukeUnarmed)
+WORD 0 0
+
+//ArchDuke Animation Pointer
+
+
+//Dragon Knight
+ALIGN 4
+DragonKnightAnimPoint:
+AnimPointer(Axe,01,DragonKnightAxe)
+AnimPointer(Lance,01,DragonKnightLance)
+AnimPointer(HandAxe,00,DragonKnightHandaxe)
+AnimPointer(Hatchet,00,DragonKnightHandaxe)
+AnimPointer(Tomahawk,00,DragonKnightHandaxe)
+AnimPointer(Unarmed,01,DragonKnightUnarmed)
+WORD 0 0
+
+//Dragon KnightF
+ALIGN 4
+DragonKnightFAnimPoint:
+AnimPointer(Axe,01,DragonKnightFAxe)
+AnimPointer(Lance,01,DragonKnightFLance)
+AnimPointer(HandAxe,00,DragonKnightFHandaxe)
+AnimPointer(Hatchet,00,DragonKnightFHandaxe)
+AnimPointer(Tomahawk,00,DragonKnightFHandaxe)
+AnimPointer(Unarmed,01,DragonKnightFUnarmed)
+WORD 0 0
+
+//Dragon Master Animation Pointer
+ALIGN 4
+DragonMasterAnimPoint:
+AnimPointer(Axe,01,DragonMasterAxe)
+AnimPointer(Lance,01,DragonMasterLance)
+AnimPointer(HandAxe,00,DragonMasterHandaxe)
+AnimPointer(Hatchet,00,DragonMasterHandaxe)
+AnimPointer(Tomahawk,00,DragonMasterHandaxe)
+AnimPointer(Unarmed,01,DragonMasterUnarmed)
+WORD 0 0
+
+//Oracle Animation Pointer
+
+
+//Female Acolyte Animation Pointer
+
+
+//Female Shaman Animation Pointer
+
+
+//Lord Animation Pointer
+
+
+//Great Lord Animation Pointer
+
+
+//Deserter Animation Pointer
+
+
+//Arch Knight Animation Pointer
+
+
+//Sword Armor Animation Pointer
+
+
+//Lance Armor Animation Pointer
+
+
+//Axe Armor Animation Pointer
+
+
+//General Animation Pointer
+
+
+//Pegasus Knight Animation Pointer
+ALIGN 4
+PegasusKnightAnimPoint:
+AnimPointer(Sword,01,PegasusKnightSword)
+AnimPointer(Lance,01,PegasusKnightLance)
+AnimPointer(Unarmed,01,PegasusKnightUnarmed)
+WORD 0 0
+
+//Falcoknight Animation Pointer
+
+
+//Baron Animation Pointer
