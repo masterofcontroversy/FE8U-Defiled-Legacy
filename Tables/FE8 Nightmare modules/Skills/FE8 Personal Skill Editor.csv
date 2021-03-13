@@ -1,9 +1,9 @@
 INLINE PersonalSkillTable,Skill
 None,0x0
-Devan,AdeptID
-Kenneth,ParagonID
+Devan,LunaID
 Ronni,AdeptID
-Myrm,LunaID
+Anthony,0x0
+Kenneth,ParagonID
 Holly,0x0
 Vanessa,SpurSpdID
 Brock,NullifyID
