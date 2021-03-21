@@ -4,7 +4,7 @@
 We're ready to go Devan.[A]
 [MidLeft]
 #Devan
-Thank you.[A]
+Thank you. [A]
 [MidRight][ClearFace]
 [MidLeft]
 #Devan

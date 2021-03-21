@@ -9,11 +9,11 @@ village. We'll be able to chase the[NL]
 raiders faster with fewer numbers.[A]
 [MidLeft]
 #Ronni
-Aye aye.
+Aye aye.[A]
 [MidLeft][ClearFace][MidRight][ClearFace]
 [MidLeft][LoadKenneth][ToggleMouthMove]
 (Whew, no bandits. Maybe I can stay[NL]
-with the rear guard.)[ToggleMouthMove][NL]
+with the rear guard.)[ToggleMouthMove][NL][A]
 [MidRight][LoadAnthony]
 Hey, new Blood.[A]
 [MidLeft]
@@ -30,10 +30,10 @@ Well, I mean, it would make sense[NL]
 since this is my first time.[A]
 [MidRight]
 #Anthony
-You got a horse kid?
+You got a horse kid?[A]
 [MidLeft]
 #Kenneth
-Uh[ToggleMouthMove]...[.....][ToggleMouthMove]yes.
+Uh[ToggleMouthMove]...[.....][ToggleMouthMove]yes.[A]
 [MidRight]
 #Anthony
 You're going with the advance squad.[NL]
@@ -49,7 +49,7 @@ maybe you won't get yourself killed.[NL][A]
 Name's Anthony by the way.[A]
 [MidLeft]
 #Kenneth
-[ToggleMouthMove]...[.....][ToggleMouthMove]Kenneth.
+[ToggleMouthMove]...[.....][ToggleMouthMove]Kenneth.[A]
 [MidRight][ClearFace]
 [MidLeft]
 #Kenneth

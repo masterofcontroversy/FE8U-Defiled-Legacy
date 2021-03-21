@@ -1,0 +1,60 @@
+## Ch1Convo_DevanKenneth
+
+[MidLeft][LoadKenneth]
+#Kenneth
+Whew.[A]
+[MidRight][LoadDevan]
+#Devan
+Getting tired already?[A]
+[MidLeft]
+#Kenneth
+Oh, ah. No sir.[NL]
+I'm good to go for hours.[A]
+[MidRight]
+#Devan
+I was talking more about[NL]
+your mental state. This[NL][A]
+is your first battle after all.[A]
+[MidLeft]
+#Kenneth
+Well[ToggleMouthMove]...[.....][ToggleMouthMove]in that case, I'm doing[NL]
+pretty bad I guess.[NL][A]
+I'm amazed I haven't thrown up.[A]
+[MidRight]
+#Devan
+For someone so uncomfortable with[NL]
+fighting, you're awfully skilled[NL][A]
+with weaponry.[A]
+[MidLeft]
+#Kenneth
+That's thanks to my sister. She's a[NL]
+knight in the holy kingdom, she[NL][A]
+tought me how to use a sword and[NL]
+lance mostly for self defense.[NL][A]
+The time I spent training with[NL]
+the other recruits helped me[NL][A]
+polish those skills.[A]
+[MidRight]
+#Devan
+I see... Then in that case maybe[NL]
+I can rely on you to keep up with[NL][A]
+me. Let's go.[A]
+[MidLeft]
+#Kenneth
+Yes sir![A]
+[MidLeft][ClearFace]
+[MidRight]
+#Devan
+Oh, and Kenneth![A]
+[MidLeft][LoadKenneth]
+#Kenneth
+Yes?[A]
+[MidRight]
+#Devan
+You probably should use your sword[NL]
+against the brigands instead of[NL][A]
+that lance.[A]
+[MidLeft]
+#Kenneth
+Oh. Oops. Hehe[ToggleMouthMove]...[.....][ToggleMouthMove][A]
+[X]

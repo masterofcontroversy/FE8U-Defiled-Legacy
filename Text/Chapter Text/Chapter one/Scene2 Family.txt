@@ -1,8 +1,9 @@
 ## Ch1_Family
 
-[MidRight][LoadIssac][MidLeft][LoadDevan]
-Ah Devan, you're awake. I take it[NL]
-you heard about the raid in Tristan?[A]
+[MidLeft][LoadDevan][MidRight][LoadIssac]
+Ah Devan, you're awake.[NL]
+I take it you heard about[NL][A]
+the raid in Tristan?[A]
 [MidLeft]
 #Devan
 Yes Uncle, I heard. I'm leaving in[NL]
@@ -12,7 +13,9 @@ the middle of the best sleep I had[NL][A]
 In weeks[A]
 [MidRight]
 #Issac
-Well, the raiders never seemed to be[NL] concerned with stealing on when it's[NL][A] convient. Before you leave, you[NL]
+Well, the raiders never seemed to be[NL]
+concerned with stealing on when it's[NL][A]
+convient. Before you leave, you[NL]
 should get something to eat.[A]
 [MidLeft]
 #Devan
