@@ -11,9 +11,9 @@ Devan: "None, which is precisly why I want to do a sweep of the area. Maybe Abig
 Kenneth: "Hold on. Why would the bandits not want to go to Evans? And who's Abigail?"
 Anthony: "I can answer both questions at once. Abigail's an old general from Cassis. She retired early to take care of her granddaughter. Everyone in Duramontis
     knows not to mess with her."
-Devan: "Thanks to her, Evans has the lowest crime rate in the country. Aside from the capital of course."
+Devan: "Thanks to her, Evans has the lowest crime rate in the country. Aside from the capitol of course."
 Kenneth: "She sounds tough. But why live in Duramontis instead of Cassis or the empire? Wouldn't they be safer locations?"
-Anthony: "No idea, but I recon she's safe just about anywhere she goes."
+Anthony: "No idea, but I reckon she's safe just about anywhere she goes."
 Devan: "well, regardless of where she lives we're still checking Evans. While we're at it we-"
 Ronni (Offscreen): "Hey, Lord Devan!"
 [Ronni onscreen]
@@ -28,24 +28,26 @@ Kenneth: "Yes sir."
 [Kenneth leaves]
 Anthony: "What do we do now?"
 Devan: "At the moment, wait. The best thing to do is be ready to pursue the bandits as soon we know where they are. I just hope that will be soon..."
+
 (Elsewhere)
-[Change to carrage scene (Note to self: Add carrage scene)]
+[Change to carriage scene (Note to self: Add carrage scene)]
 [Charles onscreen]
 Charles: "Sire, we will be arriving in Evergreen village in a few hours."
 [Brock onscreen]
 Brock: "Hmm...Evergreen... Isn't that near Evans?"
 Charles: "Yes, it is."
-Brock: "Prehaps we can pay Abigail a visit while we're nearby."
+Brock: "Perhaps we can pay Abigail a visit while we're nearby."
 Charles: "I wouldn't advise it highness. You're well aware of how dangerous Duramontis is."
-Brock: "You mean it being a thieve's den? That shouldn't be a problem for us or Evans."
-Charles: "And there's the added fact that we shouldn't tarry anymore then we have to. We don't want to be found out. Besides, informing passed solders families
+Brock: "You mean it being a thieves' den? That shouldn't be a problem for us or Evans."
+Charles: "And there's the added fact that we shouldn't tarry anymore than we have to. We don't want to be found out. Besides, informing passed solders families
     of their loss is the responsibility of our curiours."
-Brock: "I know, but I doubt anyone from the empire will find us here. Fine we'll do it your way. I'll send a solder to tell her when we get home."
-Charles: "Thank you Sire. ...Your highness, pardon me for being blunt, but do you think we'll be headed into full scale war?"
+Brock: "I know, but I doubt anyone from the empire will find us here. Fine, we'll do it your way. I'll send a solder to tell her when we get home."
+Charles: "Thank you sire. ...Your highness, pardon me for being blunt, but do you think we'll be headed into full scale war?"
 Brock: "Knowing how stubborn my father and the emperer are, I wouldn't be surprised by a full on war. ...This conversation is getting too bleak for my liking.
     Want to play a few games of chess?"
 Charles: "Alright, but be ready to have your royal rear handed to you on a silver platter."
 Brock: "I wouldn't worry about that. after all, as a prince, it's my job to serve you."
+
 (Later in Devan's camp)
 [open to camp scene]
 [Ronni and Devan onscreen]
@@ -60,8 +62,9 @@ Devan: "Tell the solders to gather at the west side of camp immediately."
 Anthony: "Aye."
 [Anthony leaves]
 Ronni: "The last time you ate was dinner two days ago?"
-Devan: "Of course not. I just skipped breakfast that day. But nevermind that, we've got bigger fish to fry."
+Devan: "Of course not. I just skipped breakfast yesterday. But nevermind that, we've got bigger fish to fry."
 Ronni: "Please don't talk about fish..."
+
 (A little later)
 [Plains scene]
 [Music change: Dramatic song]
@@ -76,7 +79,7 @@ Brock: "That must be Devan. We might stand a chance after all. Men! Hold your gr
     met?"
 (Battle start)
 
-[Event one (Turn 2)]:
+[Event one {Player phase 2}]:
     [Highlight Evans]
     [House scene]
     [Julianne onscreen]
@@ -99,26 +102,26 @@ Brock: "That must be Devan. We might stand a chance after all. Men! Hold your gr
     Julianne: "Alright. Be careful Grandma."
     Abigail: "Of course I will Julie."
     [Abigail leaves Evans and flies to the northern forrest (Gameplay: She is an ally unit and remains stationary)]
-    Abigail: "Alright, let's see what these currs can do!"
+    Abigail: "Alright, let's see what these curs can do!"
 
-[Event two (Turn 4)]:
-    Bandit boss: "Shoot! This old crone is picking us off to fast. Where's the boss?"
-    [??? Appears]
-    ???: "What are you doing just standing there? Don't you have those axes we stole?"
+[Event two {Player phase 4}]:
+    Bandit boss: "Shoot! This old crone is picking us off too fast. Where's the boss?"
+    [Gregory Appears]
+    Gregory: "What are you doing just standing there? Don't you have those axes we stole?"
     Bandit boos: "W-Well...yeah, but nobody with them can get close. Or want to."
-    ???: "Of all the useless... Give me that axe. I'll handle her."
+    Gregory: "Of all the useless... Give me that axe. I'll handle her."
     Bandit boss: "Yes boss!"
-    [??? moves adjacent to Abigail's position and initiates combat]
+    [Gregory moves adjacent to Abigail's position and initiates combat]
     (Combat) {
         Abigail: "Well well, looks like we have a brave one. Come here rookie. Let me show you how to wield an axe."
-        [Abigail attacks with her brave axe and injures ???. ??? Crits and kills Abigail]
+        [Abigail attacks with her brave axe and injures Gregory. Gregory Crits and kills Abigail]
         Abigail (Death): "No... I can't die here... Julianne... Cirrus, keep her safe..."
     }
-    ???: "Ouch... Damned crone. But this axe is most definitely worth the trouble."
+    Gregory: "Ouch... Damned crone. But this axe is most definitely worth the trouble."
     [Cirrus flies back to Evans]
-    ???: "Ugh! Just missed the wyvern. Would have sold for a hefty sum too... Oh well. Back to the rabble."
-    [??? returns to Bandit boss]
-    ???: "There I did your job for you. Tell the boys they're free to raid Evans."
+    Gregory: "Ugh! Just missed the wyvern. Would have sold for a hefty sum too... Oh well. Back to the rabble."
+    [Gregory returns to Bandit boss]
+    Gregory: "There I did your job for you. Tell the boys they're free to raid Evans."
     Bandit boss: "Aye boss. C'mon boys! It's time to strip Evans for all it's worth!"
     [Bandit despawn from around Abigail's old position and renforcements appear around Evans]
     [Highlight Evans]
@@ -152,7 +155,7 @@ Brock: "That must be Devan. We might stand a chance after all. Men! Hold your gr
 
     [If player visits Evans before turn 4]
     Anna: "Wow, you managed to reach this village so fast! I guess you should get something for your troubles... Oh! I know. (Game secret).
-        Okay, now that you know that, I kinda have to give you a game over. Don't give me that face! that's what you get for cheating! Buh bye."
+        Okay, now that you know that, I kinda have to give you a game over. Don't give me that look! that's what you get for cheating! Buh bye."
     [Game Over]
     
     Talk convos {
@@ -164,11 +167,11 @@ Brock: "That must be Devan. We might stand a chance after all. Men! Hold your gr
             Devan: "I have one answer in the back of my mind, and I really hope I'm wrong."
             Anthony: "And that is...?"
             Devan: "The bandit's are getting organized."
-            Anthony: "Don't they usually do that?"
-            Devan: "No. You already know that most of the bandits are just very poor citizens. All they care about is stealing enough to feed themselves.
+            Anthony: "More than usual? Oh, you mean like two decades ago."
+            Devan: "Yes. You already know that most of the bandits are just very poor citizens. All they care about is stealing enough to feed themselves.
                 It's rare for someone driven by greed to lead a group, but when it happens, and said someone knows what they're doing, things can turn disastrous
                 very quickly."
-            Anthony: "Well, I hope that's not the case. Life here is hellish enough as is."
+            Anthony: "No need to tell me. My father died in those damned raids. I really hope that doesn't happen again."
             Devan: "I couldn't agree more. ...Let's get back to the battle. Even if the wyvern knights don't need our help, the villages sure do."
             Anthony: "Sure thing, Lordship!"
         
@@ -179,7 +182,7 @@ Brock: "That must be Devan. We might stand a chance after all. Men! Hold your gr
             Devan: "That raises the question of why you have so many weapons that you would need to put them in reserve."
             Brock: "As said I'll explain later, but among the weapons in storage were dragon axes."
             Devan: "Meaning they're likely to attack Evans now that they have a means of fighting Abigail."
-            Brock: "Exactly, but now that you're here, my men and I should be able to push foward against the enemy."
+            Brock: "Exactly, but now that you're here, my men and I should be able to push forward against the enemy."
             Devan: "Then we shouldn't waste anymore time. Let's go."
         
         Ronni and Charles:
@@ -224,24 +227,29 @@ Brock: "There's no need to tell us what happened to your grandmother, but could 
 Julianne: "Bandits...came and killed everyone... I don't know if anyone else survied..."
 Brock: "I'm sorry... Is there anything I can do for you?"
 Julianne: "No... I just...just need to be alone..."
-Brock: "Alright. Charles, Take her to one of the carrages."
+Brock: "Alright. Charles, Take her to one of the carriages."
 Charles: "Yes, your highness. This way miss Julianne."
 [Charles and Julianne leave]
 Brock: "Abigail... Damn those bandits! I won't let a single one live!"
+
 (In the ruins of Evans)
 [Highlight Evans' ruins]
 [Devan, Kenneth, Ronni and Anthony onscreen]
 Kenneth: "This is horrible. It's all burned to the ground..."
-Devan: "So the nightmare begins... We're going to Evergreen."
-Kenneth: "Why? Shouldn't we look for clues of where the bandits went?"
+Devan: "Of course this is happening... We're going to Evergreen."
+Kenneth: "Why? Shouldn't we look for any survivors? Or clues of where the bandits went?"
 Anthony: "Where? They burned everything down. And we didn't take any prisioners. We don't have any leads."
 Devan: "We might have one lead: Julianne."
 Ronni: "Are you sure you should question her now? She seemed to be in pretty bad shock."
-Devan: "I don't like it either, but we don't have much of a choice. We can't wait for the bandits to make their next move. I'll tell the solders to
-    Search for survivors. *sigh* Let's go."
+Devan: "I don't like it either, but we don't have much of a choice. We can't wait for the bandits to make their next move. 
+Kenneth: "Wait, what about the survivors?"
+Devan: I'll tell the solders to look for them. If there are any around, the solders will inform me. *sigh* Let's go."
 [Devan, Ronni and Anthony leave]
-Kenneth: "No matter where fire burns, ashes always look the same..."
+Kenneth: "......(This smell... The ashes... No! Pull yourself together!)"
+Devan (Offscreen): "Kenneth? We're leaving!"
+Kenneth: "Oh! Right."
 [Kennth leaves]
+
 (In Evergreen)
 [House scene]
 [Devan and Brock onscreen]
@@ -250,8 +258,8 @@ Brock: "Devan. Did anyone..."
 Devan: "Make it out alive? I'm not sure, but it doesn't look like it."
 Brock: "I can't believe this happened. And because of me no less..."
 Devan: "It's not your fault. It's my responsibility to keep this dukedom safe."
-Brock: "You mean prevent it from becoming an even worse hell hole?"
-Devan: "Hell hole is a little weak, but it'll do. How's Julianne?"
+Brock: "But the bandits stole our weapons, and somehow knew where they were."
+Devan: "Interesting... We'll have to look into that later. How's Julianne?"
 Brock: "I don't know. The last time I saw her, she was walking Cirrus into the stable."
 Devan: "Cirrus?"
 Brock: "Abigail's wyvern. Or Julianne's wyvern now."
@@ -266,7 +274,7 @@ Julianne: "...?"
 Brock: "Lord Devan would like to ask you some questions about what happened."
 Devan: "We searched the area for any possible hints as to where the bandits went, but couldn't find any. Did you see or hear anything that could help?"
 Julianne: "..."
-Devan: "I know this is a terrible time, and that you are griving, but if you know anything that might be able to lead us to those men, I need to know."
+Devan: "I know this is a terrible time, and that you are grieving, but if you know anything that might be able to lead us to those men, I need to know."
 Julianne: "...I'm sorry. I didn't notice anything... After the bandits broke into my house, I flew away on Cirrus."
 Devan: "I see... Well, we'll let you and Cirrus be alone now."
 (The next day)
@@ -278,14 +286,14 @@ Charles: "But we're at the last stages of our mission, and the king is expecting
 Brock: "I know. Go ahead and tell him that I'll be home soon. And that I needed to take care of something that just came up."
 Charles: "But-"
 Brock: "Go. That's an order."
-Charles: "...Yes, your highness."
+Charles: "...Yes, Your Highness."
 [Charles leaves]
 [Devan appears]
-Devan: "Brock? Shouldn't you be with the caravan? And why does Charles look so cross?"
+Devan: "Brock? Shouldn't you be with the caravan? And why does Charles look so upset?"
 Brock: "I'm going with you to take care of those bandits. They must answer for what they've done."
 Devan: "Really? Don't you have to report to your father on your trip to the empire?"
 Brock: "How did you know about that?"
-Devan: "I asked some of the mercenary guards, and considering Cassis and Tolva are only in a cease fire, it wasn't too hard to figure out."
+Devan: "I asked some of the mercenary guards, and considering Cassis and Tolva are only in a cease fire, it wasn't too hard to figure out why the prince of Cassis was coming from Tolva."
 Brock: "I hope you're the only one to find out. So I take it you have no objections?"
 Devan: "Nope, the more the merrier."
 [Julianne appears]
@@ -293,7 +301,7 @@ Julianne: "Then could I go too?"
 Brock: "Julianne? what are you doing here? The caravan will be leaving any minute now."
 Julianne: "I want to go with you to find those bandits."
 Devan: "I'm sorry, but you can't. These bandits have already proved that they are more dangerous than initailly thought."
-Julianne: "But isn't that why you should let me go? The army isn't that strong, and you only seem to have an advance squad with you.
+Julianne: "But isn't that why you should let me go? The army isn't that strong, and you only seem to have an advance team with you.
     Having an extra wyvern rider would be useful."
 Brock: "You really know your stuff don't you?"
 Julianne: "My grandmother tought me about strategy and how to use an axe and lance. I won't be a burden. Just...please let me avenge my grandma."

@@ -1,10 +1,8 @@
-Introduction:
-(To be started)
+Chapter 1: Always With the Bandits
 
-Chapter 1:
 Devan (Eyes closed): "...zzzzz....."
 *Knock on the door*
-Ronni (out of screen): "Hey Devan, there's a bandit attack going on over in Tristan!"
+Ronni (off screen): "Devan, there's a bandit attack going on over in Tristan!"
 Devan (Eyes open): "...mmm...ugh..."
 Ronni: "You might want to get up sometime today, those bandits probably won't wait for you to finish your nap."
 Devan: "...Tell the troops we sortie in fifteen minutes."
@@ -14,9 +12,9 @@ Issac: "Ah Devan, you're awake. I take it you heard about the raid in Tristan?"
 Devan: "Yes Uncle, I heard. I'm leaving in about ten minutes. Of course the raid had to happen while I was in the middle of the best sleep
     I had in weeks."
 Issac: "Well, the raiders never seemed to be concerned with stealing on when it's convient. Before you leave, you should get something to eat."
-Devan: "I'll be fine. I'll just eat some jerky on the way or something. I'm going to the barrocks to check on the troops. While I'm gone hold down the fort."
+Devan: "I'll be fine. I'll just eat some jerky on the way or something. I'm going to the barracks to check on the troops. While I'm gone hold down the fort."
 Issac: "Alright. Safe travels."
-(A few minutes later in the barrocks)
+(A few minutes later in the barracks)
 Devan: "Ronni!"
 Ronni: [Appears onscreen]: Yeah?
 Devan: "How are the preperations to leave going?"
@@ -101,11 +99,12 @@ Devan and Kenneth:
     Devan: "I see... Then in that case maybe I can rely on you to keep up with me. Let's go."
     Kenneth: "Yes sir!"
     [Kenneth leaves]
-    Devan: "Oh, and kenneth!"
+    Devan: "Oh, and Kenneth!"
     [Kenneth comes back]
     Kenneth: "Yes?"
     Devan: "You probably should use your sword against the brigands instead of that lance."
     Kenneth: "Oh. Oops. Hehe..."
+    (For the uninitiated, swords beat axes, axes beat lances, and lances beat swords. Rock, Paper, Scissors.)
 
 Kenneth and Ronni:
     Ronni: "Hey Kenny, how're you holding up?"
@@ -114,16 +113,17 @@ Kenneth and Ronni:
         Just make sure not to go too far ahead and you should be fine."
     Kenneth: "Say Ronni, how long have you been in the Duramontis army?"
     Ronni: "Oh, about three years give or take a month. Why?"
-    Kenneth: "That long huh? I'm not sure I can handle this for that long, and be so laid back about it no less."
-    Ronni: "It gets easier to deal with in time. Though I suppose that doesn't apply to Devan"
+    Kenneth: "That long huh? I'm not sure I could handle this for that long, and be so laid back about it no less."
+    Ronni: "It gets easier to deal with in time. Though I suppose that doesn't apply to Devan."
     Kenneth: "You're on a first name basis with Lord Devan?"
     Ronni: "Woops. Didn't mean to let that slip. Yeah, we knew each other since we were kids. We met about a year before Devan
         inherited the throne and- Oh! There goes a bandit. Let's talk about this later."
     [Ronni leaves]
     Kenneth: "...Did she just ride towards the enemy ahead of me?"
+    (Since you can't see it here, Ronni is a mounted archer.)
 
 Anthony and Kenneth:
-    Kenneth: "Hey Anthony."
+    Kenneth: "Hey Anthony?"
     Anthony: "Yeah kid?"
     Kenneth: "I was thinking about what you said earlier. About mounted solders being in the advance team."
     Anthony: "And?"
@@ -135,7 +135,7 @@ Anthony and Kenneth:
     Kenneth: "You mean you used to be a raider?"
     Anthony: "Yup. Just like the men you see here, I got in a bad way and turned to pillaging as a source of food."
     Kenneth: "So, how did you end up working for Lord Devan?"
-    Anthony: "It's a long story, and we don't have the time. Tell ya what? If you live long enough, I might tell it you."
+    Anthony: "It's a long story, and we don't have the time. Tell ya what? If you live long enough, I might tell you."
     Kenneth: "I'll try."
 }
 
@@ -149,9 +149,9 @@ Bandit: "..."
 Devan: "Not saying anything huh? You don't have any reason to not tell me. You have the choice between a slow agonizing death or a rare display of mercy.
     Which one will it be?"
 Bandit: "...All they told me was that we were headed north."
-Devan: "Thank you... Execute him, and make it swift.
+Devan: "Thank you... Execute him, and make it swift."
 Bandit: "Wait, what! No! NOOO!"
-[Bandit offscreen]
+[Bandit is taken offscreen]
 Ronni: "Man, I hate it when you do that."
 Devan: "..."
 [Cut to Kenneth and Anthony]
@@ -168,7 +168,7 @@ Devan: "If we have them stand trial they will still die for their crimes. The on
 Kenneth: "Wait, you mean these bandits have families? how many?"
 Anthony: "Just about all of 'em."
 Kenneth: "If these men have families to take care of, why did they become... bandits..."
-Ronni: "Yeah, pretty sad huh? This nation is so poor that a lot of regular people have to resort to banditry to feed their themselves and their families."
+Ronni: "Yeah, pretty sad huh? Our nation is so poor that a lot of regular people have to resort to banditry to feed themselves and their families."
 Devan: "It's been like this for generations, and I don't see it getting better anytime soon."
 Kenneth: "That's terrible."
 Anthony: "That's the state of our country. Sorry kid, I don't like it any more than you do, maybe even less, but that's just how it is."
@@ -181,21 +181,21 @@ Devan: "Alright."
 [Devan leaves]
 Kenneth: "Forced to fight your own people on a regular basis... No wonder the military is so somber. And Lord Devan... Hey Ronni, why does Lord Devan let
     you speak so casually to him?"
-Ronni: "Hmm? I guess I droped the title a bit too much eh? Well, It was about seven years ago when we met. Devan was a year away from inheriting the throne-"
-Kenneth: "Lord Devan asended to the throne at age eleven?"
-Ronni: "Yup. Anyway, my family was poor, so when my mom was offered a job at the castle it was basically a no-brainer. After we moved into the servant's quarters
+Ronni: "Hmm? I guess I droped the title a bit too much eh? Well, It was about six years ago when we met. Devan was a year away from inheriting the throne and-"
+Kenneth: "Lord Devan asended to the throne at age twelve?"
+Ronni: "Yup. Anyway, my mom and I were poor, so when my mom was offered a job at the castle it was basically a no-brainer. After we moved into the servant's quarters
     I decided to do some exploring."
 Kenneth: "You mean snooping around in places you weren't supposed to be?"
-Ronni: "Yes. While I was 'snooping' I found Devan working on his lance arm. He was so focused on the dummy he didn't notice me come in. He was wearing 
+Ronni: "Yes. While I was 'snooping', I found Devan working on his lance arm. He was so focused on the dummy he didn't notice me come in. He was wearing 
     training armor so I thought he was a recruit, so I decided to...ah...teach him the importance of the element of surprise."
 Kenneth: "You snuck up on Lord Devan?"
-Ronni: "You like asking questions with obvious answers don't you?"
+Ronni: "You really like asking questions with obvious answers don't you?"
 Kenneth: "Oh, sorry."
 Ronni: "Moving on... I got a little closer to Devan, stayed just out of spear range and then said hi. Turns out I underestimated His reach. He turned around
     and swept his lance at my feet knocking me down. Then he pointed it at me demanding to know who I was. While I laughed at him he prodded his lance at my chest 
     accusing me of being a thief. It then dawned on me that I was talking to the young prince of the castle. I asked who he was, he answered, then I explained 
-    myself. After getting a very long lecture from my mom for almost making her lose her new job, Devan and I started the slow process of becoming freinds.
+    myself. After getting a very long lecture from my mom for almost making her lose her new job, Devan and I started the slow process of becoming freinds."
 Devan [Offscreen]: "Ronni! Kenneth! We're leaving!"
 Ronni: "Welp, there's the call of duty. Better get going."
 [Ronni leaves]
-Kenneth: "...So Lord Devan was on edge even at a young age."
+Kenneth: "...So Lord Devan was tough even at a young age."
