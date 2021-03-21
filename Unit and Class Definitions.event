@@ -20,6 +20,8 @@
 #define ArchDuke EirikaMasterLord
 #define Lord EphriamLord
 #define GreatLord EphriamMasterLord
+#define BowKnight Ranger
+#define BowKnightF Ranger_F
 
 //Type Definitions
 #define Sword 0x00
@@ -199,7 +201,8 @@
 
 //Monster Animations (First to be replaced)
 #define PegasusKnightSword 0xA0
-//A1 and A2
-#define ArchKnightF 0xA3
+#define FalkoknightStaff 0xA1
+//A2
+#define ArchKnightFBow 0xA3
 
 //The rest is vanilla
