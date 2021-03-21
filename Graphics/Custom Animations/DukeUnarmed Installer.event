@@ -1,7 +1,7 @@
 ///////Animation Install.event///////
     
 PUSH
-AnimTableEntry(0x4) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
+AnimTableEntry(DukeUnarmed) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
 WORD 0 0 0 //empty name field, who cares
 POIN Duke_Unarmed_Anim_sectiondata
 POIN Duke_Unarmed_Anim_framedata

@@ -1,7 +1,7 @@
 ///////Animation Install.event///////
     
 PUSH
-AnimTableEntry(0x3D) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
+AnimTableEntry(PaladinFSword) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
 WORD 0 0 0 //empty name field, who cares
 POIN PaladinF_Sword_Anim_sectiondata
 POIN PaladinF_Sword_Anim_framedata

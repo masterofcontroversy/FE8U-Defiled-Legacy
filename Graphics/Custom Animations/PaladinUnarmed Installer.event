@@ -1,7 +1,7 @@
 ///////Animation Install.event///////
     
 PUSH
-AnimTableEntry(0x3C) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
+AnimTableEntry(PaladinUnarmed) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
 WORD 0 0 0 //empty name field, who cares
 POIN Paladin_Unarmed_Anim_sectiondata
 POIN Paladin_Unarmed_Anim_framedata

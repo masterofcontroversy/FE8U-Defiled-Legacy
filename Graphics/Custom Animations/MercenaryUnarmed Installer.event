@@ -1,7 +1,7 @@
 ///////Animation Install.event///////
     
 PUSH
-AnimTableEntry(0x0C) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
+AnimTableEntry(MercenaryUnarmed) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
 WORD 0 0 0 //empty name field, who cares
 POIN Mercenary_Unarmed_Anim_sectiondata
 POIN Mercenary_Unarmed_Anim_framedata

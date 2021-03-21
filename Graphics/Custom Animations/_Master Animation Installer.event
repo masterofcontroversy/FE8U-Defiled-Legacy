@@ -76,15 +76,14 @@ PUSH
   #include "PaladinLance Installer.event"
   #include "PaladinUnarmed Installer.event"
 
-  //Bow Knight
-
-  //Unarmed same as Paladin unarmed
-
   //PaladinF + Bow KnightF
   #include "PaladinFSword Installer.event"
   #include "PaladinFLance Installer.event"
   #include "PaladinFBow Installer.event"
   #include "PaladinFUnarmed Installer.event"
+
+  //Falkoknight
+  #include "FalkoknightStaff Installer.event"
 
   MESSAGE Animation storage B from AnimSpaceB to currentOffset
 POP

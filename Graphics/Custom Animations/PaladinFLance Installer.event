@@ -1,7 +1,7 @@
 ///////Animation Install.event///////
     
 PUSH
-AnimTableEntry(0x3E) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
+AnimTableEntry(PaladinFLance) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
 WORD 0 0 0 //empty name field, who cares
 POIN PaladinF_Lance_Anim_sectiondata
 POIN PaladinF_Lance_Anim_framedata

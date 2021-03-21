@@ -1,7 +1,7 @@
 ///////Animation Install.event///////
     
 PUSH
-AnimTableEntry(0x35) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
+AnimTableEntry(CavalierLance) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
 WORD 0 0 0 //empty name field, who cares
 POIN Cavalier_Lance_Anim_sectiondata
 POIN Cavalier_Lance_Anim_framedata
