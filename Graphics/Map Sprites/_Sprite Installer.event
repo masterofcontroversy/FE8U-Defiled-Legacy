@@ -1,11 +1,11 @@
 //Duke map sprites
 ALIGN 4
 DukeMapStanding:
-#incbin "Duke(Standing).dmp"
+#incbin "Duke Standing.dmp"
 
 ALIGN 4
 DukeMapMoving:
-#incbin "Duke(Moving).dmp"
+#incbin "Duke Moving.dmp"
 
 ALIGN 4
 DukeAP:
