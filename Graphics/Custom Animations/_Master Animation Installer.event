@@ -85,5 +85,12 @@ PUSH
   //Falkoknight
   #include "FalkoknightStaff Installer.event"
 
+  //Armor Knight
+  #include "Armor KnightSword Installer.event"
+  #include "Armor KnightLance Installer.event"
+  #include "Armor KnightAxe Installer.event"
+  #include "Armor KnightHandaxe Installer.event"
+  #include "Armor KnightUnarmed Installer.event"
+
   MESSAGE Animation storage B from AnimSpaceB to currentOffset
 POP

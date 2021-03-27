@@ -63,17 +63,36 @@ WORD 0 0
 //Deserter Animation Pointer
 
 
-//Arch Knight Animation Pointer
-
+//Arch KnightF Animation Pointer
+ALIGN 4
+ArchKnightFAnimPoint:
+AnimPointer(Bow,01,ArchKnightFBow)
+AnimPointer(Unarmed,01,PaladinFUnarmed)
+WORD 0 0
 
 //Sword Armor Animation Pointer
-
+ALIGN 4
+SwordArmorAnimPoint:
+AnimPointer(Sword,01,ArmorKnightSword)
+AnimPointer(Unarmed,01,ArmorKnightUnarmed)
+WORD 0 0
 
 //Lance Armor Animation Pointer
-
+ALIGN 4
+LanceArmorAnimPoint:
+AnimPointer(Lance,01,ArmorKnightLance)
+AnimPointer(Unarmed,01,ArmorKnightUnarmed)
+WORD 0 0
 
 //Axe Armor Animation Pointer
-
+ALIGN 4
+AxeArmorAnimPoint:
+AnimPointer(Axe,01,ArmorKnightAxe)
+AnimPointer(HandAxe,00,ArmorKnightHandaxe)
+AnimPointer(Hatchet,00,ArmorKnightHandaxe)
+AnimPointer(Tomahawk,00,ArmorKnightHandaxe)
+AnimPointer(Unarmed,01,ArmorKnightUnarmed)
+WORD 0 0
 
 //General Animation Pointer
 

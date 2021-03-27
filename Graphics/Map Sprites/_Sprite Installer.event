@@ -1,0 +1,87 @@
+//Duke map sprites
+ALIGN 4
+DukeMapStanding:
+#incbin "Duke(Standing).dmp"
+
+ALIGN 4
+DukeMapMoving:
+#incbin "Duke(Moving).dmp"
+
+ALIGN 4
+DukeAP:
+#incbin "DukeAP.romtcs.ap.bin"
+
+
+//Bow Knight (M) map sprites
+ALIGN 4
+BowKnightStanding:
+#incbin "Bow Knight (M) Bow Standing.dmp"
+
+ALIGN 4
+BowKnightMoving:
+#incbin "Bow Knight (M) Bow Moving.dmp"
+
+
+//Bow Knight (F) map sprites
+ALIGN 4
+BowKnightFStanding:
+#incbin "Bow Knight (F) Bow Standing.dmp"
+
+ALIGN 4
+BowKnightFMoving:
+#incbin "Bow Knight (F) Bow Moving.dmp"
+
+
+//Arch Knight (U) map sprites
+
+
+//Dragon Knight (M) map sprites
+ALIGN 4
+DragonKnightStanding:
+#incbin "Wyvern Rider (M) Axe Standing.dmp"
+
+ALIGN 4
+DragonKnightMoving:
+#incbin "Wyvern Rider (M) Axe Moving.dmp"
+
+//Dragon Knight (F) map sprites
+ALIGN 4
+DragonKnightFStanding:
+#incbin "Wyvern Rider (F) Axe Standing.dmp"
+
+ALIGN 4
+DragonKnightFMoving:
+#incbin "Wyvern Rider (F) Axe Moving.dmp"
+
+//Dragon Master (F) map sprites
+
+
+//Dragon Master (F) map sprites
+
+
+//Sword Armor map sprites
+ALIGN 4
+SwordArmorStanding:
+#incbin "Sword Armor Standing.dmp"
+
+ALIGN 4
+SwordArmorMoving:
+#incbin "Sword Armor Moving.dmp"
+
+//Lance Armor map sprites
+ALIGN 4
+LanceArmorStanding:
+#incbin "Lance Armor Standing.dmp"
+
+ALIGN 4
+LanceArmorMoving:
+#incbin "Lance Armor Moving.dmp"
+
+//Axe Armor map sprites
+ALIGN 4
+AxeArmorStanding:
+#incbin "Axe Armor Standing.dmp"
+
+ALIGN 4
+AxeArmorMoving:
+#incbin "Axe Armor Moving.dmp"
