@@ -7,10 +7,10 @@ Socialknight,0x81c5fe4,0x81c692c
 Socialknight (F),0x81c5fe4,0x81c692c
 Paladin,0x81c6a84,0x81c7428
 Paladin (F),0x81c6a84,0x81c7428
-Armour Knight,0x81c7580,0x81c7e74
-Armour Knight (F),0x81c7580,0x81c7e74
+Sword Armor,SwordArmorMoving|IsPointer,0x81c7e74
+Lance Armor,LanceArmorMoving|IsPointer,0x81c7e74
+Axe Armor,AxeArmorMoving|IsPointer,0x81c7e74
 General,0x81c7fcc,0x81c8a80
-General (F),0x81c7fcc,0x81c8a80
 Thief,0x81c8be0,0x81c945c
 Mamkute,0x81c95b4,0x81ca124
 Mercenary,0x81ca27c,0x81caa20
@@ -29,8 +29,8 @@ Sniper,0x81d1520,0x81d1d48
 Sniper (F),0x81d1ea0,0x81d2714
 Forrest Knight,0x81d286c,0x81d3194
 Forrest Knight (F),BowKnightFMoving|IsPointer,0x81d3194
-Dragon Knight,0x81d32ec,0x81d403c
-Dragon Knight (F),0x81d419c,0x81d4eec
+Dragon Knight,DragonKnightMoving|IsPointer,0x81d403c
+Dragon Knight (F),DragonKnightFMoving|IsPointer,0x81d4eec
 Dragon Master,0x81d504c,0x81d5e58
 Dragon Master (F),0x81d5fc0,0x81d6d6c
 Wyvern Knight,0x81d6ec4,0x81d7cc8
