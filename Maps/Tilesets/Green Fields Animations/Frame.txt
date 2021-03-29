@@ -1,0 +1,17 @@
+//wait	filename
+28	Frame_000.png	4096
+28	Frame_001.png	4096
+28	Frame_002.png	4096
+28	Frame_003.png	4096
+28	Frame_004.png	4096
+28	Frame_005.png	4096
+28	Frame_006.png	4096
+28	Frame_007.png	4096
+28	Frame_008.png	4096
+28	Frame_009.png	4096
+28	Frame_010.png	4096
+28	Frame_011.png	4096
+28	Frame_012.png	4096
+28	Frame_013.png	4096
+28	Frame_014.png	4096
+28	Frame_015.png	4096
