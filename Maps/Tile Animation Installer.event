@@ -5,52 +5,52 @@
 //Zoramine Fields animations
 ALIGN 4
 FieldsAnimation0:
-#incbin "Tilesets/Green Fields Animations/Frame0.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_000.dmp"
 ALIGN 4
 FieldsAnimation1:
-#incbin "Tilesets/Green Fields Animations/Frame1.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_001.dmp"
 ALIGN 4
 FieldsAnimation2:
-#incbin "Tilesets/Green Fields Animations/Frame2.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_002.dmp"
 ALIGN 4
 FieldsAnimation3:
-#incbin "Tilesets/Green Fields Animations/Frame3.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_003.dmp"
 ALIGN 4
 FieldsAnimation4:
-#incbin "Tilesets/Green Fields Animations/Frame4.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_004.dmp"
 ALIGN 4
 FieldsAnimation5:
-#incbin "Tilesets/Green Fields Animations/Frame5.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_005.dmp"
 ALIGN 4
 FieldsAnimation6:
-#incbin "Tilesets/Green Fields Animations/Frame6.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_006.dmp"
 ALIGN 4
 FieldsAnimation7:
-#incbin "Tilesets/Green Fields Animations/Frame7.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_007.dmp"
 ALIGN 4
 FieldsAnimation8:
-#incbin "Tilesets/Green Fields Animations/Frame8.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_008.dmp"
 ALIGN 4
 FieldsAnimation9:
-#incbin "Tilesets/Green Fields Animations/Frame9.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_009.dmp"
 ALIGN 4
 FieldsAnimation10:
-#incbin "Tilesets/Green Fields Animations/Frame10.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_010.dmp"
 ALIGN 4
 FieldsAnimation11:
-#incbin "Tilesets/Green Fields Animations/Frame11.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_011.dmp"
 ALIGN 4
 FieldsAnimation12:
-#incbin "Tilesets/Green Fields Animations/Frame12.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_012.dmp"
 ALIGN 4
 FieldsAnimation13:
-#incbin "Tilesets/Green Fields Animations/Frame13.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_013.dmp"
 ALIGN 4
 FieldsAnimation14:
-#incbin "Tilesets/Green Fields Animations/Frame14.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_014.dmp"
 ALIGN 4
 FieldsAnimation15:
-#incbin "Tilesets/Green Fields Animations/Frame15.dmp"
+#incbin "Tilesets/Green Fields Animations/Frame_015.dmp"
 
 //Bringing them together
 ALIGN 4
