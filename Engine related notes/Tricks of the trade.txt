@@ -1,0 +1,186 @@
+Creating animation pointers:
+(This might be tutorial worthy)
+
+(Note from the future: Not anymore maybe. I made a macro for this)
+
+Before I get into this, you should know that I made a macro that makes the pointers using the information I'll share here.
+So, if you just want to create some pointers for your animations, here you go.
+
+#define AnimPointer(Type,Type_Designation,AnimID) "BYTE Type Type_Designation AnimID 0;"
+
+Remember, you need to use the macro for each INDIVIDUAL animation. To be in line with the example featured later in this tutorial:
+
+AnimPointer(01,01,01) // Vanilla Ephriam with lance
+AnimPointer(09,01,02) // Vanilla Ephriam unarmed
+
+Now for your not so regularly scheduled tutorial:
+
+While working on my hack, I got to the point to where I needed to add a few animations. While inserting the animations was cake,
+getting the animations to play for the classes was not... Until I found this out.
+
+Battle animation pointers can be made entirely through hex editor. Here's how.
+
+What you'll need: A hex Editor, a Class Editor CSV Table.
+(This is only tested on FE8, but I don't see why this wouldn't work on FE6 or 7.)
+
+Open a new .dmp file with a hex editor and insert:
+
+first: <Weapon Type> second: <Type Designation> third: <Animation ID> fourth: <Devider (Always 00)>
+
+
+The Weapon type decides what type of weapon will trigger the animation. These can be:
+00 = Sword
+01 = Lance
+02 = Axe
+03 = Bow
+04 = Staff
+05 = Anima
+06 = Light
+07 = Dark
+09 = Item (Unarmed)
+0B = Monster Weapon
+0C = Ring (For Dancers)
+11 = FireStone
+
+(If the Type designation is 00, The Weapon type should be the item ID of the item you want the animation to play for)
+
+The Type designation is for weather you want all items of the same type to share an animation, or have the animation
+play for only one item. If you do decide to play an animation for only one item, the weapon type is used to select the
+item ID for the item that you want the animation to play for. The options for Type designation are:
+
+00 = Specific Item
+01 = Item Type (All Awords, All Lances etc.)
+
+The most straight forward selection is the animation ID. Input the ID of the animation you want to play here.
+
+Last is the divider. The divider is always set to 00, and after you set it, you can repeat the cycle until you have
+all the animations you want set.
+
+Now that that's done, here's an example:
+
+This is the animation pointer for Ephraim's Lord class.
+
+01 01 01 00 09 01 02 00
+
+As you can see, the first byte is 01 to select lances. The second byte is 01 to specify that this animation should play
+for all lances. The third byte is 01 stating that the animation in Animation ID 01 (Ephraim with a lance) should be played.
+After that, the fourth byte is 00 to be a divider.
+After this, it's pretty easy to tell that the next batch of 09 01 02 00 is for:
+Unarmed, all items of this type, Animation ID 02 (Ephraim unarmed), divider.
+
+Once you have the animation pointers set, you can point to the .dmp file you made and place it in the "Battle Animation Pointer"
+Column for whatever class you want. Including the .dmp is done like this:
+
+ALIGN 4
+NameOfLabel:
+#incbin "yourfile.dmp"
+WORD 0 0
+
+Make sure to have WORD 0 0 at the end of the label. This tells the ROM that it reached the end of the pointer information for that class.
+
+One last note: Whenever pointing to something put "|IsPointer" at the end of the (In this case) label name like so: NameOfLabel|IsPointer
+
+I hope what I said made sense and helps you out on the trials of ROM hacking.
+If I got something wrong or forgot something, please tell me and I'll append this tutorial.
+
+---------------------------------------
+
+Placing animations in multiple places:
+
+To preface, these are notes for Defiled Legacy specifically.
+
+The free spaces currently being used for animations are:
+    AnimSpaceA: 0xE47200 (Ends at 0xEDFFF0)
+    AnimApaceB: 0xF00000 (Ends at 0xFDFFF0)
+    
+There are currently 36 animations inserted with maybe 10 or so left to insert (We all know that will increase)
+
+AnimSpaceA is pretty much full. I can't imagine putting anything other than a few unarmed animations at the most there.
+Also, even if the ROM still works and FEBuilder returns no errors, please don't exceed the end address. It could still
+cause problems
+
+AnimspaceB has a decent amount of room still left in it (As of March 6th 2021, the used space goes up to 0xF919B0)
+so it should be good for the most of if not all of the animations yet to be added this round. Research on trimming fat
+and possibly writing over locations of the old animations will have to be done at some point if thing really get bad.
+
+As far as the possible third storage location, some of the area past FreeSpace could work in a pinch, but that area
+will probably have to be reserved for the text, maps and events. Some graphics like map animations and tilesets
+could take up some room to. The animation pointers should be a non issue.
+
+After some digging, (Just looking at the ROM on a hex editor) It turns out that there is some room at 0xFE28A0
+(There is a LITTLE space before it, but I'm a safty nut) and it goes down to 0xFFEFF0. This should Allow for a few
+animations. Maybe.
+
+Things to reasearch on this matter:
+    -How many animations will be needed
+    -How much space do text insertations take up
+    -How much space do Events take up
+    -How much space to Maps take up (This is a big one)
+    -Is there a way of making animations more compact
+    -Is it possible to expand the ROM using buildfiles (Not preferable, but is an option) | Just write data at the end, and it'll sort itself out.
+    -Are there any places in vanilla FE8 that are safe to write over (Last resort)
+    -Just use FEBuilder. It's easier! (Do not surrender!)
+    
+As it turns out, the ROM can be expanded just by writing past the end. Still keeping the ROM as small as safely possible is a goal
+
+---------------------------------------
+
+Installing those darn palettes:
+
+Palette inserting is proving to be quite difficult strictly with buildfiles.
+Getting the main palette to work is easy enough, but the other pieces of data...
+
+Let me back up.
+
+This is what a fully functional palette looks like:
+
+10 A0 00 00 00 C4 26 FF 7F 9E 63 1F 4B 00 39 1E
+42 08 83 10 42 08 00 18 77 D2 6A 0B 00 12 04 00
+6B 2D 6B 29 08 21 00 00 FF 90 1F 90 1F 90 1F 90
+1F 90 1F 90 1F 90 1F 90 1F C0 90 1F 90 1F 6B 2D
+6B 29 08 21 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00
+
+Please note that the battle palette data has to be this length. I think it's the only palette that has this requirement.
+
+(To clearify, all number characters refer to hex counting (00-FF), not traditional counting (0-255))
+After some digging I'm pretty sure that "10 A0 00 00 00" means that the following 4F bytes are information for battle palettes.
+
+The next 23 bytes make up the (At the very least) player palette. This is what matters the most for ally units, and if everything after is zeroes the ally unit palette should be fine.
+The only problem that I will have to look into is that the colors might mess up if the unit using the palette isn't an ally unit. (I'm thinking this is not the case)
+One more note to reasearch is the "Set teh enemy, NPC, and gray to the same color" checkbox on FEBuilder. Does that apply to the ROM? can the effect be replicated in buildfiles? Is it on by default? (Yes)
+
+The rest of the hex is the confusing part.
+This is where the color values for the different factions come in. It even seems to be able to change the palette entirely, meaning you can have four
+palettes in these 54 bytes. I suppose some mad lads could cut their palette space to a quarter if they really work at it. (Probably not though)
+
+I know the some bytes are for pointing to what color needs to be changed, and others decide what colors. Some might even do both at once.
+If these are for palettes depending on unit faction, this is a major issue.
+
+Then again, this chould be information for the link arena team palettes too. That is probably more likely. If that's the case, normal gameplay wouldn't suffer.
+Still, having link arena functionallity on ROM hacks is nice.
+
+---------------------------------------
+
+Tools in use:
+
+I decided that using a windows VM for FE ROM hacking was lame, so I made some tools to do on linux better than what I could do with windows.
+These could also be done in windows shell script (or batch file I don't know windows that well), so I might just learn and get to that sometime.
+
+animation-assembler:
+This is simple enough. This script uses Circles' Animation Assembler to turn animations into event files.
+The special thing this script does ask what you want to name the file and it to where you want.
+It can assemble every bin file from the directory you're in onwards with the -r argument, letting you name every output file as it goes along.
+
+PNG2Dmp:
+This script is a bit more specialized at the moment. It currently only uses the --lz77 argument. (This has been fixed. You can use all arguments that Png2Dmp would take)
+PNG2Dmp acts the same way as animation-assembler except for allowing you to name the output files.
+I originally made this so I wouldn't have to run the command on each mapsprite image seperately
+
+Now for the application in the ROM hack:
+
+animation-assembler is only being used as a semi-automatic tool. There isn't any benefit in keeping the bin files
+with the frame information in the project folder. Especially since the output file still has to be edited by hand. (To my knowlege)
+
+PNG2Dmp is being used in the makehack script to turn the mapsprite png files into dmp files and move them to the "Map Sprite" folder.
+Since I only really use the lz77 compression with Png2Dmp, so This seems an appropriate use for the script.

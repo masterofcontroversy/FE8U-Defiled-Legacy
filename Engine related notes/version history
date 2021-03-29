@@ -1,0 +1,22 @@
+version 1.0:
+    Basic Skillsystem with one portrait and holyblood.
+    
+version 1.1:
+    Champions' blood has a set spot so it can be edited with nightmare
+    Nightmare module made for Champions' blood.
+    Added snakey's auto promote asm hack.
+    
+version 1.2:
+    Added the first map.
+    Included Zoramine tilesets.
+    Added the first map sprite.
+    Added the first custom battle animation.
+    Inserted the first battle palette.
+    Repointed the animation table.
+    Started using the hex only way of adding animation pointers.
+    Made unit and class definitions.
+    
+version 1.5(Yes, I know I skipped two versions, but what was in version 1.2 was supposed to be spread out):
+    Started work on new classes.
+    Made some tools for making hacking easier.
+    Very close to finishing the events for the first chapter
