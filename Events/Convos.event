@@ -1,0 +1,29 @@
+ALIGN 4
+Ch1_DevanRonni:
+Text(Ch1Convo_DevanRonni)
+NoFade
+ENDA
+
+ALIGN 4
+Ch1_DevanKenneth:
+Text(Ch1Convo_DevanKenneth)
+NoFade
+ENDA
+
+ALIGN 4
+Ch1_KennethRonni:
+Text(Ch1Convo_KennethRonni)
+NoFade
+ENDA
+
+ALIGN 4
+Ch1_AnthonyKenneth:
+Text(Ch1Convo_AnthonyKenneth)
+NoFade
+ENDA
+
+ALIGN 4
+Timeup:
+Text(Ch1Convo_AnthonyKenneth)
+GameOver
+ENDA

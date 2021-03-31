@@ -1,13 +1,13 @@
 ## Ch1_WakeUp
 
 [MidRight][LoadDevan]
-...zzzzz.....[A]
+[CloseEyes][ToggleMouthMove]...[....]zzzzz.....[.....][ToggleMouthMove][A]
 [FarFarLeft][LoadRonni]
 Hey Devan, there's a bandit attack[NL]
 going on over in Tristan![A]
 [MidRight]
 #Devan
-...mmm...ugh...[A]
+[Beat]mmm[Beat][OpenEyes]ugh[Beat][A]
 [FarFarLeft]
 #Ronni
 You might want to get up sometime[NL]
@@ -15,7 +15,7 @@ today, those bandits probably won't[NL][A]
 wait for you to finish your nap.[A]
 [MidRight]
 #Devan
-...[.....]Tell the troops we sortie[NL]
+[ToggleMouthMove]...[.....][ToggleMouthMove]Tell the troops we sortie[NL]
 in fifteen minutes.[A]
 [FarFarLeft]
 #Ronni

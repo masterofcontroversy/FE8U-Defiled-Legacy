@@ -1,0 +1,112 @@
+EventPointerTable(7,MyEvents) //7 is the ID for prologue events in vanilla FE8
+
+MyEvents:
+
+POIN TurnBasedEvents
+
+POIN CharacterBasedEvents
+
+POIN LocationBasedEvents
+
+POIN MiscBasedEvents
+
+POIN Dunno Dunno Dunno
+
+POIN Tutorial
+
+POIN TrapData TrapData
+
+POIN PlayerUnits PlayerUnits
+
+POIN $0 $0 $0 $0 $0 $0
+
+POIN BeginningScene EndingScene
+
+Dunno:
+WORD $00
+
+Tutorial:
+WORD $00
+
+TrapData:
+ENDTRAP
+ALIGN 4
+
+TurnBasedEvents:
+TurnEventPlayer(0xC,Timeup,9)
+END_MAIN
+
+ALIGN 32
+LocationBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+CharacterEventBothWays(8,Ch1_DevanRonni,Devan,Ronni)
+CharacterEventBothWays(9,Ch1_DevanKenneth,Devan,Kenneth)
+CharacterEventBothWays(0xA,Ch1_KennethRonni,Kenneth,Ronni)
+CharacterEventBothWays(0xB,Ch1_AnthonyKenneth,Anthony,Kenneth)
+END_MAIN
+
+MiscBasedEvents:
+DefeatAll(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+BeginningScene:
+SetBackground(0x0E)
+Text(Ch1_WakeUp)
+EndConvo
+SetBackground(0x2F)
+Text(Ch1_Family)
+EndConvo
+SetBackground(0x0A)
+Text(Ch1_Bravery)
+EndConvo
+SetBackground(0x1B)
+Text(Ch1_Sortie)
+EndConvo
+SetBackground(0x18)
+Text(Ch1_Trail)
+EndConvo
+
+LOAD1 0 EnemyUnits
+
+ENUN
+
+LOAD1 1 PlayerUnits
+
+ENUN
+
+Text(Ch1_Targets_Found)
+
+ENDA
+
+EndingScene:
+SetBackground(0x18)
+Text(Ch1_Mercy)
+EndConvo
+
+MNC2 0x1
+ENDA
+
+PlayerUnits:
+UNIT Devan Duke Devan Level(1,Ally,0) [11,10] 0x0 0x0 0x0 0x1 [IronLance, Javelin, Vulnerary] NoAI
+UNIT Ronni Ranger_F Devan Level(1,Ally,0) [10,11] 0x0 0x0 0x0 0x1 [IronBow, SteelBow, Vulnerary] NoAI
+UNIT Anthony Mercenary Devan Level(1,Ally,0) [5, 11] 0x0 0x0 0x0 0x1 [IronSword, Vulnerary] NoAI
+UNIT Kenneth Cavalier Devan Level(1,Ally,0) [6, 12] 0x0 0x0 0x0 0x1 [IronLance, IronSword, Vulnerary] NoAI
+
+UNIT
+
+EnemyUnits:
+UNIT 0x67 Brigand 0x67 Level(3,Enemy,1) [13,0] 0x0 0x0 0x0 0x1 [SteelAxe, HandAxe] AttackInRangeAI
+UNIT 0x64 Brigand 0x67 Level(2,Enemy,1) [2,6] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT 0x64 Brigand 0x67 Level(1,Enemy,1) [3,6] 0x0 0x0 0x0 0x1 [IronAxe] NoAI
+UNIT 0x64 Mercenary 0x67 Level(3,Enemy,1) [0,5] 0x0 0x0 0x0 0x1 [SteelSword] NoAI
+UNIT 0x64 Mercenary 0x67 Level(1,Enemy,1) [10,2] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+UNIT 0x64 Mercenary 0x67 Level(2,Enemy,1) [11,0] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+UNIT 0x64 Brigand 0x67 Level(2,Enemy,1) [9,2] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT 0x64 Brigand 0x67 Level(1,Enemy,1) [14,1] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT 0x64 Deserter 0x67 Level(2,Enemy,1) [0,7] 0x0 0x0 0x0 0x1 [IronLance] NoAI
+UNIT 0x64 Deserter 0x67 Level(3,Enemy,1) [11,3] 0x0 0x0 0x0 0x1 [IronLance, Javelin] AttackInRangeAI
+
+UNIT

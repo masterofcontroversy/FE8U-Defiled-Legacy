@@ -85,3 +85,12 @@ AxeArmorStanding:
 ALIGN 4
 AxeArmorMoving:
 #incbin "Axe Armor Moving.dmp"
+
+//Deserter map sprites
+ALIGN 4
+DeserterStanding:
+#incbin "Deserter Standing.dmp"
+
+ALIGN 4
+DeserterMoving:
+#incbin "Deserter Moving.dmp"

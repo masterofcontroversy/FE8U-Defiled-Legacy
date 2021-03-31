@@ -113,4 +113,10 @@ AnimPointer(Lance,01,FalkoknightLance)
 AnimPointer(Staff,01,FalkoknightStaff)
 AnimPointer(Unarmed,01,FalkoknightUnarmed)
 
+//Deserter Animation Pointer
+ALIGN 4
+DeserterAnimPoint:
+AnimPointer(Lance,01,DeserterLance)
+AnimPointer(Unarmed,01,DeserterUnarmed)
+
 //Baron Animation Pointer

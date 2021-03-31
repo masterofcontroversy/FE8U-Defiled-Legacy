@@ -92,5 +92,9 @@ PUSH
   #include "Armor KnightHandaxe Installer.event"
   #include "Armor KnightUnarmed Installer.event"
 
+  //Deserter
+  #include "DeserterLance Installer.event"
+  #include "DeserterUnarmed Installer.event"
+
   MESSAGE Animation storage B from AnimSpaceB to currentOffset
 POP

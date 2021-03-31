@@ -11,9 +11,6 @@ HP Bars[.][X]
 # 0x00B2
 Set health bar display[X]
 
-# 0x160 PrologueChName
-Boss Rush[X]
-
 #0x3A LearnedSkillText
 #first text ID in the free block
 Learned  [X]
@@ -105,3 +102,5 @@ Mov[X]
 #include "Names/ClassNames.txt"
 
 #include "Names/CharNames.txt"
+
+#include "Names/ChapterNames.txt"

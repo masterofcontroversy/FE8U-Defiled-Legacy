@@ -12,7 +12,7 @@ source_rom="$base_dir/FE8_clean.gba"
 main_event="$base_dir/ROM Buildfile.event"
 
 target_rom="$base_dir/Build1.6.gba"
-target_ups="$base_dir/Build1.6.ups" # unused, but kept for symmetry with MAKE HACK_full.cmd
+target_ups="$base_dir/Buuild1.6.ups" # unused, but kept for symmetry with MAKE HACK_full.cmd
 
 # defining tools
 
@@ -56,8 +56,7 @@ if [[ $1 != quick ]]; then
   echo "Processing text"
 
   cd "$base_dir/Text"
-  echo | $python3 "$textprocess_py" \
-    "text_buildfile.txt" --parser-exe "$parsefile"
+  WINEDEBUG=-all wine "Assemble Text.cmd"
 
   # MAP SPRITES
 

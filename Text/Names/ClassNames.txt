@@ -1,16 +1,40 @@
-## DukeClass
+## DukeName
 Duke[X]
 
 ## DukeDesc
 DukeDesc[X]
 
-## ArchDukeClass
+## ArchDukeName
 ArchDuke[X]
 
 ## ArchDukeDesc
 ArchDukeDesc[X]
 
-## SongstressClass
+## BowKnightName
+Bow Knight[X]
+
+## BowKnightDesc
+BowKnightDesc[X]
+
+## DeserterName
+Deserter[X]
+
+## DeserterDesc
+DeserterDesc[X]
+
+## DragonKnightName
+Dragon Knight[X]
+
+## DragonKnightDesc
+DragonKnightDesc[X]
+
+## DragonMasterName
+Dragon Master[X]
+
+## DragonMasterDesc
+DragonMasterDesc[X]
+
+## SongstressName
 Songstress[X]
 
 ## SongstressDesc
