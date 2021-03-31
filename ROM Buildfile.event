@@ -32,9 +32,8 @@
     #include "Graphics/Custom Animations/_Master Animation Installer.event"
 
     //Events
-    #include "Events/Test Convos.event"
-    #include "Events/Test Event.event"
-
+    #include "Events/Events.event"
+    
     //Maps
     #include "Maps/Tileset Installer.event"
     #include "Maps/Master Map Installer.event"
