@@ -1,0 +1,45 @@
+#!/bin/bash
+#Poorly written by Contro
+
+SELF=$(readlink -f "$0")
+#Function for calling animation assembler
+assemble(){
+  #Defining and conditioning variables
+  FILE=$(basename "$1")
+  FILE_NAME=$(echo $FILE | cut -f 1 -d '.')
+  DIR_NAME=$(dirname "$1")
+  ANIM_DIR="../Graphics/Custom Animations/Yet to be inserted" #Place absolute path to your animation folder inbetween quotes
+  
+  cd "$DIR_NAME"
+
+  #Using wine to call "AA.exe"
+  wine "../Graphics/Custom Animations/Animation Assembler/AA.exe" $FILE #Place absolute path to AA.exe inbetween quotes
+
+  #Taking user input to name each output file
+  echo "Please name the event file ('Installer.event' is automatically added at the end)"
+  read OUTPUT
+
+  #Renaming and moving output file to the Animation folder (In this case, the "Yet to be inserted folder" for conditioning)
+  $(mv "$FILE_NAME Installer.event" "$ANIM_DIR/$OUTPUT Installer.event")
+}
+
+if [ "$1" == "-r" ];
+then
+#Run recursively, on all png files from the current directory onwards
+
+  #Safeguard to make sure hundreds or more files get converted
+  FILE_COUNT=$(find -name "*.bin" -type f | wc -l)
+  if [ $FILE_COUNT -ge 100 ];
+  then
+    echo "ERROR: There are" $FILE_COUNT "files selected for assembly. Ending script"
+    exit
+  else
+    find -name "*.bin" -exec "$SELF" {} \;
+  fi
+
+else
+#Run on one specified file
+assemble "$1"
+
+fi
+
