@@ -22,6 +22,10 @@
 #define GreatLord EphriamMasterLord
 #define BowKnight Ranger
 #define BowKnightF Ranger_F
+#define SwordArmor Knight
+#define LanceArmor Knight_F
+#define AxeArmor General
+#define Deserter 0x37 //(Recruit 2)
 
 //Type Definitions
 #define Sword 0x00
@@ -101,19 +105,19 @@
 #define PaladinUnarmed 0x3C
 #define PaladinFSword 0x3D
 #define PaladinFLance 0x3E
-#define PaladinFUnarmed 0x3F
-#define ArmorKnightLance 0x40
-#define ArmorKnightUnarmed 0x41
-#define ArmorKnightFLance 0x42
-#define ArmorKnightFUnarmed 0x43
-#define GeneralSword 0x44
-#define GeneralLance 0x45
-#define GeneralAxe 0x46
-#define GeneralHandaxe 0x47
-#define GeneralUnarmed 0x48
-#define GeneralFSword 0x49
-#define GeneralFLance 0x4A
-#define GeneralFAxe 0x4B
+#define PaladinFUnarmed 0x3F //Shared with ArchKnightF
+#define ArmorKnightSword 0x40
+#define ArmorKnightLance 0x41
+#define ArmorKnightAxe 0x42
+#define ArmorKnightHandaxe 0x43
+#define ArmorKnightUnarmed 0x44
+#define GeneralSword 0x45
+#define GeneralLance 0x46
+#define GeneralAxe 0x47
+#define GeneralHandaxe 0x48
+#define GeneralUnarmed 0x49
+#define DeserterLance 0x4A
+#define DeserterUnarmed 0x4B
 #define GeneralFHandaxe 0x4C
 #define GeneralFUnarmed 0x4D
 #define GreatKnightSword 0x4E
