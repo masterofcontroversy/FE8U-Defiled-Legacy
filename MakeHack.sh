@@ -82,9 +82,9 @@ cd "$base_dir/Event Assembler"
 WINEDEBUG=-all wine ColorzCore.exe A FE8 "-output:$target_rom" "-input:$main_event"
 
 # TODO: generate patch (would require a linux version of ups)
-# Thanks to wine, I have a workaround
+# TODO: (From Contro) find out how to get patch generation to work with ubuntu
 
 cd $base_dir
-WINEDEBUG=-all wine ups diff -b $source_rom -m $target_rom -o $target_ups
+WINEDEBUG=-all wine $ups diff -b $source_rom -m $target_rom -o $target_ups
 
 echo "Done!"
