@@ -1,4 +1,5 @@
 *.gba
+*.ups
 /Graphics/Map Sprites/*.dmp
 /Maps/Tilesets/Green Fields Animations/*.dmp
 /Maps/*.dmp
