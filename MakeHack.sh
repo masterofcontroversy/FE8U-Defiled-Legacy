@@ -14,6 +14,8 @@ main_event="$base_dir/ROM Buildfile.event"
 target_rom="$base_dir/Build1.6.gba"
 target_ups="$base_dir/Buuild1.6.ups" # unused, but kept for symmetry with MAKE HACK_full.cmd
 
+export base_dir DMP_DIR
+
 # defining tools
 
 c2ea_py="$base_dir/Tools/C2EA/c2ea.py"
@@ -58,11 +60,17 @@ if [[ $1 != quick ]]; then
   cd "$base_dir/Text"
   WINEDEBUG=-all wine "Assemble Text.cmd"
 
-  # MAP SPRITES
+  # Image Compression
 
   echo compressing map sprites
+  DMP_DIR="$base_dir/Graphics/Map Sprites"
   cd "$base_dir/Graphics/Map Sprites/Images"
-  echo | exec ./PNG2Dmp -r
+  echo | exec $PNG2Dmp -r --move --lz77
+  echo done
+
+  echo compressing tile animations
+  cd "$base_dir/Maps/Tilesets/Green Fields Animations"
+  echo | exec $PNG2Dmp -r
   echo done
 fi
 

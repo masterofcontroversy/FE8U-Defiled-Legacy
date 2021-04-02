@@ -3,22 +3,34 @@
 
 SELF=$(readlink -f "$0")
 
-#Function for calling PNG2Dmp
+#Deciding whether $2 data should be used by script or Png2Dmp
+if [ "$2" != "--move" ]
+then
+  FIRST_WINE_ARG=$2
+else
+  FIRST_WINE_ARG=$3
+fi
+
+#Function for calling Png2Dmp
 convert(){
   #Defining and conditioning arguments
   FILE=$(basename "$1")
   FILE_NAME=$(echo $FILE | cut -f 1 -d '.')
   DIR_NAME=$(dirname "$1")
-  DMP_DIR="../Graphics/Map Sprites/"
-  
+
   cd "$DIR_NAME"
-
+  
+  
   echo "$FILE"
-  #Use wine to call PNG2Dmp.exe
-  wine "../Event Assembler/Tools/PNG2Dmp.exe" --lz77 "$FILE"
+  
+  #Use wine to call Png2Dmp.exe
+  WINEDEBUG=-all wine "$base_dir/Event Assembler/Tools/Png2Dmp" "$FILE" $3 $4 $5 #Place path to Png2Dmp.exe inbetween quotes
 
-  #Moving output files to the dump location
-  $(mv "$FILE_NAME.dmp" "$DMP_DIR/$FILE_NAME.dmp")
+  if [ "$2" == "--move" ]
+  then
+    #Moving output files to the dump location
+    $(mv "$FILE_NAME.dmp" "$DMP_DIR/$FILE_NAME.dmp")
+  fi
 }
 
 if [ "$1" == "-r" ];
@@ -33,13 +45,11 @@ then
     exit
   
   else
-    find -name "*.png" -exec "$SELF" {} \;
+    find -name "*.png" -exec "$SELF" {} $2 $FIRST_WINE_ARG $4 $5 \;
   fi
 
 else
 #Run on one specified file
-convert "$1"
+convert "$1" $2 $FIRST_WINE_ARG $4 $5
 
 fi
-
-

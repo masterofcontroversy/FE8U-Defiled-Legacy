@@ -1,0 +1,9 @@
+*.gba
+/Graphics/Map Sprites/*.dmp
+/Maps/Tilesets/Green Fields Animations/*.dmp
+/Maps/*.dmp
+/Maps/*.event
+
+!Maps/Animation Installer.event
+!Maps/Tileset Installer.event
+!Maps/Tile Animation Installer.event
