@@ -24,7 +24,7 @@ convert(){
   echo "$FILE"
   
   #Use wine to call Png2Dmp.exe
-  WINEDEBUG=-all wine "$base_dir/Event Assembler/Tools/Png2Dmp" "$FILE" $3 $4 $5 #Place path to Png2Dmp.exe inbetween quotes
+  WINEDEBUG=-all wine "$base_dir/Event Assembler/Tools/Png2Dmp.exe" "$FILE" $3 $4 $5 #Place path to Png2Dmp.exe inbetween quotes
 
   if [ "$2" == "--move" ]
   then
