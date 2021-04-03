@@ -1,0 +1,453 @@
+## Ch1_WakeUp
+[MidRight][LoadDevan]
+[CloseEyes][ToggleMouthMove]...[....]zzzzz.....[.....][ToggleMouthMove][A]
+[FarFarLeft][LoadRonni]
+Hey Devan, there's a bandit attack[NL]
+going on over in Tristan![A]
+[MidRight]
+#Devan
+[Beat]mmm[Beat][OpenEyes]ugh[Beat][A]
+[FarFarLeft]
+#Ronni
+You might want to get up sometime[NL]
+today, those bandits probably won't[NL][A]
+wait for you to finish your nap.[A]
+[MidRight]
+#Devan
+[ToggleMouthMove]...[.....][ToggleMouthMove]Tell the troops we sortie[NL]
+in fifteen minutes.[A]
+[FarFarLeft]
+#Ronni
+Roger![A]
+[X]
+
+## Ch1_Family
+[MidLeft][LoadDevan][MidRight][LoadIssac]
+Ah Devan, you're awake.[NL]
+I take it you heard about[NL][A]
+the raid in Tristan?[A]
+[MidLeft]
+#Devan
+Yes Uncle, I heard. I'm leaving in[NL]
+about ten minutes. Of course the[NL][A]
+raid had to happen while I was in[NL]
+the middle of the best sleep I had[NL][A]
+In weeks[A]
+[MidRight]
+#Issac
+Well, the raiders never seemed to be[NL]
+concerned with stealing on when it's[NL][A]
+convient. Before you leave, you[NL]
+should get something to eat.[A]
+[MidLeft]
+#Devan
+I'll be fine. I'll just eat some[NL]
+jerky on the way or something. I'm[NL][A]
+going to the barrocks to check on[NL]
+the troops. While I'm gone hold down[NL][A]
+the fort.[A]
+[MidRight]
+#Issac
+Alright. Safe travels.[A]
+[X]
+
+## Ch1_Bravery
+[MidRight][LoadDevan]
+Ronni![A]
+[MidLeft][LoadRonni]
+Yeah?[A]
+[MidRight]
+#Devan
+How are the preperations[NL]
+to leave going?[A]
+[MidLeft]
+#Ronni
+Great...[....] 'cept for Kenny.[A]
+[MidRight]
+#Devan
+Let me guess: He's getting the shakes.[A]
+[MidLeft]
+#Ronni
+Yup.[A]
+[MidRight]
+#Devan
+*sigh*... I'll handle it.[A]
+[MidRight][ClearFace][MidLeft][ClearFace]
+[Right][LoadKenneth][MidRight][LoadDevan]
+#Devan
+Kenneth.[A]
+[Right][MoveMidLeft]
+[MidLeft][ClearFace][LoadKenneth]
+[MidLeft]
+#Kenneth
+Ah...[.....] Duke Devan![A]
+[MidRight]
+#Devan
+How many times do I have to tell[NL]
+you to stop calling me that? It[NL][A]
+Sounds like the title of some[NL]
+children's song.[A]
+[MidLeft]
+#Kenneth
+Oh. I'm sorry Lord Devan.[A]
+[MidRight]
+#Devan
+Nevermind that. I heard[NL]
+you're getting cold feet?[A]
+[MidLeft]
+#Kenneth
+Well...[.....]yes since this[NL]
+is my first sortie...[A]
+[MidRight]
+#Devan
+What's the problem? The idea of[NL]
+killing on the battle field? The[NL][A]
+possibility of being killed? An[NL]
+injury so bad that it would be[NL][A]
+better to die?[A]
+[MidLeft]
+#Kenneth
+That's about the gist of it, yes.[A]
+[MidRight]
+#Devan
+If that's all your worried about[NL]
+then you should be fine.[A]
+[MidLeft]
+#Kenneth
+Wait, there's more to be worried[NL]
+about?[A]
+[MidRight]
+#Devan
+Kenneth, why did you join my company?[A]
+[MidLeft]
+#Kenneth
+To prove to my sister that[NL]
+I can take care of myself.[A]
+[MidRight]
+#Devan
+If that's the case you made a poor[NL]
+decision. Don't worry, The only[NL][A]
+people that died under my command[NL]
+were either too brave or too stupid[NL][A]
+to follow orders. You're neither, so[NL]
+you should be fine.[A]
+[MidLeft]
+#Kenneth
+Um[ToggleMouthMove]...[.....][ToggleMouthMove]thanks?[A]
+[MidRight]
+#Devan
+Now finish getting ready,[NL]
+we're about to leave.[A]
+[X]
+
+## Ch1_Sortie
+[MidLeft][LoadDevan][MidRight][LoadRonni]
+#Ronni
+We're ready to go Devan.[A]
+[MidLeft]
+#Devan
+Thank you. [A]
+[MidRight][ClearFace]
+[MidLeft]
+#Devan
+Alright! As you know Tristan is[NL]
+currently being raided by bandits![NL][A]
+By the time we get  there, the[NL]
+bandits will already be gone, so[NL][A]
+we will be cutting them off at[NL]
+Edmund's pass! Understood?[A]
+[FarFarRight]
+#Solders
+Yes sir![A]
+[MidLeft]
+#Devan
+Alright. Foward![A]
+[X]
+
+## Ch1_Trail
+[MidLeft][LoadRonni]
+Lord Devan, I found some tracks![A]
+[MidRight][LoadDevan]
+They're fresh. We just missed them.[NL]
+Tell the rear guard to protect the[NL][A]
+village. We'll be able to chase the[NL]
+raiders faster with fewer numbers.[A]
+[MidLeft]
+#Ronni
+Aye aye.[A]
+[MidLeft][ClearFace][MidRight][ClearFace]
+[MidLeft][LoadKenneth][ToggleMouthMove]
+(Whew, no bandits. Maybe I can stay[NL]
+with the rear guard.)[ToggleMouthMove][NL][A]
+[MidRight][LoadAnthony]
+Hey, new Blood.[A]
+[MidLeft]
+#Kenneth
+Huh?[A]
+[MidRight]
+#Anthony
+Heh, you've got a relieved look on[NL]
+your face. You really think you're[NL][A]
+staying with the rear guard?[A]
+[MidLeft]
+#Kenneth
+Well, I mean, it would make sense[NL]
+since this is my first time.[A]
+[MidRight]
+#Anthony
+You got a horse kid?[A]
+[MidLeft]
+#Kenneth
+Uh[ToggleMouthMove]...[.....][ToggleMouthMove]yes.[A]
+[MidRight]
+#Anthony
+You're going with the advance squad.[NL]
+All mounted solders are a part of[NL][A]
+the advance squad.[A]
+[MidLeft]
+#Kenneth
+Oh[ToggleMouthMove]...[.....][ToggleMouthMove][A]
+[MidRight]
+#Anthony
+Don't worry kid, I'm going too, so[NL]
+maybe you won't get yourself killed.[NL][A]
+Name's Anthony by the way.[A]
+[MidLeft]
+#Kenneth
+[ToggleMouthMove]...[.....][ToggleMouthMove]Kenneth.[A]
+[MidRight][ClearFace]
+[MidLeft]
+#Kenneth
+[ToggleMouthMove]...[.....][ToggleMouthMove]
+Well there goes that. Come on Kenny,[NL]
+you can do this. Show Brittany that[NL][A]
+you can handle yourself.[A]
+[X]
+
+## Ch1_Targets_Found
+[MidRight][LoadDevan]
+This is it. I can see some[NL]
+stragglers. Kenneth, Ronni,[NL][A]
+Anthony, you're with me. The rest[NL]
+of you, handle the surrounding area.[A]
+[X]
+
+## Ch1_Mercy
+#NOTE: Use Portrait 4D for the bandit
+[Right][LoadDevan][FarRight][LoadRonni]
+[MidLeft][LoadFace][0x4D][0x1]
+[Right]
+#Devan
+I don't have much time to waste,[NL]
+so I'll be blunt. Where are the rest[NL][A]
+of the bandits going?[A]
+[MidLeft]
+#Bandit
+[ToggleMouthMove]...[.....][ToggleMouthMove][A]
+[Right]
+#Devan
+Not saying anything huh? You don't[NL]
+have any reason to not tell me. You[NL][A]
+have the choice between a slow[NL]
+agonizing death or a rare display[NL][A]
+of mercy. Which one will it be?[A]
+[MidLeft]
+#Bandit
+[ToggleMouthMove]...[.....][ToggleMouthMove]All they told me was that we[NL]
+were headed north.[A]
+[Right]
+#Devan
+Thank you[ToggleMouthMove]...[.....][ToggleMouthMove] Execute him,[NL]
+and make it swift.[A]
+[MidLeft]
+#Bandit
+Wait, what?[A]
+[FarLeft][LoadFace][0x6A][0x1]
+[MidLeft][ClearFace][FarLeft][ClearFace]
+[FarFarLeft]
+#Bandit
+No! NOOO![A]
+[FarRight]
+#Ronni
+Man, I hate it when you do that.[A]
+[Right]
+#Devan
+[ToggleMouthMove]...[.....][ToggleMouthMove][A]
+[Right][ClearFace][FarRight][ClearFace]
+
+[Right][LoadKenneth]
+[FarRight][LoadAnthony]
+[Right]
+#Kenneth
+My gods... What did I just see?[A]
+[FarRight]
+#Anthony
+About the norm I'd say. Oh,[NL]
+that's right, you're new.[A]
+[Right]
+#Kenneth
+Didn't Lord Devan say he[NL]
+would show that bandit mercy?[A]
+[FarRight]
+#Anthony
+Yeah, he did. Normally when he has[NL]
+someone executed, the death is very[NL][A]
+long and drown out. That sucker's going[NL]
+to die a fast death.[A]
+[Right]
+#Kenneth
+But we captured him! Shouldn't[NL]
+we imprison him and make[NL][A]
+him stand trial?[A]
+[Left][LoadDevan][FarLeft][LoadRonni]
+[Left]
+#Devan
+Trust me, it's never[NL]
+worth the trouble.[A]
+[Right]
+#Kenneth
+Lord Devan!![A]
+[Left]
+#Devan
+If we have them stand trial they[NL]
+will still die for their crimes.[NL][A]
+The only difference is that their[NL]
+families will get more involved than[NL][A]
+usual. And no one Likes dealing[NL]
+with that.[A]
+[Right]
+#Kenneth
+Wait, you mean these bandits[NL]
+have families? how many?[A]
+[FarRight]
+#Anthony
+Just about all of 'em.[A]
+[Right]
+If these men have families to take[NL]
+care of, why did they[NL][A]
+become[ToggleMouthMove]...[.....][ToggleMouthMove] bandits[ToggleMouthMove]...[.....][ToggleMouthMove][A]
+[FarLeft]
+#Ronni
+Yeah, pretty sad huh? Our nation[NL]
+is so poor that a lot of regular[NL][A]
+people have to resort to banditry to[NL]
+feed themselves and their families.[A]
+[Left]
+#Devan
+It's been like this for generations,[NL]
+and I don't see it getting better[NL][A]
+anytime soon.[A]
+[Right]
+#Kenneth
+That's terrible.[A]
+[FarRight]
+That's the state of our country.[NL]
+Sorry kid, I don't like it any more[NL][A]
+than you do, maybe even less, but[NL]
+that's just how it is.[A]
+[Left]
+#Devan
+Anthony, do you know of any[NL]
+bandit hideouts north of here?[A]
+[FarRight]
+#Anthony
+Yeah, there were a few old places.[NL]
+Let me get a map.[A]
+[FarRight][ClearFace]
+[Left]
+#Devan
+Ronni, you coming?[A]
+[FarLeft]
+#Ronni
+Nah. I think I'll talk to Kenny for a bit.[A]
+[Left]
+#Devan
+Alright.[A]
+[Left][ClearFace]
+[Right]
+#Kenneth
+Forced to fight your own people on[NL]
+a regular basis[ToggleMouthMove]...[.....][ToggleMouthMove] No wonder the[NL][A]
+military is so somber. And Lord[NL]
+Devan[ToggleMouthMove]...[.....][ToggleMouthMove] Hey Ronni, why does Lord[NL][A]
+Devan let you speak so casually[NL]
+to him?[A]
+[FarLeft]
+#Ronni
+Hmm? I guess I droped the title a[NL]
+bit too much eh? Well, It was about[NL][A]
+six years ago when we met. Devan was[NL]
+a year away from inheriting the[NL][A]
+throne and-
+[Right]
+#Kenneth
+Lord Devan asended to the[NL]
+throne at age twelve?[A]
+[FarLeft]
+#Ronni
+Yup. Anyway, my mom and I were poor,[NL]
+so when my mom was offered a job at[NL][A]
+the castle it was basically a[NL]
+no-brainer. After we moved into the[NL][A]
+servant's quarters I decided to do[NL]
+some exploring.[A]
+[Right]
+#Kenneth
+You mean snooping around in places[NL]
+you weren't supposed to be?[A]
+[FarLeft]
+#Ronni
+Yes. While I was "snooping", I found[NL]
+Devan working on his lance arm. He[NL][A]
+was so focused on the dummy he didn't[NL]
+notice me come in. He was wearing[NL][A]
+training armor so I thought he was a[NL]
+recruit, so I decided to[ToggleMouthMove]...[.....][ToggleMouthMove]ah[ToggleMouthMove]...[.....][ToggleMouthMove]teach[NL][A]
+him the importance of the element[NL]
+of surprise.[A]
+[Right]
+#Kenneth
+You snuck up on Lord Devan?[A]
+[FarLeft]
+#Ronni
+You like asking questions with[NL]
+obvious answers don't you?[A]
+[Right]
+#Kenneth
+Oh, sorry.[A]
+[FarLeft]
+#Ronni
+Moving on... I got a little closer[NL]
+to Devan, stayed just out of spear [NL][A]
+range and then said hi. Turns out I[NL]
+underestimated His reach. He turned[NL][A]
+around and swept his lance at my[NL]
+feet knocking me down. Then he[NL][A]
+pointed it at me demanding to know[NL]
+who I was. While I laughed at him he[NL][A]
+prodded his lance at my chest[NL]
+accusing me of being a thief. It[NL][A]
+then dawned on me that I was talking[NL]
+to the young prince of the castle. I[NL][A]
+asked who he was, he answered, then[NL]
+I explained myself. After getting a[NL][A]
+very long lecture from my mom for[NL]
+almost making her lose her new job,[NL][A]
+Devan and I started the slow[NL]
+process of becoming freinds.[A]
+
+#NOTE: And the award for biggest wall of text goes to Ronni!
+
+[FarFarLeft]
+#Devan
+Ronni! Kenneth! We're leaving![A]
+[FarLeft]
+#Ronni
+Welp, there's the call of duty.[NL]
+Better get going.[A]
+[FarLeft][ClearFace]
+[Right]
+#Kenneth
+[ToggleMouthMove]...[.....][ToggleMouthMove]So Lord Devan was tough[NL]
+even at a young age.[A]
+[X]

@@ -1,0 +1,213 @@
+## Ch1Convo_DevanRonni
+
+[MidLeft][LoadDevan][MidRight][LoadRonni]
+#Ronni
+[ToggleMouthMove]...[ToggleMouthMove][A]
+[MidLeft]
+#Devan
+[ToggleMouthMove]...[ToggleMouthMove][A]
+[MidRight]
+#Ronni
+[ToggleMouthMove]...[ToggleMouthMove]So, Are we going to talk or something?[A]
+[MidLeft]
+#Devan
+About what? We're in[NL]
+the middle of a skirmish.[A]
+[MidRight]
+#Ronni
+Given our experience we should be[NL]
+able to talk and fight at the same[NL][A]
+time. Tell me about what you were[NL]
+dreaming about earlier today.[A]
+[MidLeft]
+#Devan
+It wasn't anything special, just a[NL]
+peaceful day without having to fight[NL][A]
+a perpectual war against obscene crime.[A]
+[MidRight]
+#Ronni
+Right, simple stuff. Can you[NL]
+imagine life without having to[NL][A]
+fight? We'd be able to worry about[NL]
+normal things[ToggleMouthMove]...[.......][ToggleMouthMove] That'd be nice.[A]
+[MidLeft]
+#Devan
+There's no point in fantasizing about[NL]
+something that's never happening. I'm[NL][A]
+pressing on, make sure to not get[NL]
+flanked.[A]
+[MidLeft][ClearFace]
+[MidRight]
+This is really getting to him[ToggleMouthMove]...[.....][ToggleMouthMove][A]
+[X]
+
+## Ch1Convo_DevanKenneth
+
+[MidLeft][LoadKenneth]
+#Kenneth
+Whew.[A]
+[MidRight][LoadDevan]
+#Devan
+Getting tired already?[A]
+[MidLeft]
+#Kenneth
+Oh, ah. No sir.[NL]
+I'm good to go for hours.[A]
+[MidRight]
+#Devan
+I was talking more about[NL]
+your mental state. This[NL][A]
+is your first battle after all.[A]
+[MidLeft]
+#Kenneth
+Well[ToggleMouthMove]...[.....][ToggleMouthMove]in that case, I'm doing[NL]
+pretty bad I guess.[NL][A]
+I'm amazed I haven't thrown up.[A]
+[MidRight]
+#Devan
+For someone so uncomfortable with[NL]
+fighting, you're awfully skilled[NL][A]
+with weaponry.[A]
+[MidLeft]
+#Kenneth
+That's thanks to my sister. She's a[NL]
+knight in the holy kingdom, she[NL][A]
+tought me how to use a sword and[NL]
+lance mostly for self defense.[NL][A]
+The time I spent training with[NL]
+the other recruits helped me[NL][A]
+polish those skills.[A]
+[MidRight]
+#Devan
+I see... Then in that case maybe[NL]
+I can rely on you to keep up with[NL][A]
+me. Let's go.[A]
+[MidLeft]
+#Kenneth
+Yes sir![A]
+[MidLeft][ClearFace]
+[MidRight]
+#Devan
+Oh, and Kenneth![A]
+[MidLeft][LoadKenneth]
+#Kenneth
+Yes?[A]
+[MidRight]
+#Devan
+You probably should use your sword[NL]
+against the brigands instead of[NL][A]
+that lance.[A]
+[MidLeft]
+#Kenneth
+Oh. Oops. Hehe[ToggleMouthMove]...[.....][ToggleMouthMove][A]
+[X]
+
+## Ch1Convo_KennethRonni
+
+[MidLeft][LoadKenneth]
+[MidRight][LoadRonni]
+#Ronni
+Hey Kenny, how're you holding up?[A]
+[MidLeft]
+#Kenneth
+About as well as expected I guess.[A]
+[MidRight]
+#Ronni
+I wouldn't worry if I were you,[NL]
+these are just a few bandit[NL][A]
+stragglers. They normally don't come[NL]
+in such small numbers. Just make[NL][A]
+sure not to go too far ahead and[NL]
+you should be fine.[A]
+[MidLeft]
+#Kenneth
+Say Ronni, how long have you been[NL]
+in the Duramontis army?[A]
+[MidRight]
+#Ronni
+Oh, about three years give[NL]
+or take a month. Why?[A]
+[MidLeft]
+#Kennth
+That long huh? I'm not sure I could[NL]
+handle this for that long, and be[NL][A]
+so laid back about it no less.[A]
+[MidRight]
+#Ronni
+It gets easier to deal with[NL]
+in time. Though I suppose[NL][A]
+that doesn't apply to Devan.[A]
+[MidLeft]
+#Kenenth
+You're on a first name[NL]
+basis with Lord Devan?[NL][A]
+[MidRight]
+#Ronni
+Woops. Didn't mean to let that slip.[NL]
+Yeah, we knew each other since we[NL][A]
+were kids. We met about a year[NL]
+before Devan inherited the throne[NL][A]
+and- Oh! There goes a bandit. Let's[NL]
+talk about this later.[A]
+[MidRight][ClearFace]
+[MidLeft]
+#Kenneth
+...Did she just ride towards[NL]
+the enemy ahead of me?[A]
+[X]
+
+## Ch1Convo_AnthonyKenneth
+
+[MidLeft][LoadAnthony]
+[MidRight][LoadKenneth]
+#Kenneth
+Hey, Anthony?[A]
+[MidLeft]
+#Anthony
+Yeah, Kid?[A]
+[MidRight]
+#Kenneth
+I was thinking about what you said[NL]
+earlier. About mounted solders being[NL][A]
+in the advance team.[A]
+[MidLeft]
+#Anthony
+And?[A]
+[MidRight]
+#Kenneth
+Why are you here? You don't ride a[NL]
+horse or seem to be a commander.[NL][A]
+Wouldn't it make more sense for you[NL]
+to guard the village with the[NL][A]
+infantry?[A]
+[MidLeft]
+#Anthony
+Maybe, but I have somethin' very[NL]
+useful for huntin' down bandits.[A]
+[MidRight]
+#Kenneth
+What?[A]
+[MidLeft]
+#Anthony
+Experience workin' with em.[A]
+[MidRight]
+#Kenneth
+You mean you used to be a raider?[A]
+[MidLeft]
+#Anthony
+Yup. Just like the men you see here,[NL]
+I got in a bad way and turned to[NL][A]
+pillaging as a source of food.[A]
+[MidRight]
+#Kennth
+So, how did you end up[NL]
+working for Lord Devan?[A]
+[MidLeft]
+#Anthony
+It's a long story, and we don't have[NL]
+the time. Tell ya what? If you live[NL][A]
+long enough, I might tell you.[A]
+[MidRight]
+#Kenneth
+I'll try.[A]
+[X]
