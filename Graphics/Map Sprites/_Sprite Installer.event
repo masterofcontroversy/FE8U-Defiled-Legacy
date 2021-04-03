@@ -53,11 +53,7 @@ ALIGN 4
 DragonKnightFMoving:
 #incbin "Wyvern Rider (F) Axe Moving.dmp"
 
-//Dragon Master (F) map sprites
-
-
-//Dragon Master (F) map sprites
-
+//Dragon Master (U) map sprites
 
 //Sword Armor map sprites
 ALIGN 4
@@ -94,3 +90,21 @@ DeserterStanding:
 ALIGN 4
 DeserterMoving:
 #incbin "Deserter Moving.dmp"
+
+//Wagon map sprites
+ALIGN 4
+WagonStanding:
+#incbin "Wagon Standing.dmp"
+
+ALIGN 4
+WagonMoving:
+#incbin "Wagon Moving.dmp"
+
+//Torch map sprites
+ALIGN 4
+TorchStanding:
+#incbin "Torch Standing.dmp"
+
+ALIGN 4
+TorchMoving:
+#incbin "Torch Moving.dmp"

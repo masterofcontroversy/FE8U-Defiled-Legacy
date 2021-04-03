@@ -1,6 +1,6 @@
 *.gba
 *.ups
-/Tools/C2EA__pycache__
+*.pyc
 /Graphics/Map Sprites/*.dmp
 /Maps/Tilesets/Green Fields Animations/*.dmp
 /Maps/*.dmp

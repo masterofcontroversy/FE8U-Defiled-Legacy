@@ -4,9 +4,10 @@ ROM hack of Fire Emblem 8
 ## Building Instructions
 ### For linux (I use Arch btw):  
 Install wine and wintricks, use winetricks to install .Net  
+Use wine to run tmx2ea.ext to build the maps  
 If python gives you an error saying that it can't find "libffi.so.6", create a syslink from "libffi.so.6" to "libffi.so.7"
 then run MakeHack.  
-(Tested in Ubuntu Arch, and Fedora) (Patching does not work on Ubuntu)
+(Tested in Ubuntu, Arch, and Fedora) (Patching does not work on Ubuntu)
 
 ### Windows:
 Unfortunatly, I haven't written any scripts for building with Windows since I don't use it that often. I will be making one soon though.  
