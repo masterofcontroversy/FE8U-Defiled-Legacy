@@ -44,6 +44,7 @@ ALIGN 4
 DragonKnightMoving:
 #incbin "Wyvern Rider (M) Axe Moving.dmp"
 
+
 //Dragon Knight (F) map sprites
 ALIGN 4
 DragonKnightFStanding:
@@ -53,7 +54,16 @@ ALIGN 4
 DragonKnightFMoving:
 #incbin "Wyvern Rider (F) Axe Moving.dmp"
 
+
 //Dragon Master (U) map sprites
+ALIGN 4
+DragonMasterStanding:
+#incbin "Wyvern Knight (U) Axe Standing.dmp"
+
+ALIGN 4
+DragonMasterMoving:
+#incbin "Wyvern Knight (U) Axe Moving.dmp"
+
 
 //Sword Armor map sprites
 ALIGN 4
@@ -64,6 +74,7 @@ ALIGN 4
 SwordArmorMoving:
 #incbin "Sword Armor Moving.dmp"
 
+
 //Lance Armor map sprites
 ALIGN 4
 LanceArmorStanding:
@@ -72,6 +83,7 @@ LanceArmorStanding:
 ALIGN 4
 LanceArmorMoving:
 #incbin "Lance Armor Moving.dmp"
+
 
 //Axe Armor map sprites
 ALIGN 4
@@ -82,6 +94,7 @@ ALIGN 4
 AxeArmorMoving:
 #incbin "Axe Armor Moving.dmp"
 
+
 //Deserter map sprites
 ALIGN 4
 DeserterStanding:
@@ -91,6 +104,7 @@ ALIGN 4
 DeserterMoving:
 #incbin "Deserter Moving.dmp"
 
+
 //Wagon map sprites
 ALIGN 4
 WagonStanding:
@@ -99,6 +113,7 @@ WagonStanding:
 ALIGN 4
 WagonMoving:
 #incbin "Wagon Moving.dmp"
+
 
 //Torch map sprites
 ALIGN 4
