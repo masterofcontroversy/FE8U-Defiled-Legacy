@@ -1,0 +1,57 @@
+#!/bin/bash
+#Poorly written by Contro
+
+SELF=$(readlink -f "$0")
+
+#Deciding whether $2 data should be used by script or Png2Dmp
+if [ "$2" != "--move" ]
+then
+  FIRST_WINE_ARG=$2
+else
+  FIRST_WINE_ARG=$3
+fi
+
+#Function for calling Png2Dmp
+convert(){
+  #Defining and conditioning arguments
+  FILE=$(basename "$1")
+  FILE_NAME=$(echo $FILE | cut -f 1 -d '.')
+  DIR_NAME=$(dirname "$1")
+  
+  cd "$DIR_NAME"
+
+  echo "$FILE"
+  #Use wine to call Png2Dmp.exe
+  WINEDEBUG=-all wine "$base_dir/Event Assembler/Tools/PortraitFormatter.exe" "$FILE" #Place path to PortraitFormatter.exe inbetween quotes
+
+  #if [ "$2" == "--move" ]
+  #then
+  
+    $(mv "${FILE_NAME}_frames.dmp" $DMP_DIR)
+    $(mv "${FILE_NAME}_palette.dmp" $DMP_DIR)
+    $(mv "${FILE_NAME}_mug.dmp" $DMP_DIR)
+    $(mv "${FILE_NAME}_minimug.dmp" $DMP_DIR)
+
+    #fi
+}
+
+if [ "$1" == "-r" ];
+then
+#Run recursively, on all png files from the current directory onwards
+
+  #Safeguard to make sure hundreds or more files don't get converted
+  FILE_COUNT=$(find -name "*.png" -type f | wc -l)
+  if [ $FILE_COUNT -ge 100 ];
+  then
+    echo "ERROR: There are" $FILE_COUNT "files selected for conversion. Ending script"
+    exit
+  
+  else
+    find -name "*.png" -exec "$SELF" {} \;
+  fi
+
+else
+#Run on one specified file
+convert "$1"
+
+fi
