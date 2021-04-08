@@ -1,4 +1,4 @@
-#include "Portraits/Portraits.event"
+#include "Portraits/_Portrait Installer.event"
 #include "Map Sprites/_Sprite Installer.event"
 #include "Custom Animations/Palettes/Palette Installer.event"
 #include "Custom Animations/_Pointer Installer.event"

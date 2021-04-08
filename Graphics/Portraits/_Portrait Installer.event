@@ -1,0 +1,38 @@
+//Devan
+ALIGN 4
+DevanPortrait:
+#incbin "Devan_mug.dmp"
+#incbin "Devan_frames.dmp"
+#incbin "Devan_palette.dmp"
+#incbin "Devan_minimug.dmp"
+
+//Ronni
+ALIGN 4
+RonniPortrait:
+#incbin "Ronni_mug.dmp"
+#incbin "Ronni_frames.dmp"
+#incbin "Ronni_palette.dmp"
+#incbin "Ronni_minimug.dmp"
+
+//Anthony
+ALIGN 4
+AnthonyPortrait:
+#incbin "Anthony_mug.dmp"
+#incbin "Anthony_frames.dmp"
+#incbin "Anthony_palette.dmp"
+#incbin "Anthony_minimug.dmp"
+
+//Kenneth (More temperary than the others)
+ALIGN 4
+KennethPortrait:
+#incbin "Kenneth (Bloopy MB r4)_mug.dmp"
+#incbin "Kenneth (Bloopy MB r4)_frames.dmp"
+#incbin "Kenneth (Bloopy MB r4)_palette.dmp"
+#incbin "Kenneth (Bloopy MB r4)_minimug.dmp"
+
+//setMugEntry(<mugindex>,<portrait label>,<mouth X>,<mouth Y>,<eye X>,<eye Y>)
+
+setMugEntry(0x02,DevanPortrait,3,5,3,3)
+setMugEntry(0x04,RonniPortrait,4,6,4,4)
+setMugEntry(0x05,AnthonyPortrait,3,5,3,3)
+setMugEntry(0x06,KennethPortrait,3,6,3,4)

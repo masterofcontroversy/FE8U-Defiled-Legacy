@@ -71,7 +71,7 @@ processImages () {
   echo done
 
   echo compressing portraits
-  DMP_DIR="$base_dir/Graphics/Portraits/Dumps"
+  DMP_DIR="$base_dir/Graphics/Portraits"
   cd "$base_dir/Graphics/Portraits"
   echo | exec $portrait_formatter -r --move
 
