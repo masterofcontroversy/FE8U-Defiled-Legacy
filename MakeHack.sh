@@ -64,21 +64,21 @@ processText () {
 
 #Image compression
 processImages () {
-  #echo compressing map sprites
-  #DMP_DIR="$base_dir/Graphics/Map Sprites"
-  #cd "$base_dir/Graphics/Map Sprites/Images"
-  #echo | exec $PNG2Dmp -r --move --lz77
-  #echo done
+  echo compressing map sprites
+  DMP_DIR="$base_dir/Graphics/Map Sprites"
+  cd "$base_dir/Graphics/Map Sprites/Images"
+  echo | exec $PNG2Dmp -r --move --lz77
+  echo done
 
   echo compressing portraits
   DMP_DIR="$base_dir/Graphics/Portraits/Dumps"
   cd "$base_dir/Graphics/Portraits"
   echo | exec $portrait_formatter -r --move
 
-  #echo compressing tile animations
-  #cd "$base_dir/Maps/Tilesets/Green Fields Animations"
-  #echo | exec $PNG2Dmp -r
-  #echo done
+  echo compressing tile animations
+  cd "$base_dir/Maps/Tilesets/Green Fields Animations"
+  echo | exec $PNG2Dmp -r
+  echo done
 }
 
 case $1 in
@@ -100,13 +100,13 @@ esac
 
 echo "Assembling"
 
-#cd "$base_dir/Event Assembler"
-#WINEDEBUG=-all wine ColorzCore.exe A FE8 "-output:$target_rom" "-input:$main_event"
+cd "$base_dir/Event Assembler"
+WINEDEBUG=-all wine ColorzCore.exe A FE8 "-output:$target_rom" "-input:$main_event"
 
 # TODO: generate patch (would require a linux version of ups)
 # TODO: (From Contro) find out how to get patch generation to work with ubuntu
 
-#cd $base_dir
-#WINEDEBUG=-all wine $ups diff -b $source_rom -m $target_rom -o $target_ups
+cd $base_dir
+WINEDEBUG=-all wine $ups diff -b $source_rom -m $target_rom -o $target_ups
 
 echo "Done!"
