@@ -23,6 +23,7 @@ textprocess_py="$base_dir/Tools/TextProcess/text-process-classic.py"
 parsefile="$base_dir/Event Assembler/Tools/ParseFile"
 ups="$base_dir/Tools/ups/ups.exe"
 PNG2Dmp="$base_dir/Tools/PNG2Dmp"
+portrait_formatter="$base_dir/Tools/portrait-formatter"
 
 # finding correct python version
 
@@ -43,48 +44,69 @@ echo "Copying ROM"
 
 cp -f "$source_rom" "$target_rom" || exit 2
 
-if [[ $1 != quick ]]; then
-  # make hack full
-
-  # TABLES
-
+#Tables
+processTables () {
   echo "Processing tables"
 
   cd "$base_dir/Tables"
   echo | $python3 "$c2ea_py" \
     "$source_rom"
+}
 
-  # TEXT
-
+#Text
+processText () {
   echo "Processing text"
 
   cd "$base_dir/Text"
-    echo | $python3 "$textprocess_py" \
+  echo | $python3 "$textprocess_py" \
     "text_buildfile.txt" --parser-exe "$parsefile"
+}
 
-  # Image Compression
+#Image compression
+processImages () {
+  #echo compressing map sprites
+  #DMP_DIR="$base_dir/Graphics/Map Sprites"
+  #cd "$base_dir/Graphics/Map Sprites/Images"
+  #echo | exec $PNG2Dmp -r --move --lz77
+  #echo done
 
-  echo compressing map sprites
-  DMP_DIR="$base_dir/Graphics/Map Sprites"
-  cd "$base_dir/Graphics/Map Sprites/Images"
-  echo | exec $PNG2Dmp -r --move --lz77
-  echo done
+  echo compressing portraits
+  DMP_DIR="$base_dir/Graphics/Portraits/Dumps"
+  cd "$base_dir/Graphics/Portraits"
+  echo | exec $portrait_formatter -r --move
 
-  echo compressing tile animations
-  cd "$base_dir/Maps/Tilesets/Green Fields Animations"
-  echo | exec $PNG2Dmp -r
-  echo done
-fi
+  #echo compressing tile animations
+  #cd "$base_dir/Maps/Tilesets/Green Fields Animations"
+  #echo | exec $PNG2Dmp -r
+  #echo done
+}
+
+case $1 in
+  tables)
+    processTables
+    ;;
+  text)
+    processText
+    ;;
+  images)
+    processImages
+    ;;
+  full)
+    processTables
+    processText
+    processImages
+    ;;
+esac
 
 echo "Assembling"
 
-cd "$base_dir/Event Assembler"
-WINEDEBUG=-all wine ColorzCore.exe A FE8 "-output:$target_rom" "-input:$main_event"
+#cd "$base_dir/Event Assembler"
+#WINEDEBUG=-all wine ColorzCore.exe A FE8 "-output:$target_rom" "-input:$main_event"
 
 # TODO: generate patch (would require a linux version of ups)
 # TODO: (From Contro) find out how to get patch generation to work with ubuntu
 
-cd $base_dir
-WINEDEBUG=-all wine $ups diff -b $source_rom -m $target_rom -o $target_ups
+#cd $base_dir
+#WINEDEBUG=-all wine $ups diff -b $source_rom -m $target_rom -o $target_ups
 
 echo "Done!"
