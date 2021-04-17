@@ -27,30 +27,6 @@ FieldsAnimation6:
 ALIGN 4
 FieldsAnimation7:
 #incbin "Tilesets/Green Fields Animations/Frame_007.dmp"
-ALIGN 4
-FieldsAnimation8:
-#incbin "Tilesets/Green Fields Animations/Frame_008.dmp"
-ALIGN 4
-FieldsAnimation9:
-#incbin "Tilesets/Green Fields Animations/Frame_009.dmp"
-ALIGN 4
-FieldsAnimation10:
-#incbin "Tilesets/Green Fields Animations/Frame_010.dmp"
-ALIGN 4
-FieldsAnimation11:
-#incbin "Tilesets/Green Fields Animations/Frame_011.dmp"
-ALIGN 4
-FieldsAnimation12:
-#incbin "Tilesets/Green Fields Animations/Frame_012.dmp"
-ALIGN 4
-FieldsAnimation13:
-#incbin "Tilesets/Green Fields Animations/Frame_013.dmp"
-ALIGN 4
-FieldsAnimation14:
-#incbin "Tilesets/Green Fields Animations/Frame_014.dmp"
-ALIGN 4
-FieldsAnimation15:
-#incbin "Tilesets/Green Fields Animations/Frame_015.dmp"
 
 //Bringing them together
 ALIGN 4
@@ -63,12 +39,4 @@ tilesetAnimation(0x1C,0x1000,FieldsAnimation4)
 tilesetAnimation(0x1C,0x1000,FieldsAnimation5)
 tilesetAnimation(0x1C,0x1000,FieldsAnimation6)
 tilesetAnimation(0x1C,0x1000,FieldsAnimation7)
-tilesetAnimation(0x1C,0x1000,FieldsAnimation8)
-tilesetAnimation(0x1C,0x1000,FieldsAnimation9)
-tilesetAnimation(0x1C,0x1000,FieldsAnimation10)
-tilesetAnimation(0x1C,0x1000,FieldsAnimation11)
-tilesetAnimation(0x1C,0x1000,FieldsAnimation12)
-tilesetAnimation(0x1C,0x1000,FieldsAnimation13)
-tilesetAnimation(0x1C,0x1000,FieldsAnimation14)
-tilesetAnimation(0x1C,0x1000,FieldsAnimation15)
 WORD 0 0
