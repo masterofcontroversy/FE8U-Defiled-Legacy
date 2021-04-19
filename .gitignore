@@ -3,7 +3,7 @@
 *.pyc
 Tables/FE8 Nightmare modules/**/*.event
 /Graphics/Map Sprites/*.dmp
-/Graphics/Portraits/Dumps/*.dmp
+/Graphics/Portraits/*.dmp
 /Maps/Tilesets/Green Fields Animations/*.dmp
 /Maps/*.dmp
 /Maps/*.event
