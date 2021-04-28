@@ -15,86 +15,118 @@ PUSH
   //Storing in AnimSpaceA //FULL
   ORG AnimSpaceA
 
-  //Duke (Smooth Animation)
-  #include "DukeLance Installer.event"
-  #include "DukeUnarmed Installer.event"
+  //Duke
+  {
+  #include "Duke Lance Installer.event"
+  #include "Duke Unarmed Installer.event"
+  }
 
   //Lord
-  #include "LordSword Installer.event"
-  #include "LordUnarmed Installer.event"
+  {
+  #include "Lord Sword Installer.event"
+  #include "Lord Unarmed Installer.event"
+  }
 
   //Mercenary
-  #include "MercenarySword Installer.event"
-  #include "MercenaryUnarmed Installer.event"
+  {
+  #include "Mercenary Sword Installer.event"
+  #include "Mercenary Unarmed Installer.event"
+  }
 
   //Hero
-  #include "HeroSword Installer.event"
-  #include "HeroAxe Installer.event"
-  #include "HeroHandaxe Installer.event"
-  #include "HeroUnarmed Installer.event"
+  {
+  #include "Hero Sword Installer.event"
+  #include "Hero Axe Installer.event"
+  #include "Hero Hand Axe Installer.event"
+  #include "Hero Unarmed Installer.event"
+  }
 
   //Cavalier
-  #include "CavalierSword Installer.event"
-  #include "CavalierLance Installer.event"
-  #include "CavalierUnarmed Installer.event"
+  {
+  #include "Cavalier Sword Installer.event"
+  #include "Cavalier Lance Installer.event"
+  #include "Cavalier Unarmed Installer.event"
+  }
 
   //CavalierF
-  #include "CavalierLanceF Installer.event"
-  #include "CavalierSwordF Installer.event"
-  #include "CavalierUnarmedF Installer.event"
+  {
+  #include "CavalierF Lance Installer.event"
+  #include "CavalierF Sword Installer.event"
+  #include "CavalierF Unarmed Installer.event"
+  }
 
   //Pegasus Knight
-  #include "Pegasus KnightSword Installer.event"
+  {
+  #include "Pegasus Knight Sword Installer.event"
+  }
 
   //Dragon Knight (Part one)
-  #include "Dragon KnightAxe Installer.event"
-  #include "Dragon KnightHandaxe Installer.event"
-
+  {
+  #include "Dragon Knight Axe Installer.event"
+  #include "Dragon Knight Hand Axe Installer.event"
+  }
+  
   MESSAGE Animation storage A from AnimSpaceA to currentOffset
 
   //Storing in AnimSpaceB (This ends at FDFFF0)
   ORG AnimSpaceB
 
   //Dragon Knight (Part two)
-  #include "Dragon KnightLance Installer.event"
-  #include "Dragon KnightUnarmed Installer.event"
+  {
+  #include "Dragon Knight Lance Installer.event"
+  #include "Dragon Knight Unarmed Installer.event"
+  }
 
   //Dragon KnightF
-  #include "Dragon KnightFAxe Installer.event"
-  #include "Dragon KnightFHandaxe Installer.event"
-  #include "Dragon KnightFLance Installer.event"
-  #include "Dragon KnightFUnarmed Installer.event"
+  {
+  #include "Dragon KnightF Axe Installer.event"
+  #include "Dragon KnightF Hand Axe Installer.event"
+  #include "Dragon KnightF Lance Installer.event"
+  #include "Dragon KnightF Unarmed Installer.event"
+  }
 
   //Dragon Master
-  #include "Dragon MasterAxe Installer.event"
-  #include "Dragon MasterHandaxe Installer.event"
-  #include "Dragon MasterLance Installer.event"
-  #include "Dragon MasterUnarmed Installer.event"
+  {
+  #include "Dragon Master Axe Installer.event"
+  #include "Dragon Master Hand Axe Installer.event"
+  #include "Dragon Master Lance Installer.event"
+  #include "Dragon Master Unarmed Installer.event"
+  }
 
   //Paladin
-  #include "PaladinSword Installer.event"
-  #include "PaladinLance Installer.event"
-  #include "PaladinUnarmed Installer.event"
+  {
+  #include "Paladin Sword Installer.event"
+  #include "Paladin Lance Installer.event"
+  #include "Paladin Unarmed Installer.event"
+  }
 
   //PaladinF + Bow KnightF
-  #include "PaladinFSword Installer.event"
-  #include "PaladinFLance Installer.event"
-  #include "PaladinFBow Installer.event"
-  #include "PaladinFUnarmed Installer.event"
+  {
+  #include "PaladinF Sword Installer.event"
+  #include "PaladinF Lance Installer.event"
+  #include "PaladinF Bow Installer.event"
+  #include "PaladinF Unarmed Installer.event"
+  }
 
-  //Falkoknight
-  #include "FalkoknightStaff Installer.event"
+  //Falcoknight
+  {
+  #include "Falcoknight Staff Installer.event"
+  }
 
   //Armor Knight
-  #include "Armor KnightSword Installer.event"
-  #include "Armor KnightLance Installer.event"
-  #include "Armor KnightAxe Installer.event"
-  #include "Armor KnightHandaxe Installer.event"
-  #include "Armor KnightUnarmed Installer.event"
+  {
+  #include "Armor Knight Sword Installer.event"
+  #include "Armor Knight Lance Installer.event"
+  #include "Armor Knight Axe Installer.event"
+  #include "Armor Knight Hand Axe Installer.event"
+  #include "Armor Knight Unarmed Installer.event"
+  }
 
   //Deserter
-  #include "DeserterLance Installer.event"
-  #include "DeserterUnarmed Installer.event"
+  {
+  #include "Deserter Lance Installer.event"
+  #include "Deserter Unarmed Installer.event"
+  }
 
   MESSAGE Animation storage B from AnimSpaceB to currentOffset
 POP
