@@ -183,4 +183,6 @@ animation-assembler is only being used as a semi-automatic tool. There isn't any
 with the frame information in the project folder. Especially since the output file still has to be edited by hand. (To my knowlege)
 
 PNG2Dmp is being used in the makehack script to turn the mapsprite png files into dmp files and move them to the "Map Sprite" folder.
-Since I only really use the lz77 compression with Png2Dmp, so This seems an appropriate use for the script.
+Since I only really use the lz77 compression with Png2Dmp, this seems an appropriate use for the script.
+
+As of 4/27/2021, PNG2Dmp is also being used to compress tile animations.
