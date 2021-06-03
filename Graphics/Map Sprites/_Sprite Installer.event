@@ -55,7 +55,7 @@ DragonKnightFMoving:
 #incbin "Wyvern Rider (F) Axe Moving.dmp"
 
 
-//Dragon Master (U) map sprites
+//Dragon Master (M) map sprites
 ALIGN 4
 DragonMasterStanding:
 #incbin "Wyvern Knight (U) Axe Standing.dmp"
@@ -63,6 +63,16 @@ DragonMasterStanding:
 ALIGN 4
 DragonMasterMoving:
 #incbin "Wyvern Knight (U) Axe Moving.dmp"
+
+
+//Dragon Master (F) map sprites
+ALIGN 4
+DragonMasterFStanding:
+#incbin "Wyvern Knight (F) Axe Standing.dmp"
+
+ALIGN 4
+DragonMasterFMoving:
+#incbin "Wyvern Knight (F) Axe Moving.dmp"
 
 
 //Sword Armor map sprites

@@ -4,6 +4,7 @@
 
 setPalette(0x01, DevanDukePal)
 setPalette(0x03, RonniBowKnightPal)
+setPalette(0x04, RonniArchKnightPal)
 setPalette(0x05, AnthonyMercenaryPal)
 setPalette(0x07, KennethCavalierPal)
 
@@ -18,6 +19,11 @@ DevanDukePal:
 ALIGN 4
 RonniBowKnightPal:
 #incbin "Ronni(Bow Knight).dmp"
+
+//Ronni(Arch Knight)
+ALIGN 4
+RonniArchKnightPal:
+#incbin "Ronni(Arch Knight).dmp"
 
 //Anthony(Mercenary)
 ALIGN 4

@@ -30,9 +30,18 @@ KennethPortrait:
 #incbin "Kenneth (Bloopy MB r4)_palette.dmp"
 #incbin "Kenneth (Bloopy MB r4)_minimug.dmp"
 
+//Alexandra
+ALIGN 4
+AlexandraPortrait:
+#incbin "Alexandra_mug.dmp"
+#incbin "Alexandra_frames.dmp"
+#incbin "Alexandra_palette.dmp"
+#incbin "Alexandra_minimug.dmp"
+
 //setMugEntry(<mugindex>,<portrait label>,<mouth X>,<mouth Y>,<eye X>,<eye Y>)
 
 setMugEntry(0x02,DevanPortrait,3,5,3,3)
 setMugEntry(0x04,RonniPortrait,4,6,4,4)
 setMugEntry(0x05,AnthonyPortrait,3,5,3,3)
 setMugEntry(0x06,KennethPortrait,3,6,3,4)
+setMugEntry(0x14,AlexandraPortrait,3,6,3,4)
