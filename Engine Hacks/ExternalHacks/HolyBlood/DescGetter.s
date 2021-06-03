@@ -29,7 +29,7 @@ ldrh r0,[r1]
 b GoBack
 
 BadEnd:
-mov r0,#0xE0
+mov r0,#0xCD
 
 GoBack:
 mov r1,r3
