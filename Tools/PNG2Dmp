@@ -7,12 +7,14 @@ SELF=$(readlink -f "$0")
 if [ "$2" != "--move" ]
 then
   FIRST_WINE_ARG=$2
+  SECOND_WINE_ARG=$3
+  THIRD_WINE_ARG=$4
 else
   FIRST_WINE_ARG=$3
 fi
 
 #Function for calling Png2Dmp
-convert(){
+compress(){
   #Defining and conditioning arguments
   FILE=$(basename "$1")
   FILE_NAME=$(echo $FILE | cut -f 1 -d '.')
@@ -20,9 +22,7 @@ convert(){
 
   cd "$DIR_NAME"
   
-  
   echo "$FILE"
-  
   #Use wine to call Png2Dmp.exe
   WINEDEBUG=-all wine "$base_dir/Event Assembler/Tools/Png2Dmp.exe" "$FILE" $3 $4 $5 #Place path to Png2Dmp.exe inbetween quotes
 
@@ -37,7 +37,7 @@ if [ "$1" == "-r" ];
 then
 #Run recursively, on all png files from the current directory onwards
 
-  #Safeguard to make sure hundreds or more files get converted
+  #Safeguard to make sure hundreds or more files don't get compressed
   FILE_COUNT=$(find -name "*.png" -type f | wc -l)
   if [ $FILE_COUNT -ge 100 ];
   then
@@ -50,6 +50,6 @@ then
 
 else
 #Run on one specified file
-convert "$1" $2 $FIRST_WINE_ARG $4 $5
+compress "$1" $2 $FIRST_WINE_ARG $SECOND_WINE_ARG $THIRD_WINE_ARG
 
 fi

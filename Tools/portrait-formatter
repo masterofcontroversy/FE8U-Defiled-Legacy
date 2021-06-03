@@ -3,16 +3,8 @@
 
 SELF=$(readlink -f "$0")
 
-#Deciding whether $2 data should be used by script or Png2Dmp
-if [ "$2" != "--move" ]
-then
-  FIRST_WINE_ARG=$2
-else
-  FIRST_WINE_ARG=$3
-fi
-
-#Function for calling Png2Dmp
-convert(){
+#Function for calling PortraitFormatter.exe
+compress(){
   #Defining and conditioning arguments
   FILE=$(basename "$1")
   FILE_NAME=$(echo $FILE | cut -f 1 -d '.')
@@ -21,7 +13,7 @@ convert(){
   cd "$DIR_NAME"
 
   echo "$FILE"
-  #Use wine to call Png2Dmp.exe
+  #Use wine to call PortraitFormatter.exe.exe
   WINEDEBUG=-all wine "$base_dir/Event Assembler/Tools/PortraitFormatter.exe" "$FILE" #Place path to PortraitFormatter.exe inbetween quotes
 
   #if [ "$2" == "--move" ]
@@ -39,7 +31,7 @@ if [ "$1" == "-r" ];
 then
 #Run recursively, on all png files from the current directory onwards
 
-  #Safeguard to make sure hundreds or more files don't get converted
+  #Safeguard to make sure hundreds or more files don't get compressed
   FILE_COUNT=$(find -name "*.png" -type f | wc -l)
   if [ $FILE_COUNT -ge 100 ];
   then
@@ -52,6 +44,6 @@ then
 
 else
 #Run on one specified file
-convert "$1"
+compress "$1" "$2"
 
 fi
