@@ -1,7 +1,6 @@
 #ifdef _FE8_
     #include "EAstdlib.event"
     #include "Custom Definitions.event"
-    #include "Unit and Class Definitions.event"
 
     ORG FreeSpace
 
