@@ -32,7 +32,7 @@ Forrest Knight (F),BowKnightFMoving|IsPointer,0x81d3194
 Dragon Knight,DragonKnightMoving|IsPointer,0x81d403c
 Dragon Knight (F),DragonKnightFMoving|IsPointer,0x81d4eec
 Dragon Master,DragonMasterMoving|IsPointer,0x81d7cc8
-Dragon Master (F),DragonMasterMoving|IsPointer,0x81d7cc8
+Dragon Master (F),DragonMasterFMoving|IsPointer,0x81d7cc8
 Wyvern Knight,0x81d6ec4,0x81d7cc8
 Wyvern Knight (F),0x81d6ec4,0x81d7cc8
 Mage,0x81d7e28,0x81d8668
