@@ -61,4 +61,6 @@
 [LoadColton] = [LoadFace][0x11][0x1]
 [LoadLucy] = [LoadFace][0x13][0x1]
 [LoadAlexandra] = [LoadFace][0x14][0x1]
-[LoadIssac] = [LoadFace][0x16][0x1]
+[LoadIsaac] = [LoadFace][0x16][0x1]
+
+[LoadAnna] = [LoadFace][0x64][0x1]

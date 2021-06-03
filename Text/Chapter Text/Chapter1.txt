@@ -22,7 +22,7 @@ Roger![A]
 [X]
 
 ## Ch1_Family
-[MidLeft][LoadDevan][MidRight][LoadIssac]
+[MidLeft][LoadDevan][MidRight][LoadIsaac]
 Ah Devan, you're awake.[NL]
 I take it you heard about[NL][A]
 the raid in Tristan?[A]
@@ -34,7 +34,7 @@ raid had to happen while I was in[NL]
 the middle of the best sleep I had[NL][A]
 In weeks[A]
 [MidRight]
-#Issac
+#Isaac
 Well, the raiders never seemed to be[NL]
 concerned with stealing on when it's[NL][A]
 convient. Before you leave, you[NL]
@@ -47,7 +47,7 @@ going to the barrocks to check on[NL]
 the troops. While I'm gone hold down[NL][A]
 the fort.[A]
 [MidRight]
-#Issac
+#Isaac
 Alright. Safe travels.[A]
 [X]
 

@@ -1,0 +1,109 @@
+## Ch2_Hunger
+[MidLeft][LoadAnthony]
+[MidRight][LoadKenneth]
+[FarLeft][LoadDevan]
+[MidLeft][MoveFarRight][ClearFace][LoadAnthony]
+[MidRight]
+#Kenneth
+Lord Devan[A]
+[FarRight]
+#Anthony
+What're the new orders[A]
+[FarLeft]
+#Devan
+Well, as you know, searching around[NL]
+the old bandit hideouts lead us[A][NL]
+nowhere, so now we're going to be[NL]
+checking the villages starting with[A][NL]
+Evans.[A]
+[FarRight]
+#Anthony
+Evans? what bandit in their[NL]
+right mind would hide there?[A]
+[FarLeft]
+#Devan
+None, which is precisely why I[NL]
+want to do a sweep of the area.[A][NL]
+Maybe Abigail will be willing to[NL]
+give us a bird's eye view.[A]
+[MidRight]
+#Kenneth
+Hold on, why would the bandits not[NL]
+want to go to Evans? And[A][NL]
+who's Abigail?[A]
+[FarRight]
+#Anthony
+I can answer both questions at once.[NL]
+Abigail's an old general from[A][NL]
+Cassis. She retired early to take[NL]
+care of her granddaughter. Everyone[A][NL]
+in Duramontis knows not to mess with[NL]
+her.[A]
+[FarLeft]
+#Devan
+Thanks to her, Evans has the lowest [NL]
+crime rate in the country. Aside[A][NL]
+from the capitol of course.[A]
+[MidRight]
+#Kenneth
+She sounds tough. But why live in[NL]
+Duramontis instead of Cassis or[A][NL]
+Tolva? Wouldn't they be safer locations?[A]
+[FarRight]
+#Anthony
+No idea, but I reckon she's safe[NL]
+just about anywhere she goes.[A]
+[FarLeft]
+#Devan
+Well, regardless of where she lives[NL]
+we're still checking Evans.[A][NL]
+While we're at it we-
+[FarFarLeft]
+#Ronni
+Lord Devan![A]
+[FarFarLeft][LoadRonni]
+[MoveMidLeft]
+[FarLeft]
+#Devan
+Hello Ronni, how was your hunting[NL]
+trip? Get any venison perchance?[A]
+[FarRight]
+#Anthony
+My money's on pork.[A]
+[MidRight]
+#Kenneth
+Please let it be turky.
+[MidLeft]
+#Ronni
+Er...no, I didn't catch any meat.[NL]
+I did see a few bandits though.[A][NL]
+They said that they were going to rob[NL]
+a caravan not far from here.[A]
+[FarLeft]
+#Devan
+A caravan huh? Kenneth, Tell the[NL]
+solders that they are to go in[A][NL]
+pairs to the nearby villages and[NL]
+ask about any caravans or potential[A][NL]
+bandit hideouts.[A]
+[FarRight]
+#Anthony
+And some food.[A]
+[FarLeft]
+#Devan
+...And tell them to[NL]
+get some provisions.[A]
+[MidRight]
+#Kenneth
+Yes sir.[A]
+[MidRight][ClearFace]
+[FarLeft]
+#Anthony
+What do we do now?[A]
+At the moment, wait. The best thing[NL]
+to do is be ready to pursue the[A][NL]
+bandits as soon we know where they[NL]
+are. I just hope that will be soon...[A]
+[X]
+
+##Ch2_Homeward
