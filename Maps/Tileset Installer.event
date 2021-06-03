@@ -1,14 +1,14 @@
-#include "Tile Animation Installer.event"
+#include "Tilesets/Animations/Tile Animation Installer.event"
 
 //Zoramine Fields
 ALIGN 4
 ZoraFieldsObjects: //compressed to lz77
 #incbin "Tilesets/Compressed Fields.dmp"
 
-//Zoramine Fields Village
+//Updated Village //compressed to lz77
 ALIGN 4
-ZoraVillageObjects: //compressed to lz77
-#incbin "Tilesets/Compressed Fields Village.dmp"
+UpdatedVillageObjects:
+#incbin "Tilesets/Compressed Updated Village.dmp"
 
 //Green Palette
 ALIGN 4
@@ -20,7 +20,7 @@ ALIGN 4
 AquaPalette: 
 #incbin "Tilesets/Palettes/AquamarinePalette.dmp"
 
-//Night Village Palette
+//Updated Village Night Palette
 ALIGN 4
 NightVillagePalette:
 #incbin "Tilesets/Palettes/NightVillagePalette.dmp"
@@ -30,31 +30,34 @@ ALIGN 4
 ZoraFieldsTiles:
 #incext compress "Tilesets/Zoramine Fields.mapchip_config"
 
-//Zoramine Village mapchip config
+//Updated Village mapchip config
 ALIGN 4
-ZoraVillageTiles:
-#incext compress "Tilesets/Zoramine Fields Village.mapchip_config"
+UpdatedVillageTiles:
+#incext compress "Tilesets/Updated Village.mapchip_config"
 
 EventPointerTable(0x01, ZoraFieldsObjects)
-EventPointerTable(0x0E, ZoraVillageObjects)
+EventPointerTable(0x0E, UpdatedVillageObjects)
 
 EventPointerTable(0x02, GreenPalette)
 EventPointerTable(0x38, AquaPalette)
 EventPointerTable(0x0F, NightVillagePalette)
 
 EventPointerTable(0x03, ZoraFieldsTiles)
-EventPointerTable(0x10, ZoraVillageTiles)
+EventPointerTable(0x10, UpdatedVillageTiles)
 
 EventPointerTable(0x05, FieldsAnimation)
-
+EventPointerTable(0x12, VillageAnimation)
 
 //Tile definitions
 #define ZoraFieldsObjects 0x01
-#define ZoraVillageObjects 0x10
+#define UpdatedVillageObjects 0x0E
 
 #define GreenPalette 0x02
 #define AquaPalette 0x38
-#define NightVIllagePalette 0x0F
+#define NightVillagePalette 0x0F
 
 #define ZoraFieldsTiles 0x03
+#define UpdatedVillageTiles 0x10
+
 #define FieldsAnimation 0x05
+#define VillageAnimation 0x12

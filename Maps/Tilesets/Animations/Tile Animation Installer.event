@@ -1,0 +1,115 @@
+#ifndef tilesetAnimation
+    #define tilesetAnimation(speed, size, pointer)    "BYTE speed 0; SHORT size; POIN pointer"
+#endif
+
+//Zoramine Fields animations
+ALIGN 4
+FieldsAnimation0:
+#incbin "Fields Animations/Frame_000.dmp"
+ALIGN 4
+FieldsAnimation1:
+#incbin "Fields Animations/Frame_001.dmp"
+ALIGN 4
+FieldsAnimation2:
+#incbin "Fields Animations/Frame_002.dmp"
+ALIGN 4
+FieldsAnimation3:
+#incbin "Fields Animations/Frame_003.dmp"
+ALIGN 4
+FieldsAnimation4:
+#incbin "Fields Animations/Frame_004.dmp"
+ALIGN 4
+FieldsAnimation5:
+#incbin "Fields Animations/Frame_005.dmp"
+ALIGN 4
+FieldsAnimation6:
+#incbin "Fields Animations/Frame_006.dmp"
+ALIGN 4
+FieldsAnimation7:
+#incbin "Fields Animations/Frame_007.dmp"
+
+//Updated Village animations
+ALIGN 4
+VillageAnimation0:
+#incbin "Updated Village Animations/Frame_000.dmp"
+ALIGN 4
+VillageAnimation1:
+#incbin "Updated Village Animations/Frame_001.dmp"
+ALIGN 4
+VillageAnimation2:
+#incbin "Updated Village Animations/Frame_002.dmp"
+ALIGN 4
+VillageAnimation3:
+#incbin "Updated Village Animations/Frame_003.dmp"
+ALIGN 4
+VillageAnimation4:
+#incbin "Updated Village Animations/Frame_004.dmp"
+ALIGN 4
+VillageAnimation5:
+#incbin "Updated Village Animations/Frame_005.dmp"
+ALIGN 4
+VillageAnimation6:
+#incbin "Updated Village Animations/Frame_006.dmp"
+ALIGN 4
+VillageAnimation7:
+#incbin "Updated Village Animations/Frame_007.dmp"
+ALIGN 4
+VillageAnimation8:
+#incbin "Updated Village Animations/Frame_008.dmp"
+ALIGN 4
+VillageAnimation9:
+#incbin "Updated Village Animations/Frame_009.dmp"
+ALIGN 4
+VillageAnimation10:
+#incbin "Updated Village Animations/Frame_010.dmp"
+ALIGN 4
+VillageAnimation11:
+#incbin "Updated Village Animations/Frame_011.dmp"
+ALIGN 4
+VillageAnimation12:
+#incbin "Updated Village Animations/Frame_012.dmp"
+ALIGN 4
+VillageAnimation13:
+#incbin "Updated Village Animations/Frame_013.dmp"
+ALIGN 4
+VillageAnimation14:
+#incbin "Updated Village Animations/Frame_014.dmp"
+ALIGN 4
+VillageAnimation15:
+#incbin "Updated Village Animations/Frame_015.dmp"
+
+//Bringing them together
+
+//Zoramine Fields animation
+ALIGN 4
+FieldsAnimation:
+tilesetAnimation(0x1C,0x1000,FieldsAnimation0)
+tilesetAnimation(0x1C,0x1000,FieldsAnimation1)
+tilesetAnimation(0x1C,0x1000,FieldsAnimation2)
+tilesetAnimation(0x1C,0x1000,FieldsAnimation3)
+tilesetAnimation(0x1C,0x1000,FieldsAnimation4)
+tilesetAnimation(0x1C,0x1000,FieldsAnimation5)
+tilesetAnimation(0x1C,0x1000,FieldsAnimation6)
+tilesetAnimation(0x1C,0x1000,FieldsAnimation7)
+WORD 0 0
+
+//Updated Village animation
+ALIGN 4
+VillageAnimation:
+tilesetAnimation(0x1C,0x1000,VillageAnimation0)
+tilesetAnimation(0x1C,0x1000,VillageAnimation1)
+tilesetAnimation(0x1C,0x1000,VillageAnimation2)
+tilesetAnimation(0x1C,0x1000,VillageAnimation3)
+tilesetAnimation(0x1C,0x1000,VillageAnimation4)
+tilesetAnimation(0x1C,0x1000,VillageAnimation5)
+tilesetAnimation(0x1C,0x1000,VillageAnimation6)
+tilesetAnimation(0x1C,0x1000,VillageAnimation7)
+tilesetAnimation(0x1C,0x1000,VillageAnimation8)
+tilesetAnimation(0x1C,0x1000,VillageAnimation9)
+tilesetAnimation(0x1C,0x1000,VillageAnimation10)
+tilesetAnimation(0x1C,0x1000,VillageAnimation11)
+tilesetAnimation(0x1C,0x1000,VillageAnimation12)
+tilesetAnimation(0x1C,0x1000,VillageAnimation13)
+tilesetAnimation(0x1C,0x1000,VillageAnimation14)
+tilesetAnimation(0x1C,0x1000,VillageAnimation15)
+WORD 0 0
