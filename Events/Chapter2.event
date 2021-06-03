@@ -1,0 +1,123 @@
+EventPointerTable(0x0A, ThisChapter)
+
+ThisChapter:
+
+POIN TurnBasedEvents
+
+POIN CharacterBasedEvents
+
+POIN LocationBasedEvents
+
+POIN MiscBasedEvents
+
+POIN Dunno Dunno Dunno
+
+POIN Tutorial
+
+POIN TrapData TrapData
+
+POIN PlayerUnits PlayerUnits
+
+POIN $0 $0 $0 $0 $0 $0
+
+POIN BeginningScene EndingScene
+
+Dunno:
+WORD $00
+
+Tutorial:
+WORD $00
+
+TrapData:
+ENDTRAP
+ALIGN 4
+
+TurnBasedEvents:
+TurnEventPlayer(0xC, FullAttack, 6)
+END_MAIN
+
+ALIGN 32
+LocationBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+BeginningScene:
+LOAD1 0 EnemyUnits
+
+ENUN
+
+LOAD1 0 GreenUnits
+
+ENUN
+
+LOAD1 0 PlayerUnits
+
+ENUN
+
+ENDA
+
+EndingScene:
+SetBackground(0x18)
+Text(Placeholder_text)
+EndConvo
+
+MNC2 0x2
+ENDA
+
+PlayerUnits:
+UNIT Devan Duke Devan Level(1,Ally,0) [13,22] 0x0 0x0 0x0 0x1 [IronLance, Javelin, Vulnerary] NoAI
+UNIT Ronni Ranger_F Devan Level(1,Ally,0) [14,23] 0x0 0x0 0x0 0x1 [IronBow, SteelBow, Vulnerary] NoAI
+UNIT Anthony Mercenary Devan Level(1,Ally,0) [12, 23] 0x0 0x0 0x0 0x1 [IronSword, Vulnerary] NoAI
+UNIT Kenneth Cavalier Devan Level(1,Ally,0) [13, 24] 0x0 0x0 0x0 0x1 [IronLance, IronSword, Vulnerary] NoAI
+
+UNIT
+
+EnemyUnits:
+UNIT 0x68 Brigand 0x67 Level(7,Enemy,0) [1,1] 0x0 0x0 0x0 0x1 [SilverAxe] DoNotMoveAI
+UNIT 0x64 Mercenary 0x67 Level(5,Enemy,1) [0,5] 0x0 0x0 0x0 0x1 [IronBlade] DoNotMoveAI
+UNIT 0x64 Deserter 0x67 Level(6,Enemy,1) [2,5] 0x0 0x0 0x0 0x1 [SteelLance, Javelin] DoNotMoveAI
+UNIT 0x64 Archer 0x67 Level(5,Enemy,1) [6,6] 0x0 0x0 0x0 0x1 [SteelBow] DoNotMoveAI
+UNIT 0x64 Brigand 0x67 Level(6,Enemy,1) [7,7] 0x0 0x0 0x0 0x1 [IronAxe] DoNotMoveAI
+UNIT 0x64 Deserter 0x67 Level(2,Enemy,1) [8,22] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
+UNIT 0x64 Myrmidon 0x67 Level(4,Enemy,1) [5,21] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+UNIT 0x64 Archer 0x67 Level(4,Enemy,1) [10,19] 0x0 0x0 0x0 0x1 [IronBow] AttackInRangeAI
+UNIT 0x64 Brigand 0x67 Level(4,Enemy,1) [8,18] 0x0 0x0 0x0 0x1 [DragonAxe] AttackInRangeAI
+UNIT 0x64 Brigand 0x67 Level(7,Enemy,1) [6,11] 0x0 0x0 0x0 0x1 [HandAxe] AttackInRangeAI
+UNIT 0x64 Brigand 0x67 Level(7,Enemy,1) [6,10] 0x0 0x0 0x0 0x1 [SteelAxe] AttackInRangeAI
+UNIT 0x64 Archer 0x67 Level(4,Enemy,1) [3,16] 0x0 0x0 0x0 0x1 [SteelBow] DoNotMoveAI
+UNIT 0x64 Archer 0x67 Level(4,Enemy,1) [7,14] 0x0 0x0 0x0 0x1 [SteelBow] DoNotMoveAI
+UNIT 0x64 Deserter 0x67 Level(7,Enemy,1) [5,15] 0x0 0x0 0x0 0x1 [DragonSpear] [AttackIfClose, DoNotMove, NormalRecovery, DefaultAI4]
+
+UNIT
+
+GreenUnits:
+UNIT Brock DragonMaster Brock Level(15,NPC,0) [2,11] 0x0 0x0 0x0 0x1 [SteelAxe, HandAxe, Elixir] NeverMoveAI
+UNIT 0x25 DragonMaster Brock Level(15,NPC,0) [1,10] 0x0 0x0 0x0 0x1 [SteelAxe, HandAxe] NeverMoveAI
+UNIT 0x64 DragonKnight Brock Level(8,NPC,1) [0,10] 0x0 0x0 0x0 0x1 [HandAxe] NeverMoveAI
+UNIT 0x64 DragonKnight Brock Level(9,NPC,1) [0,12] 0x0 0x0 0x0 0x1 [HandAxe] NeverMoveAI
+UNIT 0x64 DragonKnight Brock Level(7,NPC,1) [1,12] 0x0 0x0 0x0 0x1 [SteelAxe] NeverMoveAI
+UNIT 0x64 Wagon Brock Level(1,NPC,1) [0,11] 0x0 0x0 0x0 0x1 [Nothing] NeverMoveAI
+UNIT 0x64 Wagon Brock Level(1,NPC,1) [1,11] 0x0 0x0 0x0 0x1 [Nothing] NeverMoveAI
+
+UNIT 0xCD GreatKnight Devan Level(1,NPC,1) [14,20] 0x0 0x0 0x0 0x1 [SteelLance] DoNotMoveAI
+UNIT 0xCD GreatKnight Devan Level(1,NPC,1) [14,20] 0x0 0x0 0x0 0x1 [SteelAxe] DoNotMoveAI
+
+UNIT
+
+FullAttack:
+//Text(Placeholder_text)
+SVAL 0x1 0x00000000
+CHAI 0x68
+CHAI [1,5]
+CHAI [1,7]
+CHAI [6,6]
+CHAI [7,7]
+NoFade
+ENDA

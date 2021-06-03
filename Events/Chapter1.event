@@ -1,6 +1,6 @@
-EventPointerTable(7,MyEvents) //7 is the ID for prologue events in vanilla FE8
+EventPointerTable(7,ThisChapter) //7 is the ID for prologue events in vanilla FE8
 
-MyEvents:
+ThisChapter:
 
 POIN TurnBasedEvents
 
@@ -91,9 +91,9 @@ ENDA
 
 PlayerUnits:
 UNIT Devan Duke Devan Level(1,Ally,0) [11,10] 0x0 0x0 0x0 0x1 [IronLance, Javelin, Vulnerary] NoAI
-UNIT Ronni Ranger_F Devan Level(1,Ally,0) [10,11] 0x0 0x0 0x0 0x1 [IronBow, SteelBow, Vulnerary] NoAI
-UNIT Anthony Mercenary Devan Level(1,Ally,0) [5, 11] 0x0 0x0 0x0 0x1 [IronSword, Vulnerary] NoAI
-UNIT Kenneth Cavalier Devan Level(1,Ally,0) [6, 12] 0x0 0x0 0x0 0x1 [IronLance, IronSword, Vulnerary] NoAI
+UNIT Ronni Ranger_F Devan Level(15,Ally,0) [10,11] 0x0 0x0 0x0 0x1 [IronBow, SteelBow, Vulnerary] NoAI
+UNIT Anthony Mercenary Devan Level(1,Ally,0) [5,11] 0x0 0x0 0x0 0x1 [IronSword, Vulnerary] NoAI
+UNIT Kenneth Cavalier Devan Level(15,Ally,0) [6,12] 0x0 0x0 0x0 0x1 [IronLance, IronSword, Vulnerary] NoAI
 
 UNIT
 

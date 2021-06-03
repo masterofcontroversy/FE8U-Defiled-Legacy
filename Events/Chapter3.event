@@ -1,0 +1,89 @@
+EventPointerTable(0x0D, ThisChapter)
+
+ThisChapter:
+
+POIN TurnBasedEvents
+
+POIN CharacterBasedEvents
+
+POIN LocationBasedEvents
+
+POIN MiscBasedEvents
+
+POIN Dunno Dunno Dunno
+
+POIN Tutorial
+
+POIN TrapData TrapData
+
+POIN PlayerUnits PlayerUnits
+
+POIN $0 $0 $0 $0 $0 $0
+
+POIN BeginningScene EndingScene
+
+Dunno:
+WORD $00
+
+Tutorial:
+WORD $00
+
+TrapData:
+ENDTRAP
+ALIGN 4
+
+TurnBasedEvents:
+END_MAIN
+
+ALIGN 32
+LocationBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+BeginningScene:
+LOAD1 0 PlayerUnits
+
+ENUN
+
+LOAD1 0 EnemyUnits
+
+ENDA
+
+EndingScene:
+SetBackground(0x18)
+Text(Placeholder_text)
+EndConvo
+
+MNC2 0x3
+ENDA
+
+PlayerUnits:
+UNIT Devan Duke Devan Level(1,Ally,0) [11,6] 0x0 0x0 0x0 0x1 [IronLance, Javelin, Vulnerary] NoAI
+UNIT Ronni Ranger_F Devan Level(1,Ally,0) [8,10] 0x0 0x0 0x0 0x1 [IronBow, SteelBow, Vulnerary] NoAI
+UNIT Anthony Mercenary Devan Level(1,Ally,0) [10,10] 0x0 0x0 0x0 0x1 [IronSword, Vulnerary] NoAI
+UNIT Kenneth Cavalier Devan Level(1,Ally,0) [9,11] 0x0 0x0 0x0 0x1 [IronLance, IronSword, Vulnerary] NoAI
+UNIT Brock DragonMaster Devan Level(15,Ally,0) [12,7] 0x0 0x0 0x0 0x1 [SteelAxe, HandAxe, Elixir] NoAI
+UNIT Julianne DragonMasterF Devan Level(5,Ally,0) [7,11] 0x0 0x0 0x0 0x1 [IronAxe, Javelin] NoAI
+
+UNIT
+
+EnemyUnits:
+UNIT 0x64 AxeArmor 0x68 Level(10,Enemy,1) [19,11] 0x0 0x0 0x0 0x1 [Tomahawk] NeverMoveAI
+UNIT 0x64 SwordArmor 0x68 Level(10,Enemy,1) [18,12] 0x0 0x0 0x0 0x1 [Wyrmslayer] NeverMoveAI
+UNIT 0x64 AxeArmor 0x68 Level(10,Enemy,1) [17,13] 0x0 0x0 0x0 0x1 [Tomahawk] NeverMoveAI
+UNIT 0x64 Brigand 0x68 Level(5,Enemy,1) [12,3] 0x0 0x0 0x0 0x1 [SteelAxe] NoAI
+UNIT 0x64 Archer 0x68 Level(5,Enemy,1) [0,10] 0x0 0x0 0x0 0x1 [SteelBow] NoAI
+UNIT 0x64 Mercenary 0x68 Level(5,Enemy,1) [4,14] 0x0 0x0 0x0 0x1 [SteelSword, DoorKey] NoAI //Unlock nearby doors
+UNIT 0x64 Mercenary 0x68 Level(5,Enemy,1) [10,14] 0x0 0x0 0x0 0x1 [SteelSword, DoorKey] NoAI //Unlock nearby doors
+UNIT 0x64 Mercenary 0x68 Level(5,Enemy,1) [7,14] 0x0 0x0 0x0 0x1 [SteelSword] NoAI
+UNIT 0x64 Fighter 0x68 Level(5,Enemy,1) [2,5] 0x0 0x0 0x0 0x1 [IronAxe] NoAI
+UNIT 0x64 Deserter 0x68 Level(5,Enemy,1) [4,5] 0x0 0x0 0x0 0x1 [IronLance] NoAI
+
+UNIT
