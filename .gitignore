@@ -1,10 +1,11 @@
 *.gba
 *.ups
 *.pyc
+*.sav
 Tables/FE8 Nightmare modules/**/*.event
 /Graphics/Map Sprites/*.dmp
 /Graphics/Portraits/*.dmp
-/Maps/Tilesets/Green Fields Animations/*.dmp
+/Maps/Tilesets/Animations/**/*.dmp
 /Maps/*.dmp
 /Maps/*.event
 
