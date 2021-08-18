@@ -20,7 +20,7 @@ export base_dir DMP_DIR
 
 c2ea_py="$base_dir/Tools/C2EA/c2ea.py"
 textprocess_py="$base_dir/Tools/TextProcess/text-process-classic.py"
-parsefile="$base_dir/Event Assembler/Tools/ParseFile"
+parsefile="$base_dir/EventAssembler/Tools/ParseFile"
 ups="$base_dir/Tools/ups/ups.exe"
 PNG2Dmp="$base_dir/Tools/PNG2Dmp"
 portrait_formatter="$base_dir/Tools/portrait-formatter"
@@ -100,8 +100,8 @@ esac
 
 echo "Assembling"
 
-cd "$base_dir/Event Assembler"
-WINEDEBUG=-all wine ColorzCore.exe A FE8 "-output:$target_rom" "-input:$main_event"
+cd "$base_dir/EventAssembler"
+./ColorzCore A FE8 "-output:$target_rom" "-input:$main_event"
 
 # TODO: generate patch (would require a linux version of ups)
 # TODO: (From Contro) find out how to get patch generation to work with Ubuntu

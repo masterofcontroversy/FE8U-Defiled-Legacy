@@ -14,7 +14,7 @@ compress(){
 
   echo "$FILE"
   #Use wine to call PortraitFormatter.exe.exe
-  WINEDEBUG=-all wine "$base_dir/Event Assembler/Tools/PortraitFormatter.exe" "$FILE" #Place path to PortraitFormatter.exe inbetween quotes
+  "$base_dir/EventAssembler/Tools/PortraitFormatter" "$FILE" #Place path to PortraitFormatter.exe inbetween quotes
 
   #if [ "$2" == "--move" ]
   #then
