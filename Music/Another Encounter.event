@@ -1,0 +1,562 @@
+//Event file generated from Sappy .s format.
+        #include "MPlayDef.event"
+
+        #define    Another_Encounter_grp  voicegroup000
+        #define    Another_Encounter_pri  0
+        #define    Another_Encounter_rev  0
+        #define    Another_Encounter_key  0
+
+        // .rodata
+        // Another_Encounter
+        ALIGN 4
+
+//****************** Track 0 (Midi-Chn.0) ******************//
+
+Another_Encounter_0:
+        BYTE   KEYSH   Another_Encounter_key+0
+// 000   ----------------------------------------
+        BYTE   TEMPO   120/2
+Another_Encounter_0_LOOP:
+        BYTE           VOICE   19
+        BYTE           TIE     As3   v032
+        BYTE           VOL     127
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W24
+        BYTE           EOT
+        BYTE   W06
+        BYTE           TIE     An3
+        BYTE   W66
+// 002   ----------------------------------------
+        BYTE   W54
+        BYTE           EOT
+        BYTE   W06
+        BYTE           N54     As3
+        BYTE   W36
+// 003   ----------------------------------------
+Another_Encounter_0_3:
+        BYTE   W30
+        BYTE           N12     Cn4   v032
+        BYTE   W18
+        BYTE           N30     As3
+        BYTE   W36
+        BYTE           N06     Bn3
+        BYTE   W06
+        BYTE           TIE     An3
+        BYTE   W06
+        BYTE   PEND
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W18
+        BYTE           EOT
+        BYTE   W06
+        BYTE           TIE     As3
+        BYTE   W72
+// 006   ----------------------------------------
+        BYTE   W48
+        BYTE           EOT
+        BYTE   W06
+        BYTE           TIE     An3
+        BYTE   W42
+// 007   ----------------------------------------
+        BYTE   W78
+        BYTE           EOT
+        BYTE   W06
+        BYTE           N54     As3
+        BYTE   W12
+// 008   ----------------------------------------
+Another_Encounter_0_8:
+        BYTE   W54
+        BYTE           N12     Cn4   v032
+        BYTE   W18
+        BYTE           N30     As3
+        BYTE   W24
+        BYTE   PEND
+// 009   ----------------------------------------
+Another_Encounter_0_9:
+        BYTE   W12
+        BYTE           N06     Bn3   v032
+        BYTE   W06
+        BYTE           TIE     An3
+        BYTE   W78
+        BYTE   PEND
+// 010   ----------------------------------------
+        BYTE   W42
+        BYTE           EOT
+        BYTE   W06
+        BYTE           N60     Gs3
+        BYTE   W48
+// 011   ----------------------------------------
+        BYTE   W18
+        BYTE           N12     An3
+        BYTE   W18
+        BYTE                   Bn3
+        BYTE   W18
+        BYTE                   Cn4
+        BYTE   W24
+        BYTE           TIE     En3
+        BYTE   W18
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W06
+        BYTE           EOT
+        BYTE   W06
+        BYTE           N60     Gs3
+        BYTE   W66
+        BYTE           N12     An3
+        BYTE   W18
+// 014   ----------------------------------------
+        BYTE                   Bn3
+        BYTE   W18
+        BYTE                   Cn4
+        BYTE   W18
+        BYTE           N06     En3
+        BYTE   W06
+        BYTE           N24     Cn4
+        BYTE   W30
+        BYTE                   An3
+        BYTE   W24
+// 015   ----------------------------------------
+        BYTE   W06
+        BYTE           N18     Cn4
+        BYTE   W18
+        BYTE           N06     An3
+        BYTE   W18
+        BYTE           N36     Gs3
+        BYTE   W48
+        BYTE   GoTo
+         POIN2  Another_Encounter_0_LOOP
+        BYTE   FINE
+
+//****************** Track 1 (Midi-Chn.1) ******************//
+
+Another_Encounter_1:
+        BYTE   KEYSH   Another_Encounter_key+0
+// 000   ----------------------------------------
+Another_Encounter_1_LOOP:
+        BYTE           VOICE   116
+        BYTE           N18     Cn3   v051
+        BYTE           VOL     127
+        BYTE   W18
+        BYTE           N06
+        BYTE   W12
+        BYTE           N18
+        BYTE   W18
+        BYTE           N12
+        BYTE   W18
+        BYTE           N18
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W12
+// 001   ----------------------------------------
+        BYTE   W06
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE           N06     Dn3
+        BYTE   W06
+        BYTE           N18     Cn3
+        BYTE   W18
+        BYTE           N06
+        BYTE   W12
+        BYTE           N18
+        BYTE   W18
+        BYTE           N12
+        BYTE   W18
+// 002   ----------------------------------------
+        BYTE           N18
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE           N06     Dn3
+        BYTE   W06
+        BYTE           N18     Cn3
+        BYTE   W18
+        BYTE           N06
+        BYTE   W12
+        BYTE           N18
+        BYTE   W06
+// 003   ----------------------------------------
+        BYTE   W12
+        BYTE           N12
+        BYTE   W18
+        BYTE           N18
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE           N06     Dn3
+        BYTE   W06
+        BYTE           N18     Cn3
+        BYTE   W06
+// 004   ----------------------------------------
+        BYTE   W12
+        BYTE           N06
+        BYTE   W12
+        BYTE           N18
+        BYTE   W18
+        BYTE           N12
+        BYTE   W18
+        BYTE           N18
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W18
+// 005   ----------------------------------------
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE           N06     Dn3
+        BYTE   W06
+        BYTE           N18     Cn3
+        BYTE   W18
+        BYTE           N06
+        BYTE   W12
+        BYTE           N18
+        BYTE   W18
+        BYTE           N12
+        BYTE   W18
+        BYTE           N18
+        BYTE   W06
+// 006   ----------------------------------------
+        BYTE   W12
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE           N06     Dn3
+        BYTE   W06
+        BYTE           N18     Cn3
+        BYTE   W18
+        BYTE           N06
+        BYTE   W12
+        BYTE           N18
+        BYTE   W12
+// 007   ----------------------------------------
+        BYTE   W06
+        BYTE           N12
+        BYTE   W18
+        BYTE           N18
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE           N06     Dn3
+        BYTE   W06
+        BYTE           N18     Cn3
+        BYTE   W12
+// 008   ----------------------------------------
+        BYTE   W06
+        BYTE           N06
+        BYTE   W12
+        BYTE           N18
+        BYTE   W18
+        BYTE           N12
+        BYTE   W18
+        BYTE           N18
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W06
+// 009   ----------------------------------------
+        BYTE   W12
+        BYTE           N06     Dn3
+        BYTE   W06
+        BYTE           N18     Cn3
+        BYTE   W18
+        BYTE           N06
+        BYTE   W12
+        BYTE           N18
+        BYTE   W18
+        BYTE           N12
+        BYTE   W18
+        BYTE           N18
+        BYTE   W12
+// 010   ----------------------------------------
+        BYTE   W06
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE           N06     Dn3
+        BYTE   W06
+        BYTE           N18     Cn3
+        BYTE   W18
+        BYTE           N06
+        BYTE   W12
+        BYTE           N18
+        BYTE   W18
+// 011   ----------------------------------------
+        BYTE           N12
+        BYTE   W18
+        BYTE           N18
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE           N06     Dn3
+        BYTE   W06
+        BYTE           N18     Cn3
+        BYTE   W18
+// 012   ----------------------------------------
+        BYTE           N06
+        BYTE   W12
+        BYTE           N18
+        BYTE   W18
+        BYTE           N12
+        BYTE   W18
+        BYTE           N18
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W12
+// 013   ----------------------------------------
+        BYTE   W06
+        BYTE           N06     Dn3
+        BYTE   W06
+        BYTE           N18     Cn3
+        BYTE   W18
+        BYTE           N06
+        BYTE   W12
+        BYTE           N18
+        BYTE   W18
+        BYTE           N12
+        BYTE   W18
+        BYTE           N18
+        BYTE   W18
+// 014   ----------------------------------------
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE           N06     Dn3
+        BYTE   W06
+        BYTE           N18     Cn3
+        BYTE   W30
+        BYTE                   Cn3
+        BYTE   W24
+// 015   ----------------------------------------
+        BYTE   W06
+        BYTE                   Cn3
+        BYTE   W18
+        BYTE           N06     Dn3
+        BYTE   W18
+        BYTE           N24     Cn3
+        BYTE   W48
+        BYTE   GoTo
+         POIN2  Another_Encounter_1_LOOP
+        BYTE   FINE
+
+//****************** Track 2 (Midi-Chn.2) ******************//
+
+Another_Encounter_2:
+        BYTE   KEYSH   Another_Encounter_key+0
+// 000   ----------------------------------------
+Another_Encounter_2_LOOP:
+        BYTE           VOICE   40
+        BYTE           N18     Dn3   v038
+        BYTE           VOL     127
+        BYTE   W18
+        BYTE           N06     Cn3
+        BYTE   W12
+        BYTE           N18     An3
+        BYTE   W18
+        BYTE           N12     Gs3
+        BYTE   W18
+        BYTE                   An3
+        BYTE   W18
+        BYTE           N18     Gs3
+        BYTE   W12
+// 001   ----------------------------------------
+        BYTE   W06
+        BYTE                   Fs3
+        BYTE   W24
+        BYTE                   Dn3
+        BYTE   W18
+        BYTE           N06     Cn3
+        BYTE   W12
+        BYTE           N18     An3
+        BYTE   W18
+        BYTE           N12     Gs3
+        BYTE   W18
+// 002   ----------------------------------------
+        BYTE                   An3
+        BYTE   W18
+        BYTE           N18     Gs3
+        BYTE   W18
+        BYTE                   Fs3
+        BYTE   W24
+        BYTE                   Dn3
+        BYTE   W18
+        BYTE           N06     Cn3
+        BYTE   W12
+        BYTE           N24     An3
+        BYTE   W06
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W24
+        BYTE           N18     Dn3
+        BYTE   W18
+        BYTE           N06     Cn3
+        BYTE   W12
+        BYTE           N18     An3
+        BYTE   W18
+        BYTE           N12     Gs3
+        BYTE   W18
+        BYTE                   An3
+        BYTE   W06
+// 006   ----------------------------------------
+        BYTE   W12
+        BYTE           N18     Gs3
+        BYTE   W18
+        BYTE                   Fs3
+        BYTE   W24
+        BYTE                   Dn3
+        BYTE   W18
+        BYTE           N06     Cn3
+        BYTE   W12
+        BYTE           N18     An3
+        BYTE   W12
+// 007   ----------------------------------------
+        BYTE   W06
+        BYTE           N12     Gs3
+        BYTE   W18
+        BYTE                   An3
+        BYTE   W18
+        BYTE           N18     Gs3
+        BYTE   W18
+        BYTE                   Fs3
+        BYTE   W24
+        BYTE                   Dn3
+        BYTE   W12
+// 008   ----------------------------------------
+        BYTE   W06
+        BYTE           N06     Cn3
+        BYTE   W12
+        BYTE           N24     An3
+        BYTE   W78
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W48
+        BYTE           N18     Gs3   v026
+        BYTE   W18
+        BYTE           N06     Bn3   v032
+        BYTE   W12
+        BYTE           N12
+        BYTE   W18
+// 011   ----------------------------------------
+        BYTE           N72     An3
+        BYTE   W78
+        BYTE           N18     Bn3
+        BYTE   W18
+// 012   ----------------------------------------
+        BYTE           N06     Cn4
+        BYTE   W12
+        BYTE           N90     En3
+        BYTE   W84
+// 013   ----------------------------------------
+        BYTE   W12
+        BYTE           N18     Gs3
+        BYTE   W18
+        BYTE           N06     Bn3
+        BYTE   W12
+        BYTE           N12
+        BYTE   W18
+        BYTE           N66     An3
+        BYTE   W36
+// 014   ----------------------------------------
+        BYTE   W96
+// 015   ----------------------------------------
+        BYTE   W90
+        BYTE   GoTo
+         POIN2  Another_Encounter_2_LOOP
+        BYTE   FINE
+
+//****************** Track 3 (Midi-Chn.3) ******************//
+
+Another_Encounter_3:
+        BYTE   KEYSH   Another_Encounter_key+0
+// 000   ----------------------------------------
+Another_Encounter_3_LOOP:
+        BYTE           VOICE   52
+        BYTE           VOL     127
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   PATT
+         POIN2  Another_Encounter_0_3
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W18
+        BYTE           EOT     An3
+        BYTE   W78
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   PATT
+         POIN2  Another_Encounter_0_8
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  Another_Encounter_0_9
+// 010   ----------------------------------------
+        BYTE   W42
+        BYTE           EOT     An3
+        BYTE   W54
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+        BYTE   W42
+        BYTE           N24     Cn4   v032
+        BYTE   W30
+        BYTE                   An3
+        BYTE   W24
+// 015   ----------------------------------------
+        BYTE   W06
+        BYTE           N18     Cn4
+        BYTE   W18
+        BYTE           N06     An3
+        BYTE   W18
+        BYTE           N36     Gs3
+        BYTE   W48
+        BYTE   GoTo
+         POIN2  Another_Encounter_3_LOOP
+        BYTE   FINE
+
+
+//********************** End of Song ***********************//
+
+        ALIGN 4
+Another_Encounter:
+        BYTE   4                       // Num Tracks
+        BYTE   0                       // Unknown
+        BYTE   Another_Encounter_pri   // Priority
+        BYTE   Another_Encounter_rev   // Reverb
+
+        POIN2   Another_Encounter_grp  
+
+        POIN2   Another_Encounter_0
+        POIN2   Another_Encounter_1
+        POIN2   Another_Encounter_2
+        POIN2   Another_Encounter_3
+
+        
