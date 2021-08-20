@@ -78,11 +78,30 @@ ALIGN 4
 VillageAnimation15:
 #incbin "Updated Village Animations/Frame_015.dmp"
 
+//Improved Castle animations
+ALIGN 4
+CastleAnimation0:
+#incbin "Improved Castle Animations/Frame_000.dmp"
+CastleAnimation1:
+#incbin "Improved Castle Animations/Frame_001.dmp"
+CastleAnimation2:
+#incbin "Improved Castle Animations/Frame_002.dmp"
+CastleAnimation3:
+#incbin "Improved Castle Animations/Frame_003.dmp"
+CastleAnimation4:
+#incbin "Improved Castle Animations/Frame_004.dmp"
+CastleAnimation5:
+#incbin "Improved Castle Animations/Frame_005.dmp"
+CastleAnimation6:
+#incbin "Improved Castle Animations/Frame_006.dmp"
+CastleAnimation7:
+#incbin "Improved Castle Animations/Frame_007.dmp"
+
 //Bringing them together
 
 //Zoramine Fields animation
 ALIGN 4
-FieldsAnimation:
+FieldsAnimationLabel:
 tilesetAnimation(0x1C,0x1000,FieldsAnimation0)
 tilesetAnimation(0x1C,0x1000,FieldsAnimation1)
 tilesetAnimation(0x1C,0x1000,FieldsAnimation2)
@@ -95,7 +114,7 @@ WORD 0 0
 
 //Updated Village animation
 ALIGN 4
-VillageAnimation:
+VillageAnimationLabel:
 tilesetAnimation(0x1C,0x1000,VillageAnimation0)
 tilesetAnimation(0x1C,0x1000,VillageAnimation1)
 tilesetAnimation(0x1C,0x1000,VillageAnimation2)
@@ -113,3 +132,15 @@ tilesetAnimation(0x1C,0x1000,VillageAnimation13)
 tilesetAnimation(0x1C,0x1000,VillageAnimation14)
 tilesetAnimation(0x1C,0x1000,VillageAnimation15)
 WORD 0 0
+
+//Improved Castle animations
+ALIGN 4
+CastleAnimationLabel:
+tilesetAnimation(0x1C,0x1000,CastleAnimation0)
+tilesetAnimation(0x1C,0x1000,CastleAnimation1)
+tilesetAnimation(0x1C,0x1000,CastleAnimation2)
+tilesetAnimation(0x1C,0x1000,CastleAnimation3)
+tilesetAnimation(0x1C,0x1000,CastleAnimation4)
+tilesetAnimation(0x1C,0x1000,CastleAnimation5)
+tilesetAnimation(0x1C,0x1000,CastleAnimation6)
+tilesetAnimation(0x1C,0x1000,CastleAnimation7)
