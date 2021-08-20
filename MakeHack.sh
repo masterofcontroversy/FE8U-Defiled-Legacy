@@ -24,6 +24,7 @@ parsefile="$base_dir/EventAssembler/Tools/ParseFile"
 ups="$base_dir/Tools/ups/ups.exe"
 PNG2Dmp="$base_dir/Tools/PNG2Dmp"
 portrait_formatter="$base_dir/Tools/portrait-formatter"
+tmx2ea="$base_dir/Maps/tmx2ea/tmx2ea.py"
 
 # finding correct python version
 
@@ -81,6 +82,13 @@ processImages () {
   echo done
 }
 
+#Map generation
+processMaps () {
+  echo generating Maps
+  cd "$base_dir/Maps/"
+  echo | $python3 $tmx2ea -s -O "_Master Map Installer.event"
+}
+
 case $1 in
   tables)
     processTables
@@ -91,10 +99,14 @@ case $1 in
   images)
     processImages
     ;;
+  maps)
+    processMaps
+    ;;
   full)
     processTables
     processText
     processImages
+    processMaps
     ;;
 esac
 

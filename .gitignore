@@ -2,6 +2,7 @@
 *.ups
 *.pyc
 *.sav
+__pychache__
 Tables/FE8 Nightmare modules/**/*.event
 /Graphics/Map Sprites/*.dmp
 /Graphics/Portraits/*.dmp
@@ -9,6 +10,4 @@ Tables/FE8 Nightmare modules/**/*.event
 /Maps/*.dmp
 /Maps/*.event
 
-!Maps/Animation Installer.event
-!Maps/Tileset Installer.event
-!Maps/Tile Animation Installer.event
+!Maps/_Tileset Installer.event
