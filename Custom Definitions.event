@@ -3,6 +3,12 @@
 #define AnimSpaceB $F00000 //End at 0xFDFFF0 (0xFDFFD0 to be safe)
 #define AnimSpaceC $FE4000 //This will expand the ROM to fit the animations
 
+//Chapter item permissions
+//Door key + 1
+//Lockpick + 2
+//Antitoxin + 4
+#define AIItemUse(index, permission) "PUSH; ORG ($D8538 + index * 0x4); BYTE permission; POP"
+
 //AI Definitions
 #define DoNotMoveAI [0x06, DoNotMove, NormalRecovery, DefaultAI4]
 
@@ -13,7 +19,7 @@
 #define Kenneth Franz
 #define Holly Moulder
 #define Julianne Vanessa
-#define Brock Ross
+#define Brent Ross
 #define BowChamp Neimi
 #define Amber Colm
 #define Grace Garcia
@@ -22,6 +28,12 @@
 #define Colton Natasha
 #define Lucy Cormag
 #define Alexandra Ephraim
+#define Evelyn Forde
+
+#define Duramontis 0xCD
+#define Cassis 0xC0
+#define Tolva 0x80
+#define Raider 0x64
 
 //Class Definitions
 #define Duke EirikaLord
@@ -220,12 +232,12 @@
 //Monster Animations (First to be replaced)
 #define PegasusKnightSword 0xA0
 #define FalkoknightStaff 0xA1
-//A2
-#define ArchKnightFBow 0xA3
+#define ArchKnightFBow 0xA2
+#define SpartanSword 0xA3
+#define SpartanLance 0xA4
+#define SpartanUnarmed 0xA5
 
-//The rest is vanilla
-
-//Definitions not made for Defiled Legacy
+//The rest is not made by me
 
 #define FreeSpace 0xb2a610
 #define FreeSpaceBLRange 0x1c1ec0

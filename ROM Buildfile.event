@@ -8,6 +8,8 @@
     #include "AnimationTable.event"
     #include "repointedTextTable.event"
 
+    AIItemUse(0x3, 4)
+
     //Text first for Text ID definitions
     #include "Text/Install Text Data.event"
     MESSAGE Used text space ends at currentOffset
@@ -28,14 +30,17 @@
     //#include "Items/Stat Bonuses.event"
 
     //Animations. When debugging, comment out to build faster
-    #include "Graphics/Custom Animations/_Master Animation Installer.event"
+    //#include "Graphics/Custom Animations/_Master Animation Installer.event"
+
+    //Music
+    #include "Music/_Music Installer.event"
 
     //Events
     #include "Events/Events.event"
     
     //Maps
-    #include "Maps/Tileset Installer.event"
-    #include "Maps/Master Map Installer.event"
+    #include "Maps/_Tileset Installer.event"
+    #include "Maps/_Master Map Installer.event"
 
     MESSAGE Used free space ends at currentOffset
 #else

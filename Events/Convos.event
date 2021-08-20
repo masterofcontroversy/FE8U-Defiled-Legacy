@@ -1,29 +1,53 @@
 ALIGN 4
+Chapter1_Start:
+SetBackground(0x0E)
+Text(Ch1_WakeUp)
+SetBackground(0x2F)
+Text(Ch1_Family)
+SetBackground(0x0A)
+Text(Ch1_Bravery)
+SetBackground(0x1B)
+Text(Ch1_Sortie)
+SetBackground(0x18)
+Text(Ch1_Trail)
+EndConvo
+
+ALIGN 4
 Ch1_DevanRonni:
+MUSI
 Text(Ch1Convo_DevanRonni)
+MUNO
 NoFade
 ENDA
 
 ALIGN 4
 Ch1_DevanKenneth:
+MUSI
 Text(Ch1Convo_DevanKenneth)
+MUNO
 NoFade
 ENDA
 
 ALIGN 4
 Ch1_KennethRonni:
+MUSI
 Text(Ch1Convo_KennethRonni)
+MUNO
 NoFade
 ENDA
 
 ALIGN 4
 Ch1_AnthonyKenneth:
+MUSI
 Text(Ch1Convo_AnthonyKenneth)
+MUNO
 NoFade
 ENDA
 
 ALIGN 4
 Timeup:
+MUSI
 Text(Ch1Convo_AnthonyKenneth)
+MUNO
 GameOver
 ENDA

@@ -1,4 +1,4 @@
-EventPointerTable(0x0D, ThisChapter)
+EventPointerTable(0x14, ThisChapter)
 
 ThisChapter:
 
@@ -37,6 +37,10 @@ END_MAIN
 
 ALIGN 32
 LocationBasedEvents:
+Door(4,12)
+Door(5,12)
+Door(10,12)
+Door(11,12)
 END_MAIN
 
 CharacterBasedEvents:
@@ -61,7 +65,7 @@ SetBackground(0x18)
 Text(Placeholder_text)
 EndConvo
 
-MNC2 0x3
+MNC2 0x2
 ENDA
 
 PlayerUnits:
@@ -69,8 +73,8 @@ UNIT Devan Duke Devan Level(1,Ally,0) [11,6] 0x0 0x0 0x0 0x1 [IronLance, Javelin
 UNIT Ronni Ranger_F Devan Level(1,Ally,0) [8,10] 0x0 0x0 0x0 0x1 [IronBow, SteelBow, Vulnerary] NoAI
 UNIT Anthony Mercenary Devan Level(1,Ally,0) [10,10] 0x0 0x0 0x0 0x1 [IronSword, Vulnerary] NoAI
 UNIT Kenneth Cavalier Devan Level(1,Ally,0) [9,11] 0x0 0x0 0x0 0x1 [IronLance, IronSword, Vulnerary] NoAI
-UNIT Brock DragonMaster Devan Level(15,Ally,0) [12,7] 0x0 0x0 0x0 0x1 [SteelAxe, HandAxe, Elixir] NoAI
-UNIT Julianne DragonMasterF Devan Level(5,Ally,0) [7,11] 0x0 0x0 0x0 0x1 [IronAxe, Javelin] NoAI
+UNIT Brent DragonMaster Devan Level(15,Ally,0) [12,7] 0x0 0x0 0x0 0x1 [SteelAxe, HandAxe, Elixir] NoAI
+UNIT Julianne DragonMasterF Brent Level(5,Ally,0) [7,11] 0x0 0x0 0x0 0x1 [IronAxe, Javelin] NoAI
 
 UNIT
 
