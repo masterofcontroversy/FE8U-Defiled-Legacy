@@ -1,5 +1,5 @@
 # 0x00CD NoCBdesc
-None. Pure of Champions' blood.[X]
+None. Pure of Champions's blood.[X]
 
 # 0x0002 textWeaponRankIncreasedTo
  Weapon rank increased to [X]
@@ -106,3 +106,5 @@ Mov[X]
 #include "Names/CharNames.txt"
 
 #include "Names/ChapterNames.txt"
+
+#include "Names/SongNames.txt"

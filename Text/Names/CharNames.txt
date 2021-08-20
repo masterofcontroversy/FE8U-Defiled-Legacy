@@ -1,14 +1,30 @@
 #0x0212 DevanName
 Devan[X]
 
+#0x026E DevanDesc
+The jaded duke of Duramontis.[NL]
+Hates cowardice.[X]
+
 #0x0213 RonniName
 Ronni[X]
+
+#0x026F RonniDesc
+A young huntress from Duramontis.[NL]
+Has a quick wit and a quicker mouth.[X]
 
 #0x0214 AnthonyName
 Anthony[X]
 
+#0x0270 AnthonyDesc
+A widower serving in the Duramontis[NL]
+military. Was once a bandit.[X]
+
 #0x0215 KennethName
 Kenneth[X]
+
+#0x0271 KennethDesc
+A knave from Tirza that wants to[NL]
+make his mark on the world.[X]
 
 #0x0216 HollyName
 Holly[X]
@@ -16,8 +32,16 @@ Holly[X]
 #0x0217 JulianneName
 Julianne[X]
 
-#0x0218 BrockName
-Brock[X]
+#0x0273 JulianneDesc
+A solder in training from Evans. Rides[NL]
+her grandmother's wyvern, Cirrus.[X]
+
+#0x0218 BrentName
+Brent[X]
+
+#0x0274 BrentDesc
+The mighty prince of Cassis.[NL]
+Hardly any escape his wrath.[X]
 
 #0x021A AmberName
 Amber[X]
@@ -31,5 +55,53 @@ Thaddius[X]
 #0x021E ColtonName
 Colton[X]
 
-#0x0220 AlexandraName
+#0x027A ColtonDesc
+A "freelancer" from Duramontis.[NL]
+As good as drinking as he is stealth.[X]
+
+# 0x0220 AlexandraName
 Alexandra[X]
+
+#0x027C AlexandraDesc
+The princess of Tolva.[NL]
+The pride and joy of her country.[X]
+
+#0x0222 EvelynName
+Evelyn[X]
+
+#0x027E EvelynDesc
+The mature retainer of Alexandra.[NL]
+Diligent, and caring in her duties.[X]
+
+#0x223 ConnorName
+Connor[X]
+
+
+
+#0x0263 DuramontisName
+Duramontis[X]
+
+#0x02BB DuramontisDesc
+A knight in service of Duramontis,[NL]
+the mountain dukedom.[X]
+
+#0x0262 CassisName
+Cassis[X]
+
+#0x02BA CassisDesc
+A knight in service of Cassis,[NL]
+The dragon country.[X]
+
+#0x024D TolvaName
+Tolva[X]
+
+#0x02A9 TolvaDesc
+A knight in service of Tolva,[NL]
+The supreme empire.[X]
+
+#0x0250 RaiderName
+Raider[X]
+
+#0x02AC RaiderDesc
+A Duramontis citizen that turned[NL]
+to banditry to avoid starvation.[X]
