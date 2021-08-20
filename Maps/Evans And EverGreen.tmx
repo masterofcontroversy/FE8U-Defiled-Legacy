@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="25" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
+ <tileset firstgid="1" name="Aquamarine Fields Tileset" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="Tilesets/Images/Aquamarine Fields Tiles.png" width="512" height="512"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="15" height="25">
+  <properties>
+   <property name="Anims1" value="FieldsAnimation"/>
+   <property name="Anims2" value="0"/>
+   <property name="ChapterID" value="2"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="0xC"/>
+   <property name="MapID" value="0xB"/>
+   <property name="ObjectType" value="ZoraFieldsObjects"/>
+   <property name="PaletteID" value="AquaPalette"/>
+   <property name="TileConfig" value="ZoraFieldsTiles"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxtlDtoVEEUhufOkvhq7S00IoJoIajlPpJdU5jtTOtu4sZKRSsrd41eH5H4CBbp1iSLgosEhLRGQYVoVARthGDSWwUrC7/D/JedqLDfnrkz558zc+bM5L1zBShCA85AXbYGVxPnJrD8XCprDGm8Jf8yTEITrsma9qY07Zxzj2EODueCj/U3FdfmSzXHAP0V7HXsDVjG/xW8hhE4J3+zJRiEkzCsPpt3ATrwA/912MiF+Y/kwrwF6ELR9fZkcYuseQW2wTAcTHrjVbQVbD5iMtLvwPcAnIVxqMEuF3JjcWuR7gPMK94b2JeE+G/xfac9lJQba5s+xdYVaxD/eRjT+tr8HYMqLMEpeMFYn9bdVj7y9LUi3SH+ZmjPYKexl7Gr2Ec+aC2u1zrb2pOdn/V3GfjC9yXsJ+xF7G5YpN2P3a5c9imPpuv4EPOuYjyEj9Ie1XwJdtkF9mutL3V+FrObhBjTPszxADb5HvVbtRO2DhdqxuplCn7SNwu/Za/Qdx6e034fsQAF6S12WbEtNxbrAu1ZH/Zu69/E777O5g7fU8qvxW5EsT8rX7ZPO6tR1f1XaeuKvaL4I8qZ6Y/DCfiehLOqqjZ+wRiNcR/0A7ZuKEm/pjmMZ5rnNNxDtwh77K75rTWc7T/bw5qo6g5+o3+DwXV4CrfwvZ1s3cNQdHcyrKaX/uqzOfbiW0lCnVld23dHe8j8Cu7ft6TfziYJZx3fh2wNmT6VNn5L8qrpTFf2vVgNvnfCnO6c1UD8lmR5ynT2Ftob2tSbZev3Uf68+p7ornudWU3YG7pq91rx02jfmT7G3s2W3gcj/c979AfEq5dV
+  </data>
+ </layer>
+ <layer id="2" name="Closed Evergreen" width="15" height="25" visible="0">
+  <properties>
+   <property name="Height" value="1"/>
+   <property name="ID" value="0"/>
+   <property name="Width" value="1"/>
+   <property name="X" value="2"/>
+   <property name="Y" value="22"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRQAz4yTzQLiAeAACvKQD9
+  </data>
+ </layer>
+ <layer id="3" name="Destroyed Evans" width="15" height="25" visible="0">
+  <properties>
+   <property name="Height" value="3"/>
+   <property name="ID" value="1"/>
+   <property name="Width" value="3"/>
+   <property name="X" value="11"/>
+   <property name="Y" value="1"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYKAPWMLMwLAUiJcxk673CFDPUSA+RobeJ0A9T4H4GRl6R8EoGAWjYKgCAHBlBwk=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="16" height="13" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="Improved Castle Tileset Palette 2" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="Tilesets/Images/Improved Castle Tileset Palette 2.png" trans="ffffff" width="512" height="512"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="16" height="13">
+  <properties>
+   <property name="Anims1" value="CastleAnimation"/>
+   <property name="Anims2" value="0"/>
+   <property name="ChapterID" value="0"/>
+   <property name="Main" value=""/>
+   <property name="MapID" value="4"/>
+   <property name="ObjectType" value="ImprovedCastleObjects"/>
+   <property name="PaletteID" value="ImprovedCastlePalette"/>
+   <property name="TileConfig" value="ImprovedCastleTiles"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJx90LsuBGEYxvF3Zqm4BiQugE40iI1DgsjKLlE6RoJS1MuKREFp23UI0XEHzETHPaByuAj/zz5fZjK7o/jlne/wzLzvFEOzIsoFs4WMCvt7Yeu+M8H+ONawilKbO/fsP+TkN5Q7xEFO/j9Hyl3iApXAbB91nEu9TXUWca1chCesqB8/T3q93mb9rNwb3lFVP36eaqrWMuduHReauQ4z60RD/fh5GjnVnV+B+F82whwe1Y+bJ0YPeqUvbD13+RqmsWvJHB+qIxiVsdScvvbr2zd6T2TJLC/4Qilo+uT5NXUeKzOfej5VdQbIDGIIw0Gy9t9xdQpbmMGs+oj0Hn9/CcuZvHem+9vYUR/uP9zhG5Pc70YXNvHD3jFOVN39W/wCpRVjPA==
+  </data>
+ </layer>
+</map>

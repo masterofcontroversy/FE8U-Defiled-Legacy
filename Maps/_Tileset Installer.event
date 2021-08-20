@@ -1,0 +1,86 @@
+#include "Tilesets/Animations/Tile Animation Installer.event"
+
+//Zoramine Fields
+ALIGN 4
+ZoraFieldsObjectLabel: //compressed to lz77
+#incbin "Tilesets/Compressed Fields.dmp"
+
+//Updated Village //compressed to lz77
+ALIGN 4
+UpdatedVillageObjectLabel:
+#incbin "Tilesets/Compressed Updated Village.dmp"
+
+//Improved Castle
+ALIGN 4
+ImprovedCastleObjectLabel:
+#incbin "Tilesets/Compressed Improved Castle.dmp"
+
+//Green Palette
+ALIGN 4
+GreenPaletteLabel:
+#incbin "Tilesets/Palettes/GreenPalette.dmp"
+
+//Aquamarine Palette
+ALIGN 4
+AquaPaletteLabel: 
+#incbin "Tilesets/Palettes/AquamarinePalette.dmp"
+
+//Updated Village Night Palette
+ALIGN 4
+NightVillagePaletteLabel:
+#incbin "Tilesets/Palettes/NightVillagePalette.dmp"
+
+//Improved Castle Palette
+ALIGN 4
+ImprovedCastlePaletteLabel:
+#incbin "Tilesets/Palettes/CastlePalette.dmp"
+
+//Zoramine mapchip config
+ALIGN 4
+ZoraFieldsTileLabel:
+#incext compress "Tilesets/Zoramine Fields.mapchip_config"
+
+//Updated Village mapchip config
+ALIGN 4
+UpdatedVillageTileLabel:
+#incext compress "Tilesets/Updated Village.mapchip_config"
+
+//Improved Castle mapchip config
+ALIGN 4
+ImprovedCastleTileLabel:
+#incext compress "Tilesets/Improved Castle.mapchip_config"
+
+EventPointerTable(0x01, ZoraFieldsObjectLabel)
+EventPointerTable(0x0E, UpdatedVillageObjectLabel)
+EventPointerTable(0x18, ImprovedCastleObjectLabel)
+
+EventPointerTable(0x02, GreenPaletteLabel)
+EventPointerTable(0x38, AquaPaletteLabel)
+EventPointerTable(0x0F, NightVillagePaletteLabel)
+EventPointerTable(0x19, ImprovedCastlePaletteLabel)
+
+EventPointerTable(0x03, ZoraFieldsTileLabel)
+EventPointerTable(0x10, UpdatedVillageTileLabel)
+EventPointerTable(0x1A, ImprovedCastleTileLabel)
+
+EventPointerTable(0x05, FieldsAnimationLabel)
+EventPointerTable(0x12, VillageAnimationLabel)
+EventPointerTable(0x1C, CastleAnimationLabel)
+
+//Tile definitions
+#define ZoraFieldsObjects 0x01
+#define UpdatedVillageObjects 0x0E
+#define ImprovedCastleObjects 0x18
+
+#define GreenPalette 0x02
+#define AquaPalette 0x38
+#define NightVillagePalette 0x0F
+#define ImprovedCastlePalette 0x19
+
+#define ZoraFieldsTiles 0x03
+#define UpdatedVillageTiles 0x10
+#define ImprovedCastleTiles 0x1A
+
+#define FieldsAnimation 0x05
+#define VillageAnimation 0x12
+#define CastleAnimation 0x1C

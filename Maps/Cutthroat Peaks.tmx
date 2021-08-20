@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="22" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="Aquamarine Fields Tileset" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="Tilesets/Images/Aquamarine Fields Tiles.png" width="512" height="512"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="22" height="30">
+  <properties>
+   <property name="Anims1" value="FieldsAnimation"/>
+   <property name="Anims2" value="0"/>
+   <property name="ChapterID" value="4"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="0x16"/>
+   <property name="MapID" value="0x15"/>
+   <property name="ObjectType" value="ZoraFieldsObjects"/>
+   <property name="PaletteID" value="AquaPalette"/>
+   <property name="TileConfig" value="ZoraFieldsTiles"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxtVktIlFEU/v/791gYFUyrVkVBizIDg2pphkGEWIuydj0WEYapCeEuKkatHCdNooLQIO0hOvYwyU2bauNj0lq0l16Coyi07Dvd7/SfmVx8c9/ff853zzl3cmEQHHFBUAt0Od/X8S2sJdCOhx6yXm/GOeAyxve4vy30mAv92RTQgPl0GPMK2oFSwyP76sxYOIaAaufPy3gRuEibuoyNA+TOADeBGqA58u1GM6fIYn8V/dhAnxvIq3bKeM7wHkT/m4ED8Ik87MG+FH0Qrk6el758p93onEF/FO0ptNuA78S7wHOvAmERsBJYF3kfVJsFwyM2SttEO8WG32F8bn3kuTZj7gewH/yHiHLgMfb3u1jbgQIbRf+s8/t6nfezAm0R2jX0O4l9SbRlwHngDFBMeyd4/xNGV707sbeCnEm224Ed5J0hbzPXi40G86HXWrk6XKx3hlztQBZIi21Yew/0AVuB0+Ttpv/Kqzoo13FgL3CMuoodn3AuBUzJeeEysSDrPezLnT0weaM6DBn7loBFYBJoM3gY+flF2q/8LcBhatzP+5JYPiHcznNmgEr0X2JtEP0cMM/5GcaA3P0X4EIUc+tdqB6d5F4ynBLHov0w2hHub8G41Wgq+gwF+feapM6Sx5PkFfsqTT6fBBqBuxi/5bkt6K8Angfel6kg316JiTHWC9U4x5xIMC/kW/uA+5h/47wtcvaZ8PLurBZnaesY766JeS12vmBOCOcobawxNoWML+lfp81D9P8aa5Hy7qYetS7OE9F8gPaJnq1GX/3GE97fIONDtdYaMUY0sNZpzg27/DiVtjmM9eg1uRaRP224tX6K79XMuTTv8rXh1nvr4909YrzKfAl+dkWee5rx/5n9SyaeRZMUa2QZUA7cMLZfNXqURPnfVnzAvo/OvysL5G1kzfxbe4VH4iD4XxfLmTS+Sbx9DX3s3nbxm1HF+B0l56aCujZDe1fjZ9Z5WM4EYyFr/Nf3U2PN1tx/tmH9SsGcfENrZamLcyNtuLt4j1KLtOZq/pdj3wHW3vJlaoPWyGn63sZa0WDub7mY+IW1WdYJeSf6jP/jpi6o72q3xMWk4c0U8PZg7amJhxGX/1aorx2GV+yuc3HNyJDf5oi8mefIW8ncrDW81lf73+cV59Xuesay6tEdxn6vZTweLeDQe+8wsaF+1DGv02xFD6k78r7vdPn/oQZ4LzJO8FvCccfF/7/UD+GbIq/ki7z7P8mrb0JhrdUY0zopPH8A2yo1Rg==
+  </data>
+ </layer>
+</map>
