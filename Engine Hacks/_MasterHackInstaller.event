@@ -118,6 +118,9 @@ POP
   //Holy Blood
   #include "ExternalHacks/HolyBlood/Getters.event"
   
+  //Static Level Promotion
+  #include "ExternalHacks/StaticLevelPromotion/StaticLevelPromotion.event"
+
   //Anima Triangle
   #include "ExternalHacks/AnimaTriangle/AnimaTriangle.event"
   
