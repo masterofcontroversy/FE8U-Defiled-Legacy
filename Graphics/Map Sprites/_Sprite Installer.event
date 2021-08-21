@@ -115,6 +115,16 @@ DeserterMoving:
 #incbin "Deserter Moving.dmp"
 
 
+//Fighter map sprites
+ALIGN 4
+FighterStanding:
+#incbin "Fighter (M) Standing.dmp"
+
+ALIGN 4
+FighterMoving:
+#incbin "Fighter (M) Moving.dmp"
+
+
 //Wagon map sprites
 ALIGN 4
 WagonStanding:

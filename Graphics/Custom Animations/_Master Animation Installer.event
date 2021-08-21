@@ -69,7 +69,7 @@ PUSH
   MESSAGE Animation storage A from AnimSpaceA to currentOffset
 
   //Storing in AnimSpaceB (This ends at FDFFF0)
-  ORG AnimSpaceB
+  ORG AnimSpaceB //FULL
 
   //Dragon Knight (Part two)
   {
@@ -128,5 +128,33 @@ PUSH
   #include "Deserter Unarmed Installer.event"
   }
 
+  //TODO assign the following animations to their slots
+  //TODO assign animation pointers to use the following animations
+
+  //Solder
+  {
+  #include "Solder Lance Installer.event"
+  #include "Solder Unarmed Installer.event"
+  }
+
   MESSAGE Animation storage B from AnimSpaceB to currentOffset
+
+  ORG AnimSpaceC
+
+  //Spartan
+  {
+  #include "Spartan Sword Installer.event"
+  #include "Spartan Lance Installer.event"
+  #include "Spartan Unarmed Installer.event"
+  }
+
+  //Fighter
+  {
+  #include "Fighter Axe Installer.event"
+  #include "Fighter Handaxe Installer.event"
+  #include "Fighter Unarmed Installer.event"
+  }
+
+
+  MESSAGE Animation storage C from AnimSpaceC to currentOffset
 POP
