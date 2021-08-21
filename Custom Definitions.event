@@ -10,7 +10,7 @@
 #define AIItemUse(index, permission) "PUSH; ORG ($D8538 + index * 0x4); BYTE permission; POP"
 
 //AI Definitions
-#define DoNotMoveAI [0x06, DoNotMove, NormalRecovery, DefaultAI4]
+#define DoNotMoveAI [0x00, DoNotMove, NormalRecovery, DefaultAI4]
 
 //Unit Definitions
 #define Devan Eirika
@@ -52,6 +52,7 @@
 #define DragonMaster WyvernLord
 #define DragonMasterF WyvernLord_F
 #define Wagon Bonewalker
+#define TorchClass Bonewalker_Bow
 
 //Type Definitions
 #define Sword 0x00

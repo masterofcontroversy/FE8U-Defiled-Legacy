@@ -39,3 +39,10 @@ Songstress[X]
 
 ## SongstressDesc
 SongstressDesc[X]
+
+## TorchName
+Torch[X]
+
+## TorchDesc
+It lights things up.[NL]
+What did you expect?[X]
