@@ -8,3 +8,7 @@
 {
 #include "Chapter3.event"
 }
+
+//Chapter item permissions
+AIItemUse(0x3, 7)
+

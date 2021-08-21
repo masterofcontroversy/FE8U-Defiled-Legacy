@@ -33,11 +33,12 @@ ENDTRAP
 ALIGN 4
 
 TurnBasedEvents:
-TurnEventPlayer(0xC, FullAttack, 5)
+TurnEventEnemy(0xC, FullAttack, 5)
 END_MAIN
 
 ALIGN 32
 LocationBasedEvents:
+LOCA 0xA [12,2] 0x20
 END_MAIN
 
 CharacterBasedEvents:
@@ -82,18 +83,21 @@ UNIT
 EnemyUnits:
 UNIT 0x68 Brigand 0x67 Level(7,Enemy,0) [1,1] 0x0 0x0 0x0 0x1 [SilverAxe] DoNotMoveAI
 UNIT Raider Mercenary 0x67 Level(5,Enemy,1) [0,5] 0x0 0x0 0x0 0x1 [IronBlade] DoNotMoveAI
-UNIT Raider Deserter 0x67 Level(6,Enemy,1) [2,5] 0x0 0x0 0x0 0x1 [SteelLance, Javelin] DoNotMoveAI
+UNIT Raider Deserter 0x67 Level(6,Enemy,1) [2,5] 0x0 0x0 0x0 0x1 [DragonSpear, Javelin] DoNotMoveAI
 UNIT Raider Archer 0x67 Level(5,Enemy,1) [6,6] 0x0 0x0 0x0 0x1 [SteelBow] DoNotMoveAI
-UNIT Raider Brigand 0x67 Level(6,Enemy,1) [7,7] 0x0 0x0 0x0 0x1 [IronAxe] DoNotMoveAI
+UNIT Raider Brigand 0x67 Level(6,Enemy,1) [7,7] 0x0 0x0 0x0 0x1 [Halberd] DoNotMoveAI
 UNIT Raider Deserter 0x67 Level(2,Enemy,1) [8,22] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
 UNIT Raider Myrmidon 0x67 Level(4,Enemy,1) [5,21] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
 UNIT Raider Archer 0x67 Level(4,Enemy,1) [10,19] 0x0 0x0 0x0 0x1 [IronBow] AttackInRangeAI
 UNIT Raider Brigand 0x67 Level(4,Enemy,1) [8,18] 0x0 0x0 0x0 0x1 [DragonAxe] AttackInRangeAI
 UNIT Raider Brigand 0x67 Level(7,Enemy,1) [6,11] 0x0 0x0 0x0 0x1 [HandAxe] AttackInRangeAI
 UNIT Raider Brigand 0x67 Level(7,Enemy,1) [6,10] 0x0 0x0 0x0 0x1 [SteelAxe] AttackInRangeAI
-UNIT Raider Archer 0x67 Level(4,Enemy,1) [3,16] 0x0 0x0 0x0 0x1 [SteelBow] DoNotMoveAI
-UNIT Raider Archer 0x67 Level(4,Enemy,1) [7,14] 0x0 0x0 0x0 0x1 [SteelBow] DoNotMoveAI
+UNIT Raider Archer 0x67 Level(4,Enemy,1) [3,16] 0x0 0x0 0x0 0x1 [SteelBow] [0x00, DoNotMove, NormalRecovery, DefaultAI4]
+UNIT Raider Archer 0x67 Level(4,Enemy,1) [7,14] 0x0 0x0 0x0 0x1 [SteelBow] [0x00, DoNotMove, NormalRecovery, DefaultAI4]
 UNIT Raider Deserter 0x67 Level(7,Enemy,1) [5,15] 0x0 0x0 0x0 0x1 [DragonSpear] [AttackIfClose, DoNotMove, NormalRecovery, DefaultAI4]
+UNIT Raider Mercenary 0x67 Level(5,Enemy,1) [8,4] 0x0 0x0 0x0 0x1 [Wyrmslayer] AttackInRangeAI
+UNIT Raider Fighter 0x67 Level(4,Enemy,1) [9,5] 0x0 0x0 0x0 0x1 [Swordreaver] AttackInRangeAI
+UNIT Raider Brigand 0x67 Level(7,Enemy,1) [14,4] 0x0 0x0 0x0 0x1 [SteelAxe] DoNotMoveAI
 
 UNIT
 
@@ -115,9 +119,19 @@ FullAttack:
 Text(Placeholder_text)
 SVAL 0x1 0x00000000
 CHAI 0x68
-CHAI [1,5]
-CHAI [1,7]
+CHAI [2,5]
+CHAI [2,7]
 CHAI [6,6]
 CHAI [7,7]
+CHAI [8,4]
+CHAI [9,5]
+CHAI [14,4]
+
+SETVAL 0xB 0x04000E
+
+CAM1 [12,3]
+MOVE 10 0xFFFE [12,3]
+ENUN
+TileChange 0x1
 NoFade
 ENDA

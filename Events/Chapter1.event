@@ -1,4 +1,4 @@
-EventPointerTable(0x0A,ThisChapter) //7 is the ID for prologue events in vanilla FE8
+EventPointerTable(0x0A,ThisChapter)
 
 ThisChapter:
 
@@ -73,6 +73,7 @@ MOVE 7 Kenneth [7,11]
 
 Text(Ch1_Targets_Found)
 
+NoFade
 ENDA
 
 EndingScene:
