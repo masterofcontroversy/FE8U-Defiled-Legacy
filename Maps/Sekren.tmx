@@ -3,7 +3,6 @@
  <tileset firstgid="1" name="Updated Village Tileset Night" tilewidth="16" tileheight="16">
   <image source="Tilesets/Images/Updated Village Tileset Night.png" width="512" height="512"/>
  </tileset>
- <tileset firstgid="1025" source="../../Desktop/FEMapCreator/Aquamarine Fields Tiles.tsx"/>
  <layer id="1" name="Tile Layer 1" width="25" height="15">
   <properties>
    <property name="Anims1" value="VillageAnimation"/>
