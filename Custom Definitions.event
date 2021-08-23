@@ -12,6 +12,9 @@
 //AI Definitions
 #define DoNotMoveAI [0x00, DoNotMove, NormalRecovery, DefaultAI4]
 
+//Event every x turns (WIP)
+//#define EveryXTurns(whatTurn, Output) "CHECK_TURNS; SVAL 0xA whatTurn; SMOD (0xAC byte Output); BEQ 1 Output 0x0"
+
 //Unit Definitions
 #define Devan Eirika
 #define Ronni Seth

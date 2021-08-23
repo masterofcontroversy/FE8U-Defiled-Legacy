@@ -1,0 +1,84 @@
+EventPointerTable(0x7,ThisChapter)
+
+ThisChapter:
+
+POIN TurnBasedEvents
+
+POIN CharacterBasedEvents
+
+POIN LocationBasedEvents
+
+POIN MiscBasedEvents
+
+POIN Dunno Dunno Dunno
+
+POIN Tutorial
+
+POIN TrapData TrapData
+
+POIN PlayerUnits PlayerUnits
+
+POIN $0 $0 $0 $0 $0 $0
+
+POIN BeginningScene EndingScene
+
+Dunno:
+WORD $00
+
+Tutorial:
+WORD $00
+
+TrapData:
+ENDTRAP
+ALIGN 4
+
+TurnBasedEvents:
+TurnEventPlayer(0xC,Timeup,9)
+END_MAIN
+
+ALIGN 32
+LocationBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+BeginningScene:
+LOAD1 1 PlayerUnits
+
+ENUN
+NoFade
+ENDA
+
+EndingScene:
+SetBackground(0x18)
+Text(Ch1_Mercy)
+EndConvo
+
+MNC2 0x2
+ENDA
+
+PlayerUnits:
+UNIT Devan Duke Devan Level(1,Ally,0) [3,9] 0x0 0x0 0x0 0x1 [IronLance, Javelin, Vulnerary] NoAI
+UNIT Ronni Ranger_F Devan Level(1,Ally,0) [3,10] 0x0 0x0 0x0 0x1 [IronBow, SteelBow, Vulnerary] NoAI
+
+UNIT
+
+EnemyUnits:
+UNIT 0x67 Brigand 0x67 Level(3,Enemy,1) [13,0] 0x0 0x0 0x0 0x1 [SteelAxe, HandAxe] AttackInRangeAI
+UNIT Raider Brigand 0x67 Level(2,Enemy,1) [2,6] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT Raider Brigand 0x67 Level(1,Enemy,1) [3,6] 0x0 0x0 0x0 0x1 [IronAxe] NoAI
+UNIT Raider Mercenary 0x67 Level(3,Enemy,1) [0,5] 0x0 0x0 0x0 0x1 [SteelSword] NoAI
+UNIT Raider Mercenary 0x67 Level(1,Enemy,1) [10,2] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+UNIT Raider Mercenary 0x67 Level(2,Enemy,1) [11,0] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+UNIT Raider Brigand 0x67 Level(2,Enemy,1) [9,2] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT Raider Brigand 0x67 Level(1,Enemy,1) [14,1] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+UNIT Raider Deserter 0x67 Level(2,Enemy,1) [0,7] 0x0 0x0 0x0 0x1 [IronLance] NoAI
+UNIT Raider Deserter 0x67 Level(3,Enemy,1) [11,3] 0x0 0x0 0x0 0x1 [IronLance, Javelin] AttackInRangeAI
+
+UNIT
