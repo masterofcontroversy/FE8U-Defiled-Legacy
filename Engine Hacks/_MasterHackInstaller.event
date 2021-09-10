@@ -112,6 +112,12 @@ POP
     NoFade
     ENDA
 
+    //No Promotion Bonus
+    #include "ExternalHacks/NoPromotionBonus/NoPromotionBonus.event"
+
+    //Set Conditons
+    #include "ExternalHacks/Set Condition/Set Condition.event"
+    
     //Dismount and Mount
     //#include "ExternalHacks/DismountMount/DismountMount Installer.event"
 
