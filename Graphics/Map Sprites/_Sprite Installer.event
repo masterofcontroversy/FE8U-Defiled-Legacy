@@ -125,6 +125,16 @@ FighterMoving:
 #incbin "Fighter (M) Moving.dmp"
 
 
+//Shaman (F) map sprites
+ALIGN 4
+ShamanFStanding:
+#incbin "Shaman (F) Standing.dmp"
+
+ALIGN 4
+ShamanFMoving:
+#incbin "Shaman (F) Moving.dmp"
+
+
 //Wagon map sprites
 ALIGN 4
 WagonStanding:

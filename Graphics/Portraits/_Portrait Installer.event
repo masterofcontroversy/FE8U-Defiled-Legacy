@@ -46,6 +46,24 @@ AlexandraPortrait:
 #incbin "Alexandra_palette.dmp"
 #incbin "Alexandra_minimug.dmp"
 
+//Lucy
+ALIGN 4
+LucyPortrait:
+#incbin "Lucy_mug.dmp"
+#incbin "Lucy_frames.dmp"
+#incbin "Lucy_palette.dmp"
+#incbin "Lucy_minimug.dmp"
+
+//Enemies
+
+//Hendrick
+ALIGN 4
+HendrickPortrait:
+#incbin "Hendrick_mug.dmp"
+#incbin "Hendrick_frames.dmp"
+#incbin "Hendrick_palette.dmp"
+#incbin "Hendrick_minimug.dmp"
+
 //setMugEntry(<mugindex>,<portrait label>,<mouth X>,<mouth Y>,<eye X>,<eye Y>)
 
 setMugEntry(0x02,DevanPortrait,3,5,3,3)
@@ -54,3 +72,7 @@ setMugEntry(0x05,AnthonyPortrait,3,5,3,3)
 setMugEntry(0x06,KennethPortrait,3,6,3,4)
 setMugEntry(0x08,JuliannePortrait,4,6,3,4)
 setMugEntry(0x14,AlexandraPortrait,3,6,3,4)
+setMugEntry(0x13,LucyPortrait,4,7,4,5)
+
+//Enemies
+setMugEntry(0x31,HendrickPortrait,3,5,3,3)
