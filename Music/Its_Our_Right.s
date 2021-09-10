@@ -121,17 +121,15 @@ Its_Our_Right_0_8:
 @ 019   ----------------------------------------
         .byte   W96
 @ 020   ----------------------------------------
-        .byte           N18   , Dn3 , v022
+        .byte           N18   , Dn3
         .byte   W24
         .byte                   Dn3
         .byte   W24
         .byte                   Dn3
         .byte   W48
 @ 021   ----------------------------------------
-        .byte   W36
-        .byte           N12   , Cn3 , v038
-        .byte   W12
-        .byte                   Dn3
+        .byte   W48
+        .byte           N12
         .byte   W12
         .byte                   En3
         .byte   W12
@@ -163,7 +161,6 @@ Its_Our_Right_0_8:
 @ 025   ----------------------------------------
         .byte   W12
         .byte           N24   , An3
-        .byte           N24   , An2
         .byte   W24
         .byte           N60   , Gs3
         .byte           N60   , Gs2
@@ -194,10 +191,8 @@ Its_Our_Right_0_26:
          .word  Its_Our_Right_0_26
 @ 029   ----------------------------------------
         .byte           N12   , An3 , v038
-        .byte           N12   , An2
         .byte   W12
         .byte                   Gs3
-        .byte           N12   , Gs2
         .byte   W12
         .byte           N36   , Gn3
         .byte           N36   , Gn2
@@ -313,7 +308,7 @@ Its_Our_Right_1_LOOP:
 @ 004   ----------------------------------------
 Its_Our_Right_1_4:
         .byte   W12
-        .byte           N12   , Bn3 , v051
+        .byte           N12   , Cn4 , v051
         .byte   W12
         .byte           N24   , Fn3
         .byte   W24
@@ -352,7 +347,7 @@ Its_Our_Right_1_7:
         .byte   W24
         .byte                   Bn3
         .byte   W24
-        .byte           N12
+        .byte           N12   , Cn4
         .byte   W12
         .byte           N24   , Fn3
         .byte   W24
@@ -424,8 +419,15 @@ Its_Our_Right_1_10:
         .byte   PATT
          .word  Its_Our_Right_1_10
 @ 025   ----------------------------------------
-        .byte   PATT
-         .word  Its_Our_Right_1_4
+        .byte   W12
+        .byte           N12   , An3 , v051
+        .byte   W12
+        .byte           N24   , Fn3
+        .byte   W24
+        .byte                   Fn3
+        .byte   W24
+        .byte                   Fn3
+        .byte   W24
 @ 026   ----------------------------------------
 Its_Our_Right_1_26:
         .byte   W12
@@ -522,6 +524,7 @@ Its_Our_Right_2:
 @ 000   ----------------------------------------
         .byte           VOICE , 52
         .byte           VOL   , 127
+        .byte           N24   , AsM1 , v037
         .byte   W96
 @ 001   ----------------------------------------
         .byte   W96
@@ -559,24 +562,31 @@ Its_Our_Right_2_LOOP:
 @ 010   ----------------------------------------
         .byte   W84
         .byte                   Dn3 , v042
+        .byte           N12   , Dn2 , v019
         .byte   W12
 @ 011   ----------------------------------------
-        .byte                   En3
+        .byte                   En3 , v042
+        .byte           N12   , En2 , v019
         .byte   W12
-        .byte                   Gs3
+        .byte                   Gs3 , v042
+        .byte           N12   , Gs2 , v019
         .byte   W12
-        .byte           N24   , Bn3
+        .byte           N24   , Bn3 , v042
+        .byte           N24   , Bn2 , v019
         .byte   W24
-        .byte           N12   , An3
+        .byte           N12   , An3 , v042
+        .byte           N12   , An2 , v019
         .byte   W12
-        .byte           N06   , Fs3
+        .byte           N06   , Fs3 , v042
+        .byte           N06   , Fs2 , v019
         .byte   W12
-        .byte           N24   , Bn3
+        .byte           N24   , Bn3 , v042
+        .byte           N24   , Bn2 , v019
         .byte   W24
 @ 012   ----------------------------------------
         .byte   W96
 @ 013   ----------------------------------------
-        .byte           N18   , Cn3
+        .byte           N18   , Cn3 , v042
         .byte   W24
         .byte           N12   , Bn3
         .byte   W12
@@ -593,26 +603,31 @@ Its_Our_Right_2_LOOP:
 @ 017   ----------------------------------------
         .byte   W72
         .byte                   Gs3
+        .byte           N12   , Gs2 , v026
         .byte   W12
-        .byte           N18   , Bn3
+        .byte           N18   , Bn3 , v042
+        .byte           N18   , Bn2 , v026
         .byte   W12
 @ 018   ----------------------------------------
         .byte   W12
-        .byte                   Cn4
+        .byte                   Cn4 , v042
+        .byte           N18   , Cn3 , v026
         .byte   W24
-        .byte           N60   , An3
+        .byte           N60   , An3 , v042
+        .byte           N60   , An2 , v026
         .byte   W60
 @ 019   ----------------------------------------
         .byte   W96
 @ 020   ----------------------------------------
-        .byte           N18   , Dn3 , v032
-        .byte   W24
-        .byte                   Dn3
-        .byte   W24
-        .byte                   Dn3
-        .byte   W48
+        .byte   W84
+        .byte           N18   , Cn3 , v032
+        .byte   W12
 @ 021   ----------------------------------------
-        .byte   W96
+        .byte   W12
+        .byte                   Bn3
+        .byte   W24
+        .byte           N12   , Fs3
+        .byte   W60
 @ 022   ----------------------------------------
         .byte   W96
 @ 023   ----------------------------------------
@@ -627,7 +642,7 @@ Its_Our_Right_2_LOOP:
         .byte   W96
 @ 028   ----------------------------------------
         .byte   W48
-        .byte           N12   , Cn3
+        .byte                   Cn3
         .byte   W12
         .byte           N24   , Dn3
         .byte   W24
@@ -679,13 +694,28 @@ Its_Our_Right_2_LOOP:
         .byte                   An3
         .byte   W12
         .byte           N72   , Gs3
-        .byte           N72   , Gs2
+        .byte           N60   , Gs2
         .byte   W48
 @ 035   ----------------------------------------
-        .byte   W72
-        .byte           N12   , Cn3 , v027
         .byte   W12
-        .byte           N18   , En3
+        .byte           N12   , Cs3 , v026
+        .byte           N12   , Gs2 , v019
+        .byte   W12
+        .byte                   Dn3 , v026
+        .byte           N12   , An2 , v019
+        .byte   W12
+        .byte                   En3 , v026
+        .byte           N12   , Bn2 , v019
+        .byte   W12
+        .byte                   Dn3 , v026
+        .byte           N12   , An2 , v019
+        .byte   W12
+        .byte                   Cn3 , v026
+        .byte           N12   , Gn2 , v019
+        .byte   W12
+        .byte                   Cn3 , v037
+        .byte   W12
+        .byte           N18   , En3 , v027
         .byte   W12
 @ 036   ----------------------------------------
         .byte   W12

@@ -11,8 +11,8 @@
 #define SFXGroup 6
 
 {
-SongTable(9,It_s_Our_Right_Second_,MapMusicGroup)
-#include "It's Our Right(1).event"
+SongTable(9,Its_Our_Right,MapMusicGroup)
+#include "It's Our Right.event"
 }
 {
 SongTable(0x1A,Another_Encounter,MapMusicGroup)

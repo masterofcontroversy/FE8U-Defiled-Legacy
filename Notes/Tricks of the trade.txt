@@ -1,3 +1,8 @@
+Asorted changes to established engine hacks:
+-Holy Blood hack DescGetter uses text address 0xCD for no blood instead of 0xE0.
+
+---------------------------------------
+
 Creating animation pointers:
 (This might be tutorial worthy)
 
@@ -8,10 +13,15 @@ So, if you just want to create some pointers for your animations, here you go.
 
 #define AnimPointer(Type,Type_Designation,AnimID) "BYTE Type Type_Designation AnimID 0;"
 
-Remember, you need to use the macro for each INDIVIDUAL animation. To be in line with the example featured later in this tutorial:
+Remember, you need to use the macro for EACH INDIVIDUAL animation. To be in line with the example featured later in this tutorial:
 
-AnimPointer(01,01,01) // Vanilla Ephriam with lance
-AnimPointer(09,01,02) // Vanilla Ephriam unarmed
+ALIGN 4
+EphraimLordPointer: // Label for Ephraim Lord
+AnimPointer(01,01,01) // Vanilla Ephraim with lance
+AnimPointer(09,01,02) // Vanilla Ephraim unarmed
+WORD 0 0 // End of animation pointers for Ephraim Lord
+
+And always remember to put "WORD 0 0" at the end or else the game will try to use other data that it doesn't need, and that will cause problems
 
 Now for your not so regularly scheduled tutorial:
 
@@ -173,10 +183,16 @@ The special thing this script does ask what you want to name the file and it to 
 It can assemble every bin file from the directory you're in onwards with the -r argument, letting you name every output file as it goes along.
 
 PNG2Dmp:
-This script is a bit more specialized at the moment. It currently only uses the --lz77 argument. (This has been fixed. You can use all arguments that Png2Dmp would take)
+This script is a bit more specialized at the moment. It currently only uses the --lz77 argument. (This has been fixed. You can now use all arguments that Png2Dmp would take)
 PNG2Dmp acts the same way as animation-assembler except for allowing you to name the output files.
 I originally made this so I wouldn't have to run the command on each mapsprite image seperately
 
+portrait-formatter:
+A very simple script. It just runs PortraitFormatter, and moves the dump files to the specified folder.
+It acts like the other scripts, using the same -r argument.
+It automatically moves the output files.
+
+(NOTE: After discovering out lord and saviour Stan Hash, All these tools aside from animation-assembler use the python builds from Stan Hash.)
 Now for the application in the ROM hack:
 
 animation-assembler is only being used as a semi-automatic tool. There isn't any benefit in keeping the bin files
@@ -185,4 +201,33 @@ with the frame information in the project folder. Especially since the output fi
 PNG2Dmp is being used in the makehack script to turn the mapsprite png files into dmp files and move them to the "Map Sprite" folder.
 Since I only really use the lz77 compression with Png2Dmp, this seems an appropriate use for the script.
 
+portrait-formatter is in use for automatically compressing portraits, so the bin files can be removed from the portraits folder, and be generated during inital build.
+
 As of 4/27/2021, PNG2Dmp is also being used to compress tile animations.
+
+My own python script for converting .s music files to event files because s2ea won't change ".align  2" to "ALIGN 2" which is wrong anyway.
+What should be there is "ALIGN 4" due to the song not working if it does not start in an address that is a multiple of four.
+
+---------------------------------------
+
+AI Notes:
+
+Since there is a hack to make any unit that has the NeverMoveAI have zero move in use, any unit with NeverMoveAI will never be able to move after being loaded. Ever.
+In light of this, (And after two hours of finding the problem.) I made a "DoNotMoveAI" that makes a unit with it not move, but still
+be able to move later. The definition of it can be found in the custom definitions.
+
+---------------------------------------
+
+Music Notes:
+
+replace ".align  2" with "ALIGN 4"
+
+---------------------------------------
+
+Eventing Notes:
+
+8/25/2021
+Implemented Snakey's EveryXTurns macro for reinforcements in chapter 3
+
+8/27/2021
+Tequila's Set Condition ASM has been implemented so units that retreated before chapter 6 can come back.

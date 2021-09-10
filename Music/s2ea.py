@@ -4,9 +4,9 @@ import sys
 
 asmFile = sys.argv[1]
 try:
-    outputFile = asmFile.replace(".s",".event")
-except IndexError:
     outputFile = sys.argv[2]
+except IndexError:
+    outputFile = asmFile.replace(".s",".event")
 
 def main():
     with open(asmFile, "r") as inFile:

@@ -122,17 +122,15 @@ Its_Our_Right_0_8:
 // 019   ----------------------------------------
         BYTE   W96
 // 020   ----------------------------------------
-        BYTE           N18    Dn3  v022
+        BYTE           N18    Dn3
         BYTE   W24
         BYTE                   Dn3
         BYTE   W24
         BYTE                   Dn3
         BYTE   W48
 // 021   ----------------------------------------
-        BYTE   W36
-        BYTE           N12    Cn3  v038
-        BYTE   W12
-        BYTE                   Dn3
+        BYTE   W48
+        BYTE           N12
         BYTE   W12
         BYTE                   En3
         BYTE   W12
@@ -164,7 +162,6 @@ Its_Our_Right_0_8:
 // 025   ----------------------------------------
         BYTE   W12
         BYTE           N24    An3
-        BYTE           N24    An2
         BYTE   W24
         BYTE           N60    Gs3
         BYTE           N60    Gs2
@@ -195,10 +192,8 @@ Its_Our_Right_0_26:
          POIN2  Its_Our_Right_0_26
 // 029   ----------------------------------------
         BYTE           N12    An3  v038
-        BYTE           N12    An2
         BYTE   W12
         BYTE                   Gs3
-        BYTE           N12    Gs2
         BYTE   W12
         BYTE           N36    Gn3
         BYTE           N36    Gn2
@@ -314,7 +309,7 @@ Its_Our_Right_1_LOOP:
 // 004   ----------------------------------------
 Its_Our_Right_1_4:
         BYTE   W12
-        BYTE           N12    Bn3  v051
+        BYTE           N12    Cn4  v051
         BYTE   W12
         BYTE           N24    Fn3
         BYTE   W24
@@ -353,7 +348,7 @@ Its_Our_Right_1_7:
         BYTE   W24
         BYTE                   Bn3
         BYTE   W24
-        BYTE           N12
+        BYTE           N12    Cn4
         BYTE   W12
         BYTE           N24    Fn3
         BYTE   W24
@@ -425,8 +420,15 @@ Its_Our_Right_1_10:
         BYTE   PATT
          POIN2  Its_Our_Right_1_10
 // 025   ----------------------------------------
-        BYTE   PATT
-         POIN2  Its_Our_Right_1_4
+        BYTE   W12
+        BYTE           N12    An3  v051
+        BYTE   W12
+        BYTE           N24    Fn3
+        BYTE   W24
+        BYTE                   Fn3
+        BYTE   W24
+        BYTE                   Fn3
+        BYTE   W24
 // 026   ----------------------------------------
 Its_Our_Right_1_26:
         BYTE   W12
@@ -523,6 +525,7 @@ Its_Our_Right_2:
 // 000   ----------------------------------------
         BYTE           VOICE  52
         BYTE           VOL    127
+        BYTE           N24    AsM1  v037
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -560,24 +563,31 @@ Its_Our_Right_2_LOOP:
 // 010   ----------------------------------------
         BYTE   W84
         BYTE                   Dn3  v042
+        BYTE           N12    Dn2  v019
         BYTE   W12
 // 011   ----------------------------------------
-        BYTE                   En3
+        BYTE                   En3  v042
+        BYTE           N12    En2  v019
         BYTE   W12
-        BYTE                   Gs3
+        BYTE                   Gs3  v042
+        BYTE           N12    Gs2  v019
         BYTE   W12
-        BYTE           N24    Bn3
+        BYTE           N24    Bn3  v042
+        BYTE           N24    Bn2  v019
         BYTE   W24
-        BYTE           N12    An3
+        BYTE           N12    An3  v042
+        BYTE           N12    An2  v019
         BYTE   W12
-        BYTE           N06    Fs3
+        BYTE           N06    Fs3  v042
+        BYTE           N06    Fs2  v019
         BYTE   W12
-        BYTE           N24    Bn3
+        BYTE           N24    Bn3  v042
+        BYTE           N24    Bn2  v019
         BYTE   W24
 // 012   ----------------------------------------
         BYTE   W96
 // 013   ----------------------------------------
-        BYTE           N18    Cn3
+        BYTE           N18    Cn3  v042
         BYTE   W24
         BYTE           N12    Bn3
         BYTE   W12
@@ -594,26 +604,31 @@ Its_Our_Right_2_LOOP:
 // 017   ----------------------------------------
         BYTE   W72
         BYTE                   Gs3
+        BYTE           N12    Gs2  v026
         BYTE   W12
-        BYTE           N18    Bn3
+        BYTE           N18    Bn3  v042
+        BYTE           N18    Bn2  v026
         BYTE   W12
 // 018   ----------------------------------------
         BYTE   W12
-        BYTE                   Cn4
+        BYTE                   Cn4  v042
+        BYTE           N18    Cn3  v026
         BYTE   W24
-        BYTE           N60    An3
+        BYTE           N60    An3  v042
+        BYTE           N60    An2  v026
         BYTE   W60
 // 019   ----------------------------------------
         BYTE   W96
 // 020   ----------------------------------------
-        BYTE           N18    Dn3  v032
-        BYTE   W24
-        BYTE                   Dn3
-        BYTE   W24
-        BYTE                   Dn3
-        BYTE   W48
+        BYTE   W84
+        BYTE           N18    Cn3  v032
+        BYTE   W12
 // 021   ----------------------------------------
-        BYTE   W96
+        BYTE   W12
+        BYTE                   Bn3
+        BYTE   W24
+        BYTE           N12    Fs3
+        BYTE   W60
 // 022   ----------------------------------------
         BYTE   W96
 // 023   ----------------------------------------
@@ -628,7 +643,7 @@ Its_Our_Right_2_LOOP:
         BYTE   W96
 // 028   ----------------------------------------
         BYTE   W48
-        BYTE           N12    Cn3
+        BYTE                   Cn3
         BYTE   W12
         BYTE           N24    Dn3
         BYTE   W24
@@ -680,13 +695,28 @@ Its_Our_Right_2_LOOP:
         BYTE                   An3
         BYTE   W12
         BYTE           N72    Gs3
-        BYTE           N72    Gs2
+        BYTE           N60    Gs2
         BYTE   W48
 // 035   ----------------------------------------
-        BYTE   W72
-        BYTE           N12    Cn3  v027
         BYTE   W12
-        BYTE           N18    En3
+        BYTE           N12    Cs3  v026
+        BYTE           N12    Gs2  v019
+        BYTE   W12
+        BYTE                   Dn3  v026
+        BYTE           N12    An2  v019
+        BYTE   W12
+        BYTE                   En3  v026
+        BYTE           N12    Bn2  v019
+        BYTE   W12
+        BYTE                   Dn3  v026
+        BYTE           N12    An2  v019
+        BYTE   W12
+        BYTE                   Cn3  v026
+        BYTE           N12    Gn2  v019
+        BYTE   W12
+        BYTE                   Cn3  v037
+        BYTE   W12
+        BYTE           N18    En3  v027
         BYTE   W12
 // 036   ----------------------------------------
         BYTE   W12

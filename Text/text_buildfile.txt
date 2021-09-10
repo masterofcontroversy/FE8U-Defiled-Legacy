@@ -1,11 +1,11 @@
 # 0x00CD NoCBdesc
-None. Pure of Champions's blood.[X]
+None. Pure of Champions' blood.[X]
 
 # 0x0002 textWeaponRankIncreasedTo
  Weapon rank increased to [X]
 
 # 0x0C50
-Champion's Blood[X]
+Champions' Blood[X]
 
 # 0x0094
 HP Bars[.][X]
@@ -102,6 +102,8 @@ Mov[X]
 #include "Champions.txt"
 
 #include "Names/ClassNames.txt"
+
+#include "Names/ItemNames.txt"
 
 #include "Names/CharNames.txt"
 
