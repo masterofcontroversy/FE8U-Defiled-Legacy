@@ -4,16 +4,22 @@
 #define AnimSpaceC $FE4000 //This will expand the ROM to fit the animations
 
 //Chapter item permissions
-//Door key + 1
-//Lockpick + 2
-//Antitoxin + 4
-#define AIItemUse(index, permission) "PUSH; ORG ($D8538 + index * 0x4); BYTE permission; POP"
+//Door key = third bit
+//Lockpick = second bit
+//Antitoxin = fourth bit
+//please remember that to define binary, you add "b" to the end of your binary
+#define AIItemUse(Index, permission) "PUSH; ORG ($D8538 + Index * 0x4); BYTE permission; POP"
+
+//Skirmish chapters
+#define SkirmishChapter(Index,ChapterID) "PUSH; ORG ($206948 + Index); BYTE ChapterID; POP"
 
 //AI Definitions
 #define DoNotMoveAI [0x00, DoNotMove, NormalRecovery, DefaultAI4]
 
 //Event every x turns (WIP)
-//#define EveryXTurns(whatTurn, Output) "CHECK_TURNS; SVAL 0xA whatTurn; SMOD (0xAC byte Output); BEQ 1 Output 0x0"
+#define EveryXTurns(whatTurn) "CHECK_TURNS; SVAL 0xA whatTurn; SMOD 0xAC1;"
+#define Every2Turns(CondID1,CondID2,EventID,Pointer) "CHECK_EVENTID EventID;BNE CondID1 0x0 0xC;CALL Pointer;ENUT EventID;GOTO CondID2;LABEL CondID1;ENUF EventID;LABEL CondID2"
+#define Every3Turns(CondID1,CondID2,CondID3,CondID4,EventID1,EventID2,Pointer) "CHECK_EVENTID EventID1;BNE CondID1 0x0 0xC;CHECK_EVENTID EventID2;BNE CondID2 0x0 0xC;CALL Pointer;ENUT EventID1;ENUT EventID2;GOTO CondID3;LABEL CondID2;ENUF EventID2;GOTO CondID3;LABEL CondID1;ENUF EventID1;LABEL CondID3"
 
 //Unit Definitions
 #define Devan Eirika
@@ -37,6 +43,9 @@
 #define Cassis 0xC0
 #define Tolva 0x80
 #define Raider 0x64
+
+//Item Definitions
+#define HuntingBow 0xC4
 
 //Class Definitions
 #define Duke EirikaLord
