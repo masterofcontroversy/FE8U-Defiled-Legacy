@@ -1,0 +1,5 @@
+## HuntingBowName
+Hunting Bow[X]
+
+## HuntingBowDesc
+The personal bow of Zack O'Dule[X]
