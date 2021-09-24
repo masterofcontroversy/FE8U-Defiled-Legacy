@@ -66,8 +66,8 @@ processText () {
 #Image compression
 processImages () {
   echo compressing map sprites
-  DMP_DIR="$base_dir/Graphics/Map Sprites"
-  cd "$base_dir/Graphics/Map Sprites/Images"
+  DMP_DIR="$base_dir/Graphics/MapSprites"
+  cd "$base_dir/Graphics/MapSprites/Images"
   echo | exec $PNG2Dmp -r --move --lz77
   echo done
 
