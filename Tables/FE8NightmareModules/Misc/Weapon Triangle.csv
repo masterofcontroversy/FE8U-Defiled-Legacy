@@ -1,0 +1,13 @@
+0x59BA90,Weapon 1 vs,Weapon 2,Hit modifier,Might modifier
+Sword Lance,Sword,Lance,-20,-2
+Sword Axe,Sword,Axe,20,2
+Lance Axe,Lance,Axe,-20,-2
+Lance Sword,Lance,Sword,20,2
+Axe Sword,Axe,Sword,-20,-2
+Axe Lance,Axe,Lance,20,2
+Anima Dark,Anima,Dark,-20,-2
+Anima Light,Anima,Light,20,2
+Light Anima,Light,Anima,-20,-2
+Light Dark,Light,Dark,20,2
+Dark Light,Dark,Light,-20,-2
+Dark Anima,Dark,Anima,20,2

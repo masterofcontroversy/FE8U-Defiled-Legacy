@@ -1,0 +1,17 @@
+#define _C2EA_Weapon_Triangle(arg000,arg001,arg002,arg003) "BYTE arg000 arg001 arg002 arg003 "
+
+PUSH
+ORG 0x59BA90
+_C2EA_Weapon_Triangle(Sword,Lance,0xec,0xfe)
+_C2EA_Weapon_Triangle(Sword,Axe,0x14,0x2)
+_C2EA_Weapon_Triangle(Lance,Axe,0xec,0xfe)
+_C2EA_Weapon_Triangle(Lance,Sword,0x14,0x2)
+_C2EA_Weapon_Triangle(Axe,Sword,0xec,0xfe)
+_C2EA_Weapon_Triangle(Axe,Lance,0x14,0x2)
+_C2EA_Weapon_Triangle(Anima,Dark,0xec,0xfe)
+_C2EA_Weapon_Triangle(Anima,Light,0x14,0x2)
+_C2EA_Weapon_Triangle(Light,Anima,0xec,0xfe)
+_C2EA_Weapon_Triangle(Light,Dark,0x14,0x2)
+_C2EA_Weapon_Triangle(Dark,Light,0xec,0xfe)
+_C2EA_Weapon_Triangle(Dark,Anima,0x14,0x2)
+POP
