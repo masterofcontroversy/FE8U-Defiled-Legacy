@@ -1,0 +1,218 @@
+EphraimLordSkillList:
+BYTE 00 00
+ALIGN 4
+
+EirikaLordSkillList:
+BYTE 00 00
+ALIGN 4
+
+EphraimGreatLordSkillList:
+BYTE 00 00
+ALIGN 4
+
+EirikaGreatLordSkillList:
+BYTE 255 SupplyID
+BYTE 00 00
+ALIGN 4
+
+CavalierSkillList:
+BYTE 00 00
+
+PaladinSkillList:
+BYTE 00 00
+ALIGN 4
+
+KnightSkillList:
+BYTE 00 00
+ALIGN 4
+
+GeneralSkillList:
+BYTE 00 00
+ALIGN 4
+
+ThiefSkillList:
+BYTE 00 00
+ALIGN 4
+
+MercenarySkillList:
+BYTE 00 00
+ALIGN 4
+
+HeroSkillList:
+BYTE 00 00
+ALIGN 4
+
+MyrmidonSkillList:
+BYTE 00 00
+ALIGN 4
+
+SwordmasterSkillList:
+BYTE 00 00
+ALIGN 4
+
+AssassinSkillList:
+BYTE 00 00
+ALIGN 4
+
+ArcherSkillList:
+BYTE 00 00
+ALIGN 4
+
+SniperSkillList:
+BYTE 00 00
+ALIGN 4
+
+RangerSkillList:
+BYTE 00 00
+ALIGN 4
+
+WyvernRiderSkillList:
+BYTE 00 00
+ALIGN 4
+
+WyvernLordSkillList:
+BYTE 00 00
+ALIGN 4
+
+WyvernKnightSkillList:
+BYTE 00 00
+ALIGN 4
+
+MageSkillList:
+BYTE 00 00
+ALIGN 4
+
+SageSkillList:
+BYTE 255 AdeptID
+BYTE 00 00
+ALIGN 4
+
+MageKnightSkillList:
+BYTE 00 00
+ALIGN 4
+
+BishopSkillList:
+BYTE 00 00
+ALIGN 4
+
+ShamanSkillList:
+BYTE 00 00
+ALIGN 4
+
+DruidSkillList:
+BYTE 00 00
+ALIGN 4
+
+SummonerSkillList:
+BYTE 00 00
+ALIGN 4
+
+RogueSkillList:
+BYTE 255 DespoilID
+BYTE 00 00
+ALIGN 4
+
+GreatKnightSkillList:
+BYTE 00 00
+ALIGN 4
+
+ManaketeFSkillList:
+BYTE 00 00
+ALIGN 4
+
+FighterSkillList:
+BYTE 00 00
+ALIGN 4
+
+WarriorSkillList:
+BYTE 00 00
+ALIGN 4
+
+BrigandSkillList:
+BYTE 00 00
+ALIGN 4
+
+PirateSkillList:
+BYTE 00 00
+ALIGN 4
+
+BerserkerSkillList:
+BYTE 00 00
+ALIGN 4
+
+MonkSkillList:
+BYTE 00 00
+ALIGN 4
+
+PriestSkillList:
+BYTE 00 00
+ALIGN 4
+
+PegKnightSkillList:
+BYTE 00 00
+ALIGN 4
+
+FalcoknightSkillList:
+BYTE 255 AdeptID
+BYTE 00 00
+ALIGN 4
+
+ClericSkillList:
+BYTE 00 00
+ALIGN 4
+
+TroubadourSkillList:
+BYTE 00 00
+ALIGN 4
+
+ValkyrieSkillList:
+BYTE 00 00
+ALIGN 4
+
+DancerSkillList:
+BYTE 00 00
+ALIGN 4
+
+SoldierSkillList:
+BYTE 00 00
+ALIGN 4
+
+NecromancerSkillList:
+BYTE 00 00
+ALIGN 4
+
+FleetSkillList:
+BYTE 00 00
+ALIGN 4
+
+PhantomSkillList:
+BYTE 00 00
+ALIGN 4
+
+SuperJourneymanSkillList:
+BYTE 5 ParagonID
+BYTE 00 00
+ALIGN 4
+SuperPupilSkillList:
+BYTE 5 ParagonID
+BYTE 00 00
+ALIGN 4
+SuperRecruitSkillList:
+BYTE 10  ParagonID
+// BYTE 10 AxebreakerID
+BYTE 00 00
+ALIGN 4
+ManaketeMSkillList:
+BYTE 01 MiracleID
+BYTE 05 OddRhythmID
+BYTE 10 SpurDefID
+BYTE 00 00
+ALIGN 4
+
+DemonKingSkillList:
+BYTE 255 BaneID
+BYTE 255 SummonID
+BYTE 255 ReliefID
+BYTE 255 AnathemaID
+BYTE 00 00
+ALIGN 4
