@@ -3,8 +3,8 @@
 *.pyc
 *.sav
 __pychache__
-Tables/FE8 Nightmare modules/**/*.event
-/Graphics/Map Sprites/*.dmp
+Tables/FE8NightmareModules/**/*.event
+/Graphics/MapSprites/*.dmp
 /Graphics/Portraits/*.dmp
 /Maps/Tilesets/Animations/**/*.dmp
 /Maps/*.dmp
