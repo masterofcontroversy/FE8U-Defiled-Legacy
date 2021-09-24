@@ -1,8 +1,0 @@
-## HolyBloodText
-Bld[X]
-
-## AHolyBloodName
-Donate[X]
-
-## AHolyBloodDesc
-Donate to Circles[X]
