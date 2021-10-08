@@ -2,12 +2,23 @@
 ROM hack of Fire Emblem 8
 
 ## Building Instructions
-### For linux (I use Arch btw):  
-Install wine and wintricks, use winetricks to install dotnet 4  
-Use wine to run tmx2ea.exe to build the maps  
+### Linux (I use Arch btw):
+#### Requirements:
+python 3  
+
+six python library  
+tmx python library  
+
+.NET sdk  
+
+wine (for ups)  
+
+
+Run Makehack.sh with full argument  
+
 If python gives you an error saying that it can't find "libffi.so.6", create a syslink from "libffi.so.6" to "libffi.so.7"
 then run MakeHack (Use the "full" argument the first time).  
-(Tested in Ubuntu, Arch, and Fedora) (Patching does not work on Ubuntu)
+(Tested in Ubuntu, Arch, and Fedora) (Patch making does not work on Ubuntu)
 
 ### Windows:
 unfortunately, I haven't written any scripts for building with Windows since I don't use it that often. I will be making one soon enough though.  
@@ -19,11 +30,15 @@ then you can get the MAKEHACK batch files from the SkillSystem repository and ru
 ## Credits
 ### Special thanks to (In no particular order):
 
+StanHash for linux friendly building tools
+
 SME for holyblood ASM  
 
 Teraspark for palette inserting macros  
 
 Zoramine for custom tilesets  
+
+Tequila for auto promote ASM, and FE8 Set Conditions ASM
 
 Circleseverywhere for the skill system and TMX2EA  
 
@@ -33,11 +48,9 @@ Nintenlord for making Event Assembler
 
 Crazycolorz5 for adding on to Event Assembler  
 
-Snakey1 for auto promote ASM  
+Snakey1 for EveryXTurns macros  
 
-7743 for FEBuilderGBA  
-
-Asorted people for portaits and art (TODO: make a section for that)  
+7743 for FEBuilderGBA, and static promotions  
 
 Literally everyone who asked questions on rom hacking  
 
@@ -52,7 +65,7 @@ Kaga for doing it first
 
 Ephraim Infantry by Team SALVAGED  
 
-Beta Eirika by Intelligent Systems (Modified by)  
+Beta Eirika by Intelligent Systems (Modified by Jono the Red)  
 
 Salvaged Mercenary by Team SALVAGED  
 
@@ -64,20 +77,22 @@ Salvaged Cavalier by Team SALVAGED
 
 Salvaged Cavalier(F) by Team SALVAGED (Female edit by )  
 
-Salvaged Paladin by Team SALVAGED (Helmetless edit by )  
+Salvaged Paladin by Team SALVAGED (Helmetless edit by Leo_link, Pikmin1211, The_Big_Dededester)  
 
-Salvaged Paladin(F) by Team SALVAGED (Female edit by )  
+Salvaged Paladin(F) by Team SALVAGED (Female edit by RJ_Exists, Levin64, Obsidian_Daddy)  
 
-Helmetless Wyvern Rider by  
+Helmetless Wyvern Rider by Flasuban, eCut  
 
-Armored Wyvern Lord by  
+Armored Wyvern Lord by Nuramon  
 
-Pegasus Knight by Intelligent Systems (Sword edit by )  
+Pegasus Knight by Intelligent Systems (Sword edit by MageKnight404)  
 
-Falcoknight by Intelligent Systems (Improved edit by )  
+Falcoknight by Intelligent Systems (Improved edit by Flasuban, Nuramon, Knabepicer)  
 
-Deserter by  
+Deserter by Alusq  
 
 ### Portrait Credits:
 
 Kenneth by Bloopy (From Mugging Blitz round 4)
+
+Hendrick by LaurentLacriox
