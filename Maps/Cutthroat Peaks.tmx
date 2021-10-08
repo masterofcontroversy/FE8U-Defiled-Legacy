@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="22" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="22" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="1">
  <tileset firstgid="1" name="Aquamarine Fields Tileset" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="Tilesets/Images/Aquamarine Fields Tiles.png" width="512" height="512"/>
  </tileset>
@@ -16,7 +16,19 @@
    <property name="TileConfig" value="ZoraFieldsTiles"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   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
+   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
+  </data>
+ </layer>
+ <layer id="2" name="Lowered Bridge" width="22" height="30" visible="0">
+  <properties>
+   <property name="Height" value="1"/>
+   <property name="ID" value="0"/>
+   <property name="Width" value="1"/>
+   <property name="X" value="9"/>
+   <property name="Y" value="10"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUDCZQzTzQLhgFo2AUjIJRMApIAwBbAgB/
   </data>
  </layer>
 </map>

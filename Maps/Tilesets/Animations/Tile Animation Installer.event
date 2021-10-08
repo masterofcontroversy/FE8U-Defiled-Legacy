@@ -136,11 +136,12 @@ WORD 0 0
 //Improved Castle animations
 ALIGN 4
 CastleAnimationLabel:
-tilesetAnimation(0x1C,0x1000,CastleAnimation0)
-tilesetAnimation(0x1C,0x1000,CastleAnimation1)
-tilesetAnimation(0x1C,0x1000,CastleAnimation2)
-tilesetAnimation(0x1C,0x1000,CastleAnimation3)
-tilesetAnimation(0x1C,0x1000,CastleAnimation4)
-tilesetAnimation(0x1C,0x1000,CastleAnimation5)
-tilesetAnimation(0x1C,0x1000,CastleAnimation6)
-tilesetAnimation(0x1C,0x1000,CastleAnimation7)
+tilesetAnimation(0x1C,0x200,CastleAnimation0)
+tilesetAnimation(0x1C,0x200,CastleAnimation1)
+tilesetAnimation(0x1C,0x200,CastleAnimation2)
+tilesetAnimation(0x1C,0x200,CastleAnimation3)
+tilesetAnimation(0x1C,0x200,CastleAnimation4)
+tilesetAnimation(0x1C,0x200,CastleAnimation5)
+tilesetAnimation(0x1C,0x200,CastleAnimation6)
+tilesetAnimation(0x1C,0x200,CastleAnimation7)
+WORD 0 0

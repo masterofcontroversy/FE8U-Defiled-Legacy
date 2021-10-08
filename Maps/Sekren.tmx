@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="25" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="6">
- <tileset firstgid="1" name="Updated Village Tileset Night" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="Updated Village Tileset Night" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="Tilesets/Images/Updated Village Tileset Night.png" width="512" height="512"/>
  </tileset>
+ <tileset firstgid="1025" source="../../Desktop/FEMapCreator/Aquamarine Fields Tiles.tsx"/>
  <layer id="1" name="Tile Layer 1" width="25" height="15">
   <properties>
    <property name="Anims1" value="VillageAnimation"/>
@@ -16,7 +17,7 @@
    <property name="TileConfig" value="UpdatedVillageTiles"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJyNlLtKQ0EQhnf3ICgWxkcwxluhAR/AQuMNSV5B8FKZqKiFtdFSEKNoJ2JAS0FEbQQhoAgBBSVaWineEt/Af9hdMufk5CTFx0wmszOZf3ZTVEIsOUIsG1ZACbEIbAf4gB+GbQeH8KfANJgBsyALuvBdN+gB8x76QLFKjxjsMGgEY2AI3CC+BtJgHWyAHBg1OeOgQbnZRKwFbIOMYQeEwLGszL+XZct9bx6nGTyBPzAHkuAR/IL3GmfrJcV0DMrrNdqeCyEuhNZ41TNrHn4edgEsMvugquvIayfAJGpElSaJzwVwy3r8wM+gf6tyU6oxZ78s50aVu8e+o/X8ZJyhx4B0E/L5/fbOdjpay0ucO0H8Srh70Ay0zzehaaNZjDYHbGaaI2rusNXW3tkR0+MF5+8Qfw3oQfWzUlt6C9fwEyaX5qCclEdbS5zej9n1Kdt5wuhke/DZ6S3sIrYn9B2gO5ojHZV/j1rYHnx20usZsYLQ9dMieI4g7J6bmD/B9mM5MjZu7ijpYt/iFvvP8cZpfxFRWY9D+lg/K93ffYFvnzM8TjuPBdQPm3kkrOMzWz0E9aC6g0r3sbP8A0tboao=
+   eJydlL1KA0EQx/f2ECIWxkcwfhcx4ANYaPwiJK8gqKmSqKiFtdFSEKNoJ2JAexG1EYSAIgQU1GhpJ34lvoH/YWe5vfNyEYsfM5mb3f/O7GyqUogFW4hFZgnUEOuE7QKv8COwHWAf/hSYBjMgDYqgB996QR+Y9dAPqnU04rAjIMR2GFwivgLyYBWsgRIY45wJ0CTdrCPWCjZBgdkCYXBo/c6/sRxr+t48kxZwD75BBmTBHfgCVw3W/pWc0cegvCj39kEI8ShUj5c9tZbhl2HnwLxhb2X9Ppp7p8Ak9ohJRRa/K7a71k/4Bei3STe1BnUOWE5uTLo1dlnjzeAYGoOWm7DP+fXMdtuql2dYd4T4uXBr0P50ny9C0U61cG/2jJqpjhjPsO6tntlR1njC+mvEnwM0aP+ipSy9hQv4Kc6lOignZ/vPUZLeDzhBTo3tqVD3Y2qYtdNb2EZsR6gZoBktUR//Oataw6yd+kXzVxFq/7wIriMIfc/Nhp9gzShD/gHbJM8o9UW/xQ3jP8cbp/vr5LUJ4dy7CfVH+0XL/e0dfPisMeN053F9PhDy5Ea4HgvWlv5naISpkQFpMC6cfYek0tG1/AA8HpzK
   </data>
  </layer>
  <layer id="4" name="Front Gate 1" width="25" height="15" visible="0">
@@ -64,7 +65,7 @@
    <property name="Y" value="0"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJxjZGBgsGFkYHBigGBBJgYGIJeqAGSeAdBcPiQ8VO0AYWTzqW3HKBgFo2AUUAMAAKSkAcM=
+   eJxjZGBgsGFkYHBigGABJgYGIJeqAGSeAdBcPiQ8VO0AYWTzqW3HKBgFo2AUUAMAAJ7YAcI=
   </data>
  </layer>
  <layer id="7" name="Chest 1" width="25" height="15" visible="0">

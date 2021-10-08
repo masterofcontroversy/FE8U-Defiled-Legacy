@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="19" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="../../Desktop/FEMapCreator/Aquamarine Fields Tiles.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="15" height="19">
+  <properties>
+   <property name="Anims1" value="FieldsAnimation"/>
+   <property name="Anims2" value="0"/>
+   <property name="ChapterID" value="0"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="0xC"/>
+   <property name="MapID" value="0x4"/>
+   <property name="ObjectType" value="ZoraFieldsObjects"/>
+   <property name="PaletteID" value="AquaPalette"/>
+   <property name="TileConfig" value="ZoraFieldsTiles"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxtk88uQ0EUxu/MqMSfh5CwkJDwCtrSpb5ClVpIE3urluZKSFMb+wqCIOkGiQirbkRYsBShIZFaeAO+z5zJnVtN+uuZmXO+OffMnAl1EOD3x6Sx9kbsjOcjUyoIdsG8svME4traxl2b+B6rIOXt0YbmS3QTiEliMK3tHr2i4R4/iFnApI75PggxPsTakbK6Ae6NtSGQlj2cdg2Dio5/b12+lzWNYe28oyaSha8EWxbNrdRZkJyuhi3Mz3Rcl6QG3IM++EfBnIqfI6li7cLT0scal0AerKvIx5xN1g1a4BS+bXCJcdFEZ3wFm8H6iIrmtK+S5x1/x+CuI/cb/p6NvRMtWs5bOtIXpe4qeNBRP3yClJxrCaRFr0zUE7TNLufMe96Rc82DPdHz3jr1vPdBT+fqzDC/1xN+vQ7e87joUl7P5uDMgw2MN0Xbb6IzfxGyoktIzzJnWdu+87/bffOsib8V1wfMueidnf8OQql5WdlcTXDg3SX76kTekDuPHHwf4q+B7yD+Hh3MVZC+crFPYAX5HmEbEuN0of6v51pNYrk2jNieLnlo/XdIjZ/Dxbr+roBfW/1gZg==
+  </data>
+ </layer>
+</map>
