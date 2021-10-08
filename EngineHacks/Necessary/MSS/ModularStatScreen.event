@@ -96,12 +96,12 @@
       callHack_r3(New_Unit_Exp)
       SHORT 0xE005
 	  
-	#ifdef ENABLE_PERSONAL_INFO
+	//#ifdef ENABLE_PERSONAL_INFO
 	
 	  ORG $88690
         jumpToHack(PageNumberCheck)	  
 		
-	#endif // ENABLE_PERSONAL_INFO
+	//#endif // ENABLE_PERSONAL_INFO
 
 	  ORG $86E44
         jumpToHack(MSS_leftpage)
@@ -147,6 +147,8 @@
   
   #else // USE_STRMAG_SPLIT
   
+//  #include pages/mss_page1_original.lyn.event
+  
   #ifdef LEADERSHIP_STARS
 	#include "pages/strmag/mss_page1_skills_leadership.lyn.event"
   #else // LEADERSHIP_STARS
@@ -183,13 +185,11 @@
     WORD SS_BloodText
 	  POIN HolyBloodNameGetter|1
 	  POIN HolyBloodVoracityGetter|1
-		
-    ALIGN 4
-    TxtData0x0D4B:
-      String("Donate to Circles")
-      BYTE 0
-
-    setText(0x0D4B,TxtData0x0D4B)
+    
+  ALIGN 4
+    PageNumberCheck:
+      #include "asm/mss_threepageconditional.lyn.event"
+    POIN PersonalDataTable
   
   #endif // ENABLE_PERSONAL_INFO
   

@@ -10,6 +10,10 @@ MSS_page1:
 
 page_start
 
+ldr r0,=TalkTextIDLink
+ldrh r0,[r0]
+draw_talk_text_at 21, 15
+
 @draw str or mag
   mov r0, r8
   blh     MagCheck			@r0 = 1 if mag should show
@@ -39,6 +43,7 @@ beq NoRescue
   draw_spd_reduced_bar_at 16, 7
 b RescueCheckEnd
 .ltorg
+
 NoRescue:
   draw_skl_bar_at 16, 5
   draw_spd_bar_at 16, 7
@@ -54,14 +59,14 @@ draw_textID_at 13, 13, 0x4f0 @res
 draw_res_bar_at 16, 13
 
 draw_textID_at 21, 3, 0x4f6 @move
-draw_move_bar_at 24, 3
+draw_move_bar_with_getter_at 24, 3
 
 draw_textID_at 21, 5, 0x4f7 @con
 draw_con_bar_at 24, 5
 
 
 draw_textID_at 21, 7, 0x4f8 @aid
-draw_number_at 25, 7, 0x80189B8, 1 @aid getter
+draw_number_at 25, 7, 0x80189B8, 2 @aid getter
 draw_aid_icon_at 26, 7
 
 draw_trv_text_at 21, 9
@@ -72,8 +77,10 @@ draw_status_text_at 21, 13
 
 draw_affinity_icon_at 24, 11
 
-@draw_talk_text_at 21, 15
-
-blh DrawBWLNumbers
+@blh DrawBWLNumbers
 
 page_end
+
+.ltorg
+
+.include "GetTalkee.asm"

@@ -286,10 +286,10 @@ ST_Skill6:
     RMenu(ST_Level4,0,0,ST_Donate,0x6,0x88,0x544)
 
   ST_Donate:
-    RMenu(0,ST_Blood,ST_Name4,0,0x86,0x48,ChampionDesc)
+    RMenu(0,ST_Blood,ST_Name4,0,0x86,0x5F,ChampionDesc)
 
   ST_Blood:
-    RMenu(ST_Donate,0,ST_Name4,0,0x82,0x58,0x0,HolyBloodDescGetter)
+    RMenu(ST_Donate,0,ST_Name4,0,0x76,0x6F,0x0,HolyBloodDescGetter)
 	
 #endif // ENABLE_PERSONAL_INFO
 

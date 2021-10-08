@@ -1,72 +1,94 @@
 .thumb
 @draws the stat screen
 .include "mss_defs.s"
+.set SkillGetter, IconGraphic+4
+.set SkillTester, SkillGetter+4
+.set SaviorID, SkillTester+4
+.set CelerityID, SaviorID+4
+.set SS_SkillsText, CelerityID+4
+.set SS_TalkText, SS_SkillsText+4
 
 page_start
 
 @draw str or mag
   mov r0, r8
-  blh     MagCheck			@r0 = 1 if mag should show
-  cmp     r0,#0x0				
-  beq     NotMag				
+  blh     MagCheck      @r0 = 1 if mag should show
+  cmp     r0,#0x0       
+  beq     NotMag        
     @draw Mag at 13, 3. colour defaults to yellow.
-    draw_textID_at 13, 3, textid=0x4ff
+    draw_textID_at 13, 3, textID=0x4ff
     draw_str_bar_at 16, 3
     b       MagStrDone    
   NotMag:
     @draw Str at 13, 3
-    draw_textID_at 13, 3, textid=0x4fe
+    draw_textID_at 13, 3, textID=0x4fe
     draw_str_bar_at 16, 3
   MagStrDone:
 
-@Draw skl
-draw_textID_at 13, 5, textid=0x4EC
-@draw spd
-draw_textID_at 13, 7, textid=0x4ED
+draw_textID_at 13, 5, textID=0x4EC @skl
+draw_textID_at 13, 7, textID=0x4ED @spd
 
-rescue_check @r0 = 10 if true, 0 if false
-cmp r0, #0
-beq NoRescue
-
-  @halved if Rescue
-  draw_skl_reduced_bar_at 16, 5
-  draw_spd_reduced_bar_at 16, 7
-b RescueCheckEnd
+@ rescue_check
+@ cmp r0, #0
+@ beq NoRescue
+@   @halved if Rescue
+@   mov r0, r8
+@   @check for savior
+@   .set saviorloc, (SaviorID - . - 6)
+@   ldr r1, =saviorloc
+@   add r1, pc
+@   ldr r1, [r1]
+@   .set skilltestloc, (SkillTester - . - 6) 
+@   ldr r2, =skilltestloc
+@   add r2, pc
+@   ldr r2, [r2]
+@   mov lr, r2
+@   .short 0xf800
+@   cmp r0, #0
+@   bne NoRescue
+@   draw_skl_reduced_bar_at 16, 5
+@   draw_spd_reduced_bar_at 16, 7
+@ b RescueCheckEnd
+b NoRescue
 .ltorg
 NoRescue:
   draw_skl_bar_at 16, 5
   draw_spd_bar_at 16, 7
 RescueCheckEnd:
 
-draw_textID_at 13, 9, textid=0x4ee @luck
+draw_textID_at 13, 9, textID=0x4ee @luck
 draw_luck_bar_at 16, 9
 
-draw_textID_at 13, 11, textid=0x4ef @def
+draw_textID_at 13, 11, textID=0x4ef @def
 draw_def_bar_at 16, 11
 
-draw_textID_at 13, 13, textid=0x4f0 @res
+draw_textID_at 13, 13, textID=0x4f0 @res
 draw_res_bar_at 16, 13
 
-draw_textID_at 21, 3, textid=0x4f6 @move
-draw_move_bar_at 24, 3
+draw_textID_at 13, 15, 0x4f6 @move
+draw_move_bar_with_getter_at 16, 15
 
-draw_textID_at 21, 5, textid=0x4f7 @con
-draw_con_bar_at 24, 5
+draw_textID_at 13, 17, textID=0x4f7 @con
+draw_con_bar_with_getter_at 16, 17
 
 
-draw_textID_at 21, 7, textid=0x4f8 @aid
-draw_number_at 25, 7, 0x80189B8, 1 @aid getter
-draw_aid_icon_at 26, 7
+draw_textID_at 21, 3, textID=0x4f8 @aid
+draw_number_at 25, 3, 0x80189B8, 2 @aid getter
+draw_aid_icon_at 26, 3
 
-draw_trv_text_at 21, 9
+draw_trv_text_at 21, 5
 
-draw_textID_at 21, 11, textid=0x4f1 @affin
+draw_textID_at 21, 7, textID=0x4f1 @affin
 
-draw_status_text_at 21, 13
+draw_affinity_icon_at 24, 7
 
-draw_affinity_icon_at 24, 11
+draw_status_text_at 21, 9
 
-@draw_talk_text_at 21, 15
+.set ss_talkloc, (SS_TalkText - . - 6)
+  ldr r0, =ss_talkloc
+  add r0, pc
+  ldr r0, [r0]
+draw_talk_text_at 21, 11
 
 blh DrawBWLNumbers
 

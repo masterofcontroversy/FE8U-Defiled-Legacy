@@ -50,7 +50,8 @@ bne End
 
 @check if already cantoing
 ldr	r0, [r4,#0x0C]	@status bitfield
-mov	r1, #0x40	@has moved already
+mov	r1, #0x21
+lsl r1, #0x06 @has moved already and is not in ballista
 and	r0, r1
 cmp	r0, #0x00
 bne	End

@@ -90,11 +90,7 @@ POP
   #include "ExternalHacks/LeadershipStars/LeadershipStars.event"
 
   //Modular Stat Screen
-  //#ifndef USE_STRMAG_SPLIT
 	#include "Necessary/MSS/ModularStatScreen.event"
-  //#else
-    //#include "ExternalHacks/StrMagSplit/ModularStatScreen/ModularStatScreen.event"
-  //#endif // USE_STRMAG_SPLIT
   
   // Strength/Magic Split
   #ifdef USE_STRMAG_SPLIT
