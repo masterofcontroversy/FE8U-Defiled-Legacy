@@ -6,11 +6,11 @@ The jaded duke of Duramontis.[NL]
 Hates cowardice.[X]
 
 #0x0213 RonniName
-Veronica[X]
+Ronni[X]
 
 #0x026F RonniDesc
-A young huntress from Duramontis,[NL]
-also known as Ronni. Devan's retainer.[X]
+A young huntress from Duramontis.[NL]
+Laid back, but sharp.[X]
 
 #0x0214 AnthonyName
 Anthony[X]

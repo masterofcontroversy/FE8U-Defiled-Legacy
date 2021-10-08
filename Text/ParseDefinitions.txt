@@ -15,6 +15,7 @@
 [.6] = [......]
 [.7] = [.......]
 [Beat] = [ToggleMouthMove]...[.4][ToggleMouthMove]
+[...] = [ToggleMouthMove]...[.5][ToggleMouthMove]
 [Event] = [LoadOverworldFaces]
 
 [FarFarLeft] = [OpenFarFarLeft]
@@ -54,7 +55,7 @@
 [LoadKenneth] = [LoadFace][0x06][0x1]
 [LoadHolly] = [LoadFace][0x07][0x1]
 [LoadDevan] = [LoadJulianne][0x08][0x1]
-[LoadBrock] = [LoadFace][0x09][0x1]
+[LoadBrent] = [LoadFace][0x09][0x1]
 [LoadAmber] = [LoadFace][0x0c][0x1]
 [LoadGrace] = [LoadFace][0x0e][0x1]
 [LoadThaddius] = [LoadFace][0x10][0x1]

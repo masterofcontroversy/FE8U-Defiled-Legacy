@@ -1,0 +1,193 @@
+## Ch3_Mayor
+[MidLeft][LoadFace][0x58][0x1] [MidRight][LoadFace][0xFF][0xFF]
+[MidLeft]
+#Mayor
+Ah! What ruckus! [...]What are you[NL]
+doing here? Shouldn't you be out[A][NL]
+there protecting us?[A]
+[MidRight]
+#Visitor
+We were told to check[NL]
+in on the villagers sir.[A]
+[MidLeft]
+#Mayor
+Well[...]that's fine I guess. [...]You[NL]
+know, tax collection day was the other[A][NL]
+day. Here's the money, it should help[NL]
+you with your equipment, and whatnot.[A]
+[MidRight]
+#Visitor
+Thank you sir. I'll take this[NL]
+to the duke right away.[A]
+[MidRight][ClearFace]
+[MidLeft]
+#Mayor
+...Ha ha! That solder didn't suspect[NL]
+a thing! Ahh yes, money is important.[A][NL]
+Especially to me. Hehe.[A]
+[X]
+
+## Ch3_Mayor_DevanVer
+[MidLeft][LoadFace][0x58][0x1] [MidRight][LoadDevan]
+[MidLeft]
+#Mayor
+Ah! What ruckus! [...]What are you[NL]
+doing here? Shouldn't you be out[A][NL]
+there protecting us?[A]
+[MidRight]
+#Devan
+We are. We're also checking up[NL]
+on the people indoors as well.[A]
+[MidLeft]
+#Mayor
+That's fine I suppose. [...]Say, I[NL]
+collected the tax money the other day.[A][NL]
+Why don't you take it? I'm sure the[NL]
+duke could use it for any preperations.[A]
+[MidRight]
+#Devan
+[...]Odd, this is even[NL]
+less than last time.[A]
+[MidLeft]
+#Mayor
+Hmm?[A]
+[MidRight]
+#Devan
+I remember getting reports of Sekren[NL]
+giving less, and less, taxes. I[A][NL]
+guess the rumors were right about[NL]
+it being you.[A]
+[MidLeft]
+#Mayor
+[...]You're not-[A]
+[MidRight]
+#Devan
+The duke? I am. About time I came[NL]
+here. The tax collectors have taken[A][NL]
+to calling you Montgomery "Money Man"[NL]
+with how much money you've stolen.[A]
+[MidLeft]
+#Mayor
+B-but-[A]
+[MidRight]
+#Devan
+If you aren't willing to pay, we'll[NL]
+just have to take what's rightfully[A][NL]
+ours. I'm sure what's in this house[NL]
+will cover it.[A]
+[MidLeft]
+#Mayor
+Y-you can't do that![A]
+[MidRight]
+#Devan
+I'm the duke. I can do whatever I[NL]
+want. So what will it be? Will[A][NL]
+you take the chance to settle your[NL]
+account? Or do I have to take[A][NL]
+everything from you?[A]
+[MidLeft]
+#Mayor
+[...][A]
+[MidLeft][ClearFace][.][LoadFace][0x58][0x1]
+#Mayor
+This is all I have.[A]
+[MidRight]
+#Devan
+[...]This will do[...]for now. I'll[NL]
+expect the rest by tax collection time[A][NL]
+next month.[A]
+[MidLeft]
+#Mayor
+N-next month? That's to soon![A]
+[MidRight]
+#Devan
+You should have thought of that before[NL]
+you tried to steal from me. I'll be[A][NL]
+sure to have someone inform you of how[NL]
+much you owe, since you seem to be so[A][NL]
+bad at math, what with your tax debt[NL]
+and all.[A]
+[MidRight][ClearFace]
+[X]
+
+## Ch3_Locksmith
+[MidLeft][LoadFace][0x5D][0x1]
+[MidRight][LoadFace][0xFF][0xFF]
+[MidLeft]
+#Locksmith
+Those darned bandits. I'll bet you[NL]
+anything, the leader is hiding behind[A][NL]
+those guys in armor.[A]
+[MidRight]
+#Visitor
+We think so, but their armor[NL]
+is too thick for us to pierce.[A]
+[MidLeft]
+#Locksmith
+I guess you could try magic, though[NL]
+mages are pretty rare around here[...][A][NL]
+Oh I know! Here take this key. It[NL]
+leads to the lookout area in the[A][NL]
+eastern part of town. The lookout area[NL]
+has two entrances. One on this side,[A][NL]
+and one right behind those armored[NL]
+mongrels. The key also goes to the[A][NL]
+village treasurey, if you need to get[NL]
+there. [...]I[...]uh used the same lock[A][NL]
+for both places[...] Do me a favor, and[NL]
+don't tell anyone, eh?[A]
+[X]
+
+## Ch3_Prayer
+[MidLeft][LoadFace][0x62][0x1]
+[MidRight][LoadFace][0xFF][0xFF]
+[MidLeft][CloseEyes]
+#Woman
+[...]and please deliver us from danger,[NL]
+like you did for our ancestors eight[A][NL]
+centuries ago[...]amen.[A][NL][OpenEyes]
+Oh! I'm sorry, I didn't hear you[NL]
+come in. Thank the gods you're not[A][NL]
+a bandit.[A]
+[MidRight]
+#Visitor
+I didn't mean to scare you ma'am.[NL]
+We're checking the villagers to see[A][NL]
+if they're alright.[A]
+[MidLeft]
+#Woman
+Oh, how wonderful! You know what?[NL]
+Don't go anywhere.[A][NL]
+[MidLeft][ClearFace][.][LoadFace][0x62][0x1]
+Here.[A]
+[MidRight]
+#Visitor
+Thank you, but I couldn't[...][A]
+[MidLeft]
+#Woman
+No buts! This statue has some holy[NL]
+properties to it, and I'm sure you[A][NL]
+all need the blessing of the gods more[NL]
+than us right now. Please, take it.[A]
+[MidRight]
+#Visitor
+[...]Alright, thank you, miss.[A]
+[X]
+
+## Ch3_Mother
+[MidLeft][LoadFace][0x61][0x1]
+[MidRight][LoadFace][0xFF][0xFF]
+[MidLeft]
+#Mother
+Owen? [...]Owen? Where are you[...]?[NL][.6]
+Oh- have you seen a boy about this[A][NL]
+tall, with hair the same color as[NL]
+mine?[A]
+[MidRight]
+#Visitor
+Sorry, I haven't[A]
+[MidLeft]
+#Mother
+If you find him please tell him to[NL]
+come home. Oh, where could he be[...][A]
+[X]

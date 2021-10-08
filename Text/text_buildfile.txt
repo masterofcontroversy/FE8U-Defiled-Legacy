@@ -23,10 +23,10 @@ Learned  [X]
 
 #0xd4c LikesText
 #first text ID in the free block
-Likes:[X]
+Full name:[X]
 
 #0xd4d DislikesText
-[0x9E]i[0x90]li[0x8A][0x85][0x90]:[X]
+Birthday:[X]
 
 #0xd4e HeightText
 Height:[X]
@@ -104,6 +104,10 @@ Mov[X]
 #include "Names/ClassNames.txt"
 
 #include "Names/ItemNames.txt"
+
+#include "Names/FullNames.txt"
+
+#include "Names/Birthdays.txt"
 
 #include "Names/CharNames.txt"
 

@@ -1,0 +1,183 @@
+## Ch3_Bar
+[Right][LoadDevan]
+[FarRight][LoadRonni]
+[Right]
+#Devan
+Stay here you three.[NL]
+I'll be right back.[A]
+[Right][ClearFace]
+[FarRight][ClearFace]
+[FarLeft][LoadRonni]
+[Left][LoadKenneth]
+[MidRight][LoadBrent]
+[Left]
+#Kenneth
+[...]He's going to the bar. What[NL]
+business does he need to handle there?[A]
+[FarLeft]
+#Ronni
+Probably getting smashed. Devan's[NL]
+a heavy drinker don't ya know?[A]
+[Left]
+#Kenneth
+What?![A]
+[FarLeft]
+#Ronni
+Just kidding. There's someone Devan's[NL]
+looking for, and he's probably in[A][NL]
+the bar.[A]
+[MidRight]
+#Brent
+Who would that be?[A]
+[FarLeft]
+#Ronni
+Well[...]
+[X]
+
+## Ch3_Colton
+[MidLeft][LoadColton]
+#Colton
+Ahh[...]that's the stuff[...][NL]
+I needed a break.[A]
+[MidRight][LoadDevan]
+#Devan
+Ah Colton, I thought[NL]
+I'd find you here.[A]
+[MidLeft]
+#Colton
+Congratulations, you found me.[NL]
+I suppose you're here to discuss[A][NL]
+the recent...events going in the[NL]
+country?[A]
+[MidRight]
+#Devan
+That's correct. I need you to tell[NL]
+me where these bandits are hiding.[A][NL]
+And if you don't know, tell me where[NL]
+I can find someone who does.[A]
+[MidLeft]
+#Colton
+One problem: The guy you want to mess[NL]
+with is tough stuff. He killed Abigail[A][NL]
+single handedly! How do you intend to[NL]
+kill him?[A]
+[MidRight]
+#Devan
+I've had some new additions to my[NL]
+group that should even the odds. Even[NL][A]
+if I didn't have their help, I can't[NL]
+just do nothing.[A]
+[MidLeft]
+#Colton
+...Okay then, why?[A]
+[MidRight]
+#Devan
+Why what?[A]
+[MidLeft]
+#Colton
+Why do you even bother fighting for[NL]
+this gods forsaken hellhole? The very[A][NL]
+people you save, if you even manage to[NL]
+save anyone, sooner or later will[A][NL]
+become the very thing you saved them[NL]
+from. It's an endless cycle that's not[A][NL]
+worth fighting for. So why fight for it?[A]
+[MidRight]
+#Devan
+[...]Speaking honesty[...] It's all I[NL]
+know. As I grew up, my uncle taught me[A][NL]
+how to fight for Duramontis,[NL]
+how to[...]help the country die[A][NL]
+peacfully, and how not to quit. The[NL]
+last one especially. I can't quit. If[A][NL]
+I do, I wouldn't be any better than[]...][A]
+[MidLeft]
+#Colton
+[...]Her?[A]
+[MidRight]
+#Devan
+Yes[...]her. That's why I'm still doing[NL]
+this. [...]Though, the real test is if[A][NL]
+I'll be able to say that years from[NL]
+now.[A]
+[MidLeft]
+#Devan
+So, presently speaking, there's[NL]
+no talking you out of this?[A]
+[MidRight]
+#Devan
+No.[A]
+[MidLeft]
+#Colton
+You never fail to impress me with[NL]
+that ridiculous determination of[A][NL]
+yours. You might just live through[NL]
+fighting Gregory.[A]
+[MidRight]
+#Devan
+So that's his name... I take[NL]
+it this means you'll help?[A]
+[MidLeft]
+#Colton
+I guess[...] But if you die, I'm out.[A]
+[MidRight]
+#Devan
+Noted.[A]
+[X]
+
+## Ch3_Rest
+[FarRight][LoadBrent]
+[Right][LoadRonni]
+#Ronni
+There they are.[A]
+[Left][LoadDevan]
+[FarLeft][LoadColton]
+[Right]
+#Ronni
+Hey, Colton. Been a while, hasn't it?[A]
+[FarLeft]
+#Colton
+Right. I remember you[...][NL]
+You're the golpher right?[A]
+[Right]
+#Ronni
+Eh. Better than being a rat.[A]
+[Left]
+#Devan
+Enough you two. Colton,[NL]
+where is Gregory hiding?[A]
+[FarLeft]
+#Colton
+All in good time. I need to handle[NL]
+some unfinished business, and you[A][NL]
+probably need to rest, what with you[NL]
+running back and forth through the[A][NL]
+mountains and all.[A]
+[Left]
+#Devan
+You know, if you tell us now,[NL]
+we could just prepare and you[A][NL]
+wouldn't even have to go with us.[A]
+[FarLeft]
+#Colton
+No, no I'm going with you. Can you[NL]
+imagine how much loot Gregory has?[A][NL]
+Besides, there's no way to prepare[NL]
+for where we're going.[A]
+[Left]
+#Devan
+[...]Fine. We'll be staying at the[NL]
+inn. Meet us there at dawn.[A]
+[FarLeft]
+#Colton
+*sigh* Not even enough time to get[NL]
+over my hangover[...]? Alright,[NL][A]
+see you at dawn.[A]
+[FarLeft] [ClearFace]
+[FarRight]
+#Brent
+So, we're taking it easy tonight[A]
+[Left]
+#Devan
+I guess so.[A]
+[X]
