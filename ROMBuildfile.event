@@ -4,12 +4,18 @@
 
     ORG FreeSpace
 
+    //Don't write where the animations will be
+    PROTECT AnimTableSpace $E70200
+    PROTECT AnimSpaceB $EDFFF0
+    PROTECT AnimSpaceC $FDFFF0
+    PROTECT AnimSpaceD $1000000
+
     //Repointed tables
-    #include "AnimationTable.event"
     #include "repointedTextTable.event"
 
     //Text first for Text ID definitions
     #include "Text/Install Text Data.event"
+    #include "Text/NarrowText.event"
     MESSAGE Used text space ends at currentOffset
 
     //Graphics
@@ -19,16 +25,12 @@
     #include "Tables/TableInstaller.event"
     MESSAGE Used table space ends at currentOffset
 
-
     //Engine Hacks
     #include "EngineHacks/_MasterHackInstaller.event"
     MESSAGE Used hax space ends at currentOffset
 
     //Items
     #include "Items.event"
-
-    //Animations. When debugging, comment out to build faster
-    //#include "Graphics/Custom Animations/_Master Animation Installer.event"
 
     //Music
     #include "Music/_Music Installer.event"
@@ -42,5 +44,5 @@
 
     MESSAGE Used free space ends at currentOffset
 #else
-    ERROR Not building this on FE8 is a pitfall! Try again on a FE8 ROM.
+    ERROR Not building events on FE8 is a pitfall! Try again on a FE8 ROM.
 #endif

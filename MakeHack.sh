@@ -10,6 +10,7 @@ base_dir=$(dirname "$(readlink -f "$0")")
 source_rom="$base_dir/FE8_clean.gba"
 
 main_event="$base_dir/ROMBuildfile.event"
+anim_event="$base_dir/Animations.event"
 
 target_rom="$base_dir/Build1.6.gba"
 target_ups="$base_dir/Build1.6.ups" # unused, but kept for symmetry with MAKE HACK_full.cmd
@@ -45,6 +46,13 @@ echo "Copying ROM"
 
 cp -f "$source_rom" "$target_rom" || exit 2
 
+if ["$2" == ""]
+then
+  Anims="$1"
+else
+  Anims="$2"
+fi
+
 #Tables
 processTables () {
   echo "Processing tables"
@@ -69,7 +77,6 @@ processImages () {
   DMP_DIR="$base_dir/Graphics/MapSprites"
   cd "$base_dir/Graphics/MapSprites/Images"
   echo | exec $PNG2Dmp -r --move --lz77
-  echo done
 
   echo compressing portraits
   DMP_DIR="$base_dir/Graphics/Portraits"
@@ -77,9 +84,13 @@ processImages () {
   echo | exec $portrait_formatter -r --move
 
   echo compressing tile animations
-  cd "$base_dir/Maps/Tilesets/Animations/"
+  cd "$base_dir/Maps/Tilesets/Animations"
   echo | exec $PNG2Dmp -r
-  echo done
+
+  echo compressing item icons
+  cd "$base_dir/Graphics/ItemIcons/Images"
+  DMP_DIR="$base_dir/Graphics/ItemIcons"
+  echo | exec $PNG2Dmp -r --move
 }
 
 #Map generation
@@ -111,9 +122,14 @@ case $1 in
 esac
 
 echo "Assembling"
-
 cd "$base_dir/EventAssembler"
+
 ./ColorzCore A FE8 "-output:$target_rom" "-input:$main_event"
+
+if [ "$Anims" == "anims" ]
+then
+  ./ColorzCore A FE8 "-output:$target_rom" "-input:$anim_event";
+fi
 
 # TODO: generate patch (would require a linux version of ups)
 # TODO: (From Contro) find out how to get patch generation to work with Ubuntu

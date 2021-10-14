@@ -1,0 +1,10 @@
+#ifdef _FE8_
+    #include "EAstdlib.event"
+    #include "CustomDefinitions.event"
+
+    #include "AnimationTable.event"
+
+    #include "Graphics/CustomAnimations/_Master Animation Installer.event"
+#else
+    ERROR Not building events on FE8 is a pitfall! Try again on a FE8 ROM.
+#endif

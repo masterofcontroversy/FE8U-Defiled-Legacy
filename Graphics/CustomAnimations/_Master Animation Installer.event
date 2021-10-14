@@ -3,7 +3,6 @@
 //#endif
 
 
-//#define AnimTableEntry(index) "ORG ClassAnimTable + (index * 0x20)"
 #define AnimTableEntry(index) "ORG ClassAnimTable - 0x20 + (index * 0x20)"
 
 //////////////Installed animations go here:
@@ -12,8 +11,8 @@
 
 PUSH
 
-  //Storing in AnimSpaceA //FULL
-  ORG AnimSpaceA
+  //Storing in AnimSpaceA (This ends at 0xEDFFF0)
+  ORG AnimSpaceA //FULL
 
   //Duke
   {
@@ -55,27 +54,28 @@ PUSH
   #include "CavalierF Unarmed Installer.event"
   }
 
-  //Pegasus Knight
-  {
-  #include "Pegasus Knight Sword Installer.event"
-  }
-
-  //Dragon Knight (Part one)
-  {
-  #include "Dragon Knight Axe Installer.event"
-  #include "Dragon Knight Hand Axe Installer.event"
-  }
-  
   MESSAGE Animation storage A from AnimSpaceA to currentOffset
 
   //Storing in AnimSpaceB (This ends at FDFFF0)
   ORG AnimSpaceB //FULL
 
-  //Dragon Knight (Part two)
+  //Pegasus Knight
   {
+  #include "Pegasus Knight Sword Installer.event"
+  }
+
+  //Dragon Knight
+  {
+  #include "Dragon Knight Axe Installer.event"
+  #include "Dragon Knight Hand Axe Installer.event"
   #include "Dragon Knight Lance Installer.event"
   #include "Dragon Knight Unarmed Installer.event"
   }
+
+  MESSAGE Animation storage B from AnimSpaceB to currentOffset
+
+  //Storing in AnimSpaceB (This ends at FDFFF0)
+  ORG AnimSpaceC //FULL
 
   //Dragon KnightF
   {
@@ -128,18 +128,16 @@ PUSH
   #include "Deserter Unarmed Installer.event"
   }
 
-  //TODO assign the following animations to their slots
-  //TODO assign animation pointers to use the following animations
-
   //Solder
   {
   #include "Solder Lance Installer.event"
   #include "Solder Unarmed Installer.event"
   }
 
-  MESSAGE Animation storage B from AnimSpaceB to currentOffset
+  MESSAGE Animation storage C from AnimSpaceC to currentOffset
 
-  ORG AnimSpaceC
+  //Storing in AnimSpaceD (Expands ROM)
+  ORG AnimSpaceD
 
   //Spartan
   {
@@ -156,5 +154,5 @@ PUSH
   }
 
 
-  MESSAGE Animation storage C from AnimSpaceC to currentOffset
+  MESSAGE Animation storage D from AnimSpaceD to currentOffset
 POP
