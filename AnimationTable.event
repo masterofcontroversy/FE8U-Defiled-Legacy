@@ -1,3 +1,5 @@
+ORG AnimTableSpace
+
 ALIGN 16
 ORG CURRENTOFFSET + 0x08
 ClassAnimTable:

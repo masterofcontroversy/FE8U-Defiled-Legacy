@@ -6,6 +6,7 @@ __pychache__
 Tables/FE8NightmareModules/**/*.event
 /Graphics/MapSprites/*.dmp
 /Graphics/Portraits/*.dmp
+/Graphics/ItemIcons/*.dmp
 /Maps/Tilesets/Animations/**/*.dmp
 /Maps/*.dmp
 /Maps/*.event

@@ -1,7 +1,9 @@
 //Animation Space Definitions
-#define AnimSpaceA $E47200 //End at 0xEDFFF0 (0xEDFFD0 to be safe)
-#define AnimSpaceB $F00000 //End at 0xFDFFF0 (0xFDFFD0 to be safe)
-#define AnimSpaceC $FE4000 //This will expand the ROM to fit the animations
+#define AnimTableSpace $E47200
+#define AnimSpaceA $E4C200 //End at 0xE70200
+#define AnimSpaceB $E80000 //End at 0xEDFFF0
+#define AnimSpaceC $F00000 //End at 0xFDFFF0
+#define AnimSpaceD $FE4000 //This will expand the ROM to fit the animations
 
 
 //Gold and Items
@@ -246,7 +248,7 @@
 #define PirateHandaxe 0x9B
 #define PirateUnarmed 0x9C
 #define NecromancerMagic 0x9D
-#define NecroMancerStaff 0x9E
+#define NecromancerStaff 0x9E
 #define ArcherBallista 0x9F
 
 //Monster Animations (First to be replaced)
