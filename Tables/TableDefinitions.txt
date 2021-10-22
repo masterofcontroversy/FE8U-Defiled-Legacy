@@ -15,9 +15,6 @@
 #ifndef DebuffTable
   #define DebuffTable 0x203f100
 #endif
-#ifndef HolyBloodCharacterTable
-  #define HolyBloodCharacterTable 0xE47180
-#endif
 //#ifndef PersonalMusicTable
   //#define PersonalMusicTable 0x758a60
 //#endif

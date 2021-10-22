@@ -1,4 +1,6 @@
 #include "Convos.event"
+#include "Shops.event"
+
 {
 #include "Prologue.event"
 }
@@ -11,7 +13,13 @@
 {
 #include "Chapter3.event"
 }
+{
+#include "Chapter4.event"
+}
 
 //Chapter item permissions
-AIItemUse(0x3, 7)
+AIItemUse(0x3, 0111b)
+
+//Skirmishes
+SkirmishChapter(0x0, 0xFF)
 

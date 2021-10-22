@@ -108,8 +108,8 @@ POP
     NoFade
     ENDA
 
-    //No Promotion Bonus
-    #include "ExternalHacks/NoPromotionBonus/NoPromotionBonus.event"
+    //No Promotion EXP Bonus
+    #include "ExternalHacks/NoPromotionEXPBonus/NoPromotionEXPBonus.event"
 
     //Set Conditons
     #include "ExternalHacks/SetCondition/SetCondition.event"

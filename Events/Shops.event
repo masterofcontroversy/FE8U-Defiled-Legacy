@@ -1,0 +1,9 @@
+ALIGN 4
+SekrenArmory:
+SHLI IronSword SteelSword IronLance SteelLance Javelin IronAxe SteelAxe HandAxe IronBow SteelBow Longbow
+WORD 0 0
+
+ALIGN 4
+SekrenShop:
+SHLI Flux Luna Vulnerary Antitoxin PureWater 
+WORD 0 0

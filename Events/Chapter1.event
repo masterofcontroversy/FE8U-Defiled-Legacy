@@ -33,7 +33,7 @@ ENDTRAP
 ALIGN 4
 
 TurnBasedEvents:
-TurnEventPlayer(0xC,Timeup,9)
+TurnEventPlayer(0xC,Ch1_Timeup,9)
 END_MAIN
 
 ALIGN 32
@@ -73,12 +73,14 @@ MOVE 7 Kenneth [7,11]
 
 Text(Ch1_Targets_Found)
 
+ENUN
+
 NoFade
 ENDA
 
 EndingScene:
 SetBackground(0x18)
-Text(Ch1_Mercy)
+//Text(Ch1_Mercy)
 EndConvo
 
 MNC2 0x2
@@ -86,14 +88,14 @@ ENDA
 
 PlayerUnits:
 UNIT Devan Duke Devan Level(1,Ally,0) [14,14] 0x0 0x0 0x0 0x1 [IronLance, Javelin, Vulnerary] NoAI
-UNIT Ronni Ranger_F Devan Level(1,Ally,0) [14,13] 0x0 0x0 0x0 0x1 [IronBow, SteelBow, Vulnerary] NoAI
+UNIT Ronni Ranger_F Devan Level(1,Ally,0) [14,13] 0x0 0x0 0x0 0x1 [IronBow, HuntingBow, Longbow, Vulnerary] NoAI
 UNIT Anthony Mercenary Devan Level(1,Ally,0) [5,14] 0x0 0x0 0x0 0x1 [IronSword, Vulnerary] NoAI
 UNIT Kenneth Cavalier Devan Level(1,Ally,0) [6,14] 0x0 0x0 0x0 0x1 [IronLance, IronSword, Vulnerary] NoAI
 
 UNIT
 
 EnemyUnits:
-UNIT 0x67 Brigand 0x67 Level(3,Enemy,1) [13,0] 0x0 0x0 0x0 0x1 [SteelAxe, HandAxe] AttackInRangeAI
+UNIT 0x67 Brigand 0x67 Level(3,Enemy,0) [13,0] 0x0 0x0 0x0 0x1 [SteelAxe, HandAxe] AttackInRangeAI
 UNIT Raider Brigand 0x67 Level(2,Enemy,1) [2,6] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
 UNIT Raider Brigand 0x67 Level(1,Enemy,1) [3,6] 0x0 0x0 0x0 0x1 [IronAxe] NoAI
 UNIT Raider Mercenary 0x67 Level(3,Enemy,1) [0,5] 0x0 0x0 0x0 0x1 [SteelSword] NoAI

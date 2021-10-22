@@ -1,0 +1,90 @@
+EventPointerTable(0x17,ThisChapter)
+
+ThisChapter:
+
+POIN TurnBasedEvents
+
+POIN CharacterBasedEvents
+
+POIN LocationBasedEvents
+
+POIN MiscBasedEvents
+
+POIN Dunno Dunno Dunno
+
+POIN Tutorial
+
+POIN TrapData TrapData
+
+POIN PlayerUnits PlayerUnits
+
+POIN $0 $0 $0 $0 $0 $0
+
+POIN BeginningScene EndingScene
+
+Dunno:
+WORD $00
+
+Tutorial:
+WORD $00
+
+TrapData:
+NormalBallista(13,11)
+NormalBallista(14,14)
+ENDTRAP
+ALIGN 4
+
+TurnBasedEvents:
+END_MAIN
+
+ALIGN 32
+LocationBasedEvents:
+Seize(9,2)
+END_MAIN
+
+CharacterBasedEvents:
+//Planned Devan, Ronni convo
+//Planned Devan, Brent convo
+//Planned Devan, Colton convo
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+BeginningScene:
+
+LOAD1 0 EnemyUnits
+
+PREP
+
+ENUN
+NoFade
+ENDA
+
+EndingScene:
+MNC2 0x5
+ENDA
+
+PlayerUnits:
+UNIT Devan Duke Devan Level(1,Ally,0) [10,26] 0x0 0x0 0x0 0x1 [IronLance, Javelin, Vulnerary] NoAI
+UNIT Ronni Ranger_F Devan Level(1,Ally,0) [9,28] 0x0 0x0 0x0 0x1 [IronBow, SteelBow, Vulnerary] NoAI
+UNIT Anthony Mercenary Devan Level(1,Ally,0) [10,28] 0x0 0x0 0x0 0x1 [IronSword, Vulnerary] NoAI
+UNIT Kenneth Cavalier Devan Level(1,Ally,0) [8,26] 0x0 0x0 0x0 0x1 [IronLance, IronSword, Vulnerary] NoAI
+UNIT Julianne DragonMasterF Brent Level(5,Ally,0) [9,26] 0x0 0x0 0x0 0x1 [IronAxe, Javelin] NoAI
+UNIT Colton Thief Devan Level(3,Ally,0) [11,26] 0x0 0x1 0x0 0x1 [IronSword, Lockpick, Vulnerary] NoAI
+UNIT Lucy Shaman_F Devan Level(2,Ally,0) [9,27] 0x0 0x0 0x0 0x1 [Flux, Vulnerary, Torch] NoAI
+UNIT Brent DragonMaster Devan Level(15,Ally,0) [10,27] 0x0 0x0 0x0 0x1 [SteelAxe, HandAxe, Elixir] NoAI
+
+UNIT
+
+EnemyUnits:
+UNIT Raider Deserter 0x67 Level(6,Enemy,1) [9,2] 0x0 0x0 0x0 0x1 [IronLance, Javelin] AttackInRangeAI
+UNIT Raider Brigand 0x67 Level(7,Enemy,1) [8,23] 0x0 0x0 0x0 0x1 [Swordreaver] AttackInRangeAI
+UNIT Raider Deserter 0x67 Level(7,Enemy,1) [9,21] 0x0 0x0 0x0 0x1 [SteelLance, Javelin] AttackInRangeAI
+UNIT Raider Archer 0x67 Level(6,Enemy,1) [11,20] 0x0 0x0 0x0 0x1 [SteelBow] AttackInRangeAI
+UNIT Raider Cavalier 0x67 Level(6,Enemy,1) [9,17] 0x0 0x0 0x0 0x1 [Horseslayer, SteelSword] NoAI
+UNIT Raider Archer 0x67 Level(6,Enemy,1) [13,11] 0x0 0x0 0x0 0x1 [IronBow] NeverMoveAI
+UNIT Raider Archer 0x67 Level(6,Enemy,1) [14,14] 0x0 0x0 0x0 0x1 [SteelBow] NeverMoveAI
+
+UNIT

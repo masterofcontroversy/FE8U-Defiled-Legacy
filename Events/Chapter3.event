@@ -33,17 +33,38 @@ ENDTRAP
 ALIGN 4
 
 TurnBasedEvents:
-TurnEventPlayer(0xC, LightTorches, 1)
-//TurnEventPlayer(0xD, DeployRenforcements2, 2)
-TurnEventPlayer(0x0, DeployRenforcements1, 3, 11)
+TurnEventPlayer(0xB, LightTorches, 1)
+//TurnEventPlayer(0x0, RepeatTorches, 3)
+
+TurnEventPlayer(0xC, DeployColtonAndLucy, 2)
+
+TurnEventPlayer(0xD, DeployRenforcements2, 2)
+
+TurnEventPlayer(0x0, Reinforcements1XTurn, 3,10)
+TurnEventPlayer(0x0, Reinforcements2XTurn, 4,10)
+TurnEventPlayer(0x0, Reinforcements3XTurn, 2,10)
 END_MAIN
 
 ALIGN 32
 LocationBasedEvents:
+Village(0x22,Ch3_MayorEvent,5,8)
+Village(0x23,Ch3_LocksmithEvent,18,10)
+Village(0x24,Ch3_PrayerEvent,7,1)
+Village(0x25,Ch3_MotherEvent,0,5)
+Door(19,5)
+Door(2,3)
+Door(3,3)
 Door(4,12)
 Door(5,12)
 Door(10,12)
 Door(11,12)
+
+Chest(Lancereaver,2,0)
+Chest(Horseslayer,3,0)
+
+Armory(SekrenArmory,15,1)
+Vendor(SekrenShop,12,1)
+
 END_MAIN
 
 CharacterBasedEvents:
@@ -55,12 +76,39 @@ CauseGameOverIfLordDies
 END_MAIN
 
 BeginningScene:
+
 LOAD1 0 PlayerUnits
 
 ENUN
 
+CAM1 Devan
+
+STAL 20
+
 LOAD1 0 EnemyUnits
 
+ENUN
+
+MOVE 14 Devan [11,10]
+ENUN
+MOVE 14 Devan [9,10]
+ENUN
+MOVE 14 Devan [9,8]
+ENUN
+STAL 20
+
+LOAD1 0 PlayerUnits2
+
+ENUN
+
+STAL 20
+
+MOVE 14 Devan [9,10]
+ENUN
+MOVE 14 Devan [6,10]
+ENUN
+
+NoFade
 ENDA
 
 EndingScene:
@@ -68,44 +116,65 @@ SetBackground(0x18)
 Text(Placeholder_text)
 EndConvo
 
-MNC2 0x2
+MNC2 0x4
 ENDA
 
 PlayerUnits:
 UNIT Devan Duke Devan Level(1,Ally,0) [11,6] 0x0 0x0 0x0 0x1 [IronLance, Javelin, Vulnerary] NoAI
-UNIT Ronni Ranger_F Devan Level(1,Ally,0) [8,10] 0x0 0x0 0x0 0x1 [IronBow, SteelBow, Vulnerary] NoAI
-UNIT Anthony Mercenary Devan Level(1,Ally,0) [10,10] 0x0 0x0 0x0 0x1 [IronSword, Vulnerary] NoAI
-UNIT Kenneth Cavalier Devan Level(1,Ally,0) [9,11] 0x0 0x0 0x0 0x1 [IronLance, IronSword, Vulnerary] NoAI
 UNIT Brent DragonMaster Devan Level(15,Ally,0) [12,7] 0x0 0x0 0x0 0x1 [SteelAxe, HandAxe, Elixir] NoAI
-UNIT Julianne DragonMasterF Brent Level(5,Ally,0) [7,11] 0x0 0x0 0x0 0x1 [IronAxe, Javelin] NoAI
+
+UNIT
+
+PlayerUnits2:
+UNIT Ronni Ranger_F Devan Level(1,Ally,0) [9,8] 0x0 0x0 0x2 RonniMoves [IronBow, SteelBow, Vulnerary] NoAI
+UNIT Anthony Mercenary Devan Level(1,Ally,0) [9,8] 0x0 0x0 0x2 AnthonyMoves [IronSword, Vulnerary] NoAI
+UNIT Kenneth Cavalier Devan Level(1,Ally,0) [9,8] 0x0 0x0 0x2 KennethMoves [IronLance, IronSword, Vulnerary] NoAI
+UNIT Julianne DragonMasterF Brent Level(5,Ally,0) [9,8] 0x0 0x0 0x2 JulianneMoves [IronAxe, Javelin] NoAI
+
+UNIT
+
+ColtonAndLucy:
+UNIT Colton Thief Devan Level(3,Ally,0) [18,1] 0x0 0x1 0x1 ColtonMoves [IronSword, Lockpick, Vulnerary] NoAI
+UNIT Lucy Shaman_F Devan Level(2,Ally,0) [18,1] 0x0 0x0 0x1 LucyMoves [Flux, Vulnerary, Torch] NoAI
 
 UNIT
 
 EnemyUnits:
-UNIT 0x64 AxeArmor 0x68 Level(10,Enemy,1) [19,11] 0x0 0x0 0x0 0x1 [HandAxe] NeverMoveAI
-UNIT 0x64 SwordArmor 0x68 Level(10,Enemy,1) [18,12] 0x0 0x0 0x0 0x1 [Wyrmslayer, Runesword] NeverMoveAI
-UNIT 0x64 AxeArmor 0x68 Level(10,Enemy,1) [19,13] 0x0 0x0 0x0 0x1 [HandAxe, DragonAxe] NeverMoveAI
-UNIT 0x64 SwordArmor 0x68 Level(10,Enemy,1) [18,14] 0x0 0x0 0x0 0x1 [Wyrmslayer, Runesword] NeverMoveAI
-//UNIT 0x64 Brigand 0x68 Level(5,Enemy,1) [12,3] 0x0 0x0 0x0 0x1 [SteelAxe] AttackInRangeAI
-//UNIT 0x64 Archer 0x68 Level(5,Enemy,1) [0,10] 0x0 0x0 0x0 0x1 [SteelBow] DoNotMoveAI
-//UNIT 0x64 Mercenary 0x68 Level(5,Enemy,1) [4,14] 0x0 0x0 0x0 0x1 [Wyrmslayer, DoorKey] [0x11, 0x0, 0x0, 0x0] //Unlock nearby doors
-//UNIT 0x64 Mercenary 0x68 Level(5,Enemy,1) [10,14] 0x0 0x0 0x0 0x1 [Wyrmslayer, DoorKey] [0x11, 0x0, 0x0, 0x0] //Unlock nearby doors
-//UNIT 0x64 Mercenary 0x68 Level(5,Enemy,1) [7,14] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-//UNIT 0x64 Deserter 0x68 Level(5,Enemy,1) [4,5] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
-//UNIT 0x64 Fighter 0x68 Level(5,Enemy,1) [2,5] 0x0 0x0 0x0 0x1 [IronAxe] NoAI
+UNIT 0x46 Fighter 0x46 Level(5,Enemy,1) [23,13] 0x0 0x0 0x0 0x1 [SteelAxe, HandAxe] NeverMoveAI
+UNIT 0x64 Mercenary 0x46 Level(5,Enemy,1) [24,12] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+UNIT 0x64 Archer 0x46 Level(5,Enemy,1) [22,12] 0x0 0x0 0x0 0x1 [SteelBow] [AttackIfClose, DoNotMove, NormalRecovery, DefaultAI4]
+UNIT 0x64 AxeArmor 0x46 Level(10,Enemy,1) [19,11] 0x0 0x0 0x0 0x1 [HandAxe, DragonAxe] NeverMoveAI
+UNIT 0x64 SwordArmor 0x46 Level(10,Enemy,1) [18,12] 0x0 0x0 0x0 0x1 [Wyrmslayer, Runesword] NeverMoveAI
+UNIT 0x64 AxeArmor 0x46 Level(10,Enemy,1) [19,13] 0x0 0x0 0x0 0x1 [HandAxe, DragonAxe] NeverMoveAI
+UNIT 0x64 SwordArmor 0x46 Level(10,Enemy,1) [18,14] 0x0 0x0 0x0 0x1 [Wyrmslayer, Runesword] NeverMoveAI
+UNIT 0x64 Brigand 0x46 Level(5,Enemy,1) [12,3] 0x0 0x0 0x0 0x1 [SteelAxe] AttackInRangeAI
+UNIT 0x64 Archer 0x46 Level(5,Enemy,1) [0,10] 0x0 0x0 0x0 0x1 [SteelBow] [AttackIfClose, DoNotMove, NormalRecovery, DefaultAI4]
+UNIT 0x64 Mercenary 0x46 Level(5,Enemy,1) [4,14] 0x0 0x0 0x0 0x1 [Wyrmslayer, DoorKey] [0x11, 0x0, 0x0, 0x0] //Unlock nearby doors
+UNIT 0x64 Mercenary 0x46 Level(5,Enemy,1) [10,14] 0x0 0x0 0x0 0x1 [Wyrmslayer, DoorKey] [0x11, 0x0, 0x0, 0x0] //Unlock nearby doors
+UNIT 0x64 Mercenary 0x46 Level(5,Enemy,1) [7,14] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+UNIT 0x64 Deserter 0x46 Level(5,Enemy,1) [4,5] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
+UNIT 0x64 Fighter 0x46 Level(5,Enemy,1) [2,5] 0x0 0x0 0x0 0x1 [IronAxe] NoAI
+UNIT 0x64 Brigand 0x46 Level(5,Enemy,1) [18,7] 0x0 0x0 0x0 0x1 [IronAxe] NoAI
+UNIT 0x64 Deserter 0x46 Level(5,Enemy,1) [17,8] 0x0 0x0 0x0 0x1 [Horseslayer] NoAI
 
 UNIT
 
 EnemyReinforcements1:
-UNIT 0x64 Mercenary 0x68 Level(5,Enemy,1) [4,14] 0x0 0x0 0x0 0x1 [Wyrmslayer] NoAI
-UNIT 0x64 Mercenary 0x68 Level(5,Enemy,1) [10,14] 0x0 0x0 0x0 0x1 [Wyrmslayer] NoAI
+UNIT 0x64 Mercenary 0x46 Level(5,Enemy,1) [4,14] 0x0 0x0 0x0 0x1 [Wyrmslayer] NoAI
+UNIT 0x64 Mercenary 0x46 Level(5,Enemy,1) [10,14] 0x0 0x0 0x0 0x1 [SteelSword] NoAI
 
 UNIT
 
 EnemyReinforcements2:
-UNIT 0x64 Mercenary 0x68 Level(5,Enemy,1) [24,2] 0x0 0x0 0x1 Enemy_Move1 [SteelSword] NoAI
-UNIT 0x64 Brigand 0x68 Level(5,Enemy,1) [24,2] 0x0 0x0 0x1 Enemy_Move2 [HandAxe] NoAI
-UNIT 0x64 Myrmidon 0x68 Level(5,Enemy,1) [24,2] 0x0 0x0 0x0 0x1 [SteelSword] NoAI
+UNIT 0x64 Mercenary 0x46 Level(5,Enemy,1) [24,2] 0x0 0x0 0x1 Enemy_Move1 [SteelSword] NoAI
+UNIT 0x64 Brigand 0x46 Level(5,Enemy,1) [24,2] 0x0 0x0 0x1 Enemy_Move2 [HandAxe] NoAI
+UNIT 0x64 Myrmidon 0x46 Level(5,Enemy,1) [24,2] 0x0 0x0 0x0 0x1 [SteelSword] NoAI
+
+UNIT
+
+EnemyReinforcements3:
+UNIT 0x64 Deserter 0x46 Level(5,Enemy,1) [0,6] 0x0 0x0 0x0 0x1 [Javelin] NoAI
+UNIT 0x64 Fighter 0x46 Level(5,Enemy,1) [0,7] 0x0 0x0 0x0 0x1 [SteelAxe] NoAI
 
 UNIT
 
@@ -121,39 +190,46 @@ UNIT
 //TurnBasedEvents
 
 ALIGN 4
-LightTorches:
-LOAD1 0 Torches
+DeployColtonAndLucy:
+CURSOR [18,1]
+STAL 20
+REMOVE_CURSORS
 
+LOAD1 0 ColtonAndLucy
 ENUN
 
+NoFade
+ENDA
+
+ALIGN 4
+LightTorches:
+LOAD1 0 Torches
+ENUN
+NoFade
+ENDA
+
+//Reinforcements
+ALIGN 4
+DeployRenforcements2:
+CAM1 [24,2]
+LOAD1 0 EnemyReinforcements2
+ENUN
 NoFade
 ENDA
 
 ALIGN 4
 DeployRenforcements1:
-CHECK_TURNS
-SVAL 0xA 0x2
-SVAL 0xB 0x1
-
-SMOD 0xAC1
-
-BEQ 1 0x1 0x0
-
-
+CAM1 [7,14]
 LOAD1 0 EnemyReinforcements1
 ENUN
-GOTO 1
 
-LABEL 1
 NoFade
 ENDA
 
 ALIGN 4
-DeployRenforcements2:
-CAM1 [24,2]
-
-LOAD1 0 EnemyReinforcements2
-
+DeployRenforcements3:
+CAM1 [0,5]
+LOAD1 0 EnemyReinforcements3
 ENUN
 
 NoFade
@@ -161,9 +237,59 @@ ENDA
 
 //REDAs
 ALIGN 4
+RonniMoves:
+REDA [9,10] 0x0 0x0 0x0 0x0 0x0
+REDA [8,10] 0x0 0x0 0x0 0x0 0x0
+
+ALIGN 4
+AnthonyMoves:
+REDA [9,10] 0x0 0x0 0x0 0x0 0x0
+REDA [10,10] 0x0 0x0 0x0 0x0 0x0
+
+ALIGN 4
+KennethMoves:
+REDA [9,10] 0x0 0x0 0x0 0x0 0x0
+REDA [9,11] 0x0 0x0 0x0 0x0 0x0
+
+ALIGN 4
+JulianneMoves:
+REDA [9,10] 0x0 0x0 0x0 0x0 0x0
+REDA [7,11] 0x0 0x0 0x0 0x0 0x0
+
+
+ALIGN 4
+ColtonMoves:
+REDA [17,2] 0x0 0x0 0x0 0x0 0x0
+
+ALIGN 4
+LucyMoves:
+REDA [18,3] 0x0 0x0 0x0 0x0 0x0
+
+
+ALIGN 4
 Enemy_Move1:
 REDA [23,3] 0x0 0x0 0x0 0x0 0x0
 
 ALIGN 4
 Enemy_Move2:
 REDA [23,1] 0x0 0x0 0x0 0x0 0x0
+
+//Every X Turn Conditonals
+
+ALIGN 4
+Reinforcements1XTurn:
+Every3Turns(1,2,3,4,0x1E,0x1D,DeployRenforcements1)
+NoFade
+ENDA
+
+ALIGN 4
+Reinforcements2XTurn:
+Every3Turns(5,6,7,8,0x1C,0x1F,DeployRenforcements2)
+NoFade
+ENDA
+
+ALIGN 4
+Reinforcements3XTurn:
+Every3Turns(9,0xA,0xB,0xC,0x20,0x21,DeployRenforcements3)
+NoFade
+ENDA

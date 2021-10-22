@@ -1,4 +1,4 @@
-0xE47180,"Holy Blood ID (Set bit 0x80 for major, don't if minor)"
+INLINE HolyBloodCharacterTable,"Holy Blood ID (Set bit 0x80 for major, don't if minor)"
 None,255
 Devan,1^0x80
 Seth,255

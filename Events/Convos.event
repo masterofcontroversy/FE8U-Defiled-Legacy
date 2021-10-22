@@ -45,9 +45,58 @@ NoFade
 ENDA
 
 ALIGN 4
-Timeup:
+Ch1_Timeup:
 MUSI
 Text(Ch1Convo_AnthonyKenneth)
 MUNO
 GameOver
+ENDA
+
+ALIGN 4
+Ch3_MayorEvent:
+CHECK_ACTIVE
+SVAL 0x1 Devan
+MUSI
+
+BEQ 1 0xC Devan
+
+Text(0x0E,Ch3_Mayor)
+SetGold(5000) //In decimal
+
+GOTO 2
+
+LABEL 1
+Text(0x0E,Ch3_Mayor_DevanVer)
+SetGold(10000) // In decimal
+
+LABEL 2
+GiveGold
+MUNO
+NoFade
+ENDA
+
+ALIGN 4
+Ch3_LocksmithEvent:
+MUSI
+Text(0x1,Ch3_Locksmith)
+GiveItem(DoorKey,0xFFFF)
+MUNO
+NoFade
+ENDA
+
+ALIGN 4
+Ch3_PrayerEvent:
+MUSI
+Text(0x1,Ch3_Prayer)
+GiveItem(GoddessIcon,0xFFFF)
+MUNO
+NoFade
+ENDA
+
+ALIGN 4
+Ch3_MotherEvent:
+MUSI
+Text(0x1,Ch3_Mother)
+MUNO
+NoFade
 ENDA
